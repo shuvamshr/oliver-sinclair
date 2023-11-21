@@ -7,7 +7,7 @@ export default function () {
     <>
       <div className="container-fluid bg-red-100">
         <div className="container mx-auto lg:px-0 px-6 py-32">
-          <div className="grid grid-cols-12 lg:gap-0 gap-10">
+          <div className="grid grid-cols-12">
             <div className="lg:col-span-6 lg:gap-10 col-span-12 gap-6 flex flex-col">
               <div className="flex flex-col gap-2">
                 <Typography type="head-res-lg-medium">
@@ -42,8 +42,8 @@ export default function () {
               </div>
             </div>
 
-            <div className="lg:col-start-8 lg:col-span-5 lg:gap-10 col-span-12 gap-6">
-              <img src={CreativityImg} className="w-fit" alt="" />
+            <div className="lg:col-start-8 lg:col-span-5 col-span-12">
+              <img src={CreativityImg} alt="" />
             </div>
           </div>
         </div>
