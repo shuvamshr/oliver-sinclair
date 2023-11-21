@@ -2,8 +2,7 @@ export default function Index(props) {
   let buttonType;
   const [type, style] = props.type.split(/-(.*)/s);
 
-  const res_large_block =
-    "lg:max-2xl:h-16 lg:max-2xl:text-lg h-12 text-base w-full";
+  const res_large_block = "lg:h-16 lg:text-lg h-12 text-base w-full";
   const fix_large_block = "h-16 text-lg w-full";
   const fix_medium_block = "h-12 text-base w-full";
 

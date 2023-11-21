@@ -3,13 +3,16 @@ export default function Index(props) {
   const [type, style] = props.type.split(/-(.*)/s);
 
   const res_5xl_semibold =
-    "lg:max-2xl:text-5xl lg:max-2xl:leading-normal text-3xl leading-normal font-semibold";
+    "lg:text-5xl lg:leading-normal text-3xl leading-normal font-semibold";
+
+  const res_4xl_semibold =
+    "lg:text-4xl lg:leading-normal text-3xl leading-normal font-semibold";
 
   const res_lg_medium =
-    "lg:max-2xl:text-lg lg:max-2xl:leading-normal text-base leading-normal font-medium";
+    "lg:text-lg lg:leading-normal text-base leading-normal font-medium";
 
   const res_xl_regular =
-    "lg:max-2xl:text-xl lg:max-2xl:leading-normal text-lg leading-normal font-regular";
+    "lg:text-xl lg:leading-normal text-lg leading-normal font-regular";
 
   const fix_sm_regular = "text-sm leading-normal font-regular";
 

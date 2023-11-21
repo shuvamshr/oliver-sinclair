@@ -5,9 +5,9 @@ export default function () {
   return (
     <>
       <div className="container-fluid bg-red-100">
-        <div className="container mx-auto lg:max-2xl:px-0 px-6 py-32">
+        <div className="container mx-auto lg:px-0 px-6 py-32">
           <div className="grid grid-cols-12">
-            <div className="lg:max-2xl:col-span-6 lg:max-2xl:gap-10 col-span-12 gap-6 flex flex-col ">
+            <div className="lg:col-span-6 lg:gap-10 col-span-12 gap-6 flex flex-col ">
               <div className="flex flex-col gap-2">
                 <Typography type="head-res-lg-medium">
                   NEW UX BUNDLE ADDED
@@ -27,7 +27,7 @@ export default function () {
               </Typography>
 
               <div className="flex flex-col gap-10">
-                <div className="flex flex-col lg:max-2xl:flex-row lg:max-2xl:gap-6 gap-4">
+                <div className="flex flex-col lg:flex-row lg:gap-6 gap-4">
                   <Button type="primary-res-large-block">
                     Who's My Oliver?
                   </Button>
@@ -41,7 +41,7 @@ export default function () {
               </div>
             </div>
 
-            <div className="lg:max-2xl:col-start-8 lg:max-2xl:col-span-5 col-start-1 col-span-12 flex bg-gray-100 h-full rounded-tl-[5rem] rounded-br-[5rem]">
+            <div className="lg:col-start-8 lg:col-span-5 col-start-1 col-span-12 flex bg-gray-100 h-full rounded-tl-[5rem] rounded-br-[5rem]">
               <div></div>
             </div>
           </div>
