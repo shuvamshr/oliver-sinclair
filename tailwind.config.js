@@ -17,6 +17,9 @@ export default {
         100: "#FFFCFA",
       },
     },
+    border: {
+      thin: "1px",
+    },
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
       serif: ["Vollkorn", "serif"],

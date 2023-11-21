@@ -38,7 +38,7 @@ export default function Index(props) {
       <button
         className={
           buttonType +
-          " rounded-none bg-white font-semibold font-sans text-red-900 hover:bg-red-300 border-2 border-red-900 transition linear duration-300"
+          " rounded-none bg-white font-semibold font-sans text-red-900 hover:bg-red-300 border-[1.5px] border-red-900 transition linear duration-300"
         }
       >
         {props.children}
