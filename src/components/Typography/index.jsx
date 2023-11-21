@@ -7,7 +7,7 @@ const typographyStyle = {
   "5xl": "text-5xl leading-normal",
   "res-5xl": "lg:text-5xl text-3xl lg:leading-normal",
   "4xl": "text-4xl lg:leading-normal",
-  "res-4xl": "lg:text-4xl text-3xl lg:leading-normal",
+  "res-4xl": "lg:text-4xl text-2xl lg:leading-normal",
   "3xl": "text-3xl lg:leading-normal",
   "res-3xl": "lg:text-3xl text-2xl leading-normal",
   "2xl": "text-2xl leading-normal",
@@ -31,6 +31,7 @@ const typographyStyle = {
   // Text Align
   left: "text-left",
   center: "text-center",
+  "res-center": "lg:text-center text-left",
   right: "text-right",
   justify: "text-justify",
 
