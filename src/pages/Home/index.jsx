@@ -9,7 +9,7 @@ export default function () {
   return (
     <>
       <Header />
-      <div className="container-fluid bg-red-100 lg:mt-12 mt-6">
+      <div className="container-fluid bg-red-100 mt-6">
         <div className="container mx-auto lg:px-0 px-6 py-32">
           <div className="grid grid-cols-12">
             <div className="lg:col-span-6 lg:gap-10 col-span-12 gap-6 flex flex-col justify-center">
