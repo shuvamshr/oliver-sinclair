@@ -36,7 +36,7 @@ export default function Index(props) {
     );
   } else if (type === "body") {
     return (
-      <p className={typographyType + " font-serif text-gray-800"}>
+      <p className={typographyType + " font-serif text-gray-700"}>
         {props.children}
       </p>
     );
