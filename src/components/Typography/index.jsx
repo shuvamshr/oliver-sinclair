@@ -8,6 +8,10 @@ export default function Index(props) {
   const res_4xl_semibold =
     "lg:text-4xl lg:leading-normal text-3xl leading-normal font-semibold";
 
+  const fix_base_semibold = "text-base leading-normal font-semibold";
+
+  const fix_base_regular = "text-base leading-normal font-regular";
+
   const res_lg_medium =
     "lg:text-lg lg:leading-normal text-base leading-normal font-medium";
 
@@ -28,6 +32,12 @@ export default function Index(props) {
       break;
     case "fix-sm-regular":
       typographyType = fix_sm_regular;
+      break;
+    case "fix-base-semibold":
+      typographyType = fix_base_semibold;
+      break;
+    case "fix-base-regular":
+      typographyType = fix_base_regular;
       break;
   }
 

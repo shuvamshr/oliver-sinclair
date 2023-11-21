@@ -5,6 +5,7 @@ export default function Index(props) {
   const res_large_block = "lg:h-16 lg:text-lg h-12 text-base w-full";
   const fix_large_block = "h-16 text-lg w-full";
   const fix_medium_block = "h-12 text-base w-full";
+  const fix_medium_fit = "h-12 text-base px-6 w-fit";
 
   switch (style) {
     case "res-large-block":
@@ -15,6 +16,9 @@ export default function Index(props) {
       break;
     case "fix-medium-block":
       buttonType = fix_medium_block;
+      break;
+    case "fix-medium-fit":
+      buttonType = fix_medium_fit;
       break;
     default:
       buttonType = fix_medium_block;
