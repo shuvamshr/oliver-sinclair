@@ -71,18 +71,18 @@ export default function () {
                   size="res-4xl"
                   weight="semibold"
                   color="deepWhite"
-                  align="center"
+                  align="res-center"
                 >
                   Certified expertise from over{" "}
                   <span className="text-red-900 font-bold italic">10+</span>{" "}
                   industries,
-                  <br /> universities and events
+                  <br className="lg:block hidden" /> universities and events
                 </Typography>
                 <Typography
                   type="serif"
                   size="res-lg"
                   color="liteWhite"
-                  align="center"
+                  align="res-center"
                 >
                   our team of dedicated professionals comprises individuals with
                   a diverse array of skills and knowledge acquired through
@@ -90,12 +90,12 @@ export default function () {
                   universities, and impactful events
                 </Typography>
               </div>
-              <div className="flex flex-wrap justify-around gap-12 items-center">
-                <img src={UTSLogo} alt="" />
-                <img src={AppleLogo} alt="" />
-                <img src={DolbyLogo} alt="" />
-                <img src={LeedsLogo} alt="" />
-                <img src={OliverWhiteLogo} alt="" />
+              <div className="flex lg:flex-wrap justify-between gap-14 items-center overflow-x-auto snap-x">
+                <img src={UTSLogo} alt="" className="snap-center" />
+                <img src={AppleLogo} alt="" className="snap-center" />
+                <img src={DolbyLogo} alt="" className="snap-center" />
+                <img src={LeedsLogo} alt="" className="snap-center" />
+                <img src={OliverWhiteLogo} alt="" className="snap-center" />
               </div>
             </div>
           </div>
