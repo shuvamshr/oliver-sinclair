@@ -25,6 +25,7 @@ export default {
       sans: ["Poppins", "sans-serif"],
       serif: ["Vollkorn", "serif"],
     },
+
     extend: {},
   },
   plugins: [],
