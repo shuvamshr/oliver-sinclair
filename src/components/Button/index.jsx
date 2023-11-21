@@ -1,32 +1,48 @@
 export default function Index(props) {
   let buttonType;
+  const [type, style] = props.type.split(/-(.*)/s);
 
-  const primaryLargeBlock =
-    "w-full h-14 rounded-none bg-red-900 text-lg font-semibold font-sans text-white hover:bg-[red] transition linear duration-300";
-  const secondaryLargeBlock =
-    "w-full h-14 rounded-none bg-white text-lg font-semibold font-sans text-red-900 border-2 border-red-900";
-  const primaryLargeFit =
-    "h-14 px-8 rounded-none bg-red-900 text-lg font-semibold font-sans text-white";
-  const secondaryLargeFit =
-    "h-14 px-8 rounded-none bg-white text-lg font-semibold font-sans text-red-900 border-2 border-red-900";
+  const res_large_block =
+    "lg:max-2xl:h-16 lg:max-2xl:text-lg h-12 text-base w-full";
+  const fix_large_block = "h-16 text-lg w-full";
+  const fix_medium_block = "h-12 text-base w-full";
 
-  switch (props.type) {
-    case "primary-large-block":
-      buttonType = primaryLargeBlock;
+  switch (style) {
+    case "res-large-block":
+      buttonType = res_large_block;
       break;
-    case "secondary-large-block":
-      buttonType = secondaryLargeBlock;
+    case "fix-large-block":
+      buttonType = fix_large_block;
       break;
-    case "primary-large-fit":
-      buttonType = primaryLargeFit;
-      break;
-    case "secondary-large-fit":
-      buttonType = secondaryLargeFit;
+    case "fix-medium-block":
+      buttonType = fix_medium_block;
       break;
     default:
-      buttonType = primaryLargeFit;
+      buttonType = fix_medium_block;
       break;
   }
 
-  return <button className={buttonType}>{props.children}</button>;
+  if (type === "primary") {
+    return (
+      <button
+        className={
+          buttonType +
+          " rounded-none bg-red-900 font-semibold font-sans text-white hover:bg-red-700 transition linear duration-300"
+        }
+      >
+        {props.children}
+      </button>
+    );
+  } else if (type === "secondary") {
+    return (
+      <button
+        className={
+          buttonType +
+          " rounded-none bg-white font-semibold font-sans text-red-900 hover:bg-red-300 border-2 border-red-900 transition linear duration-300"
+        }
+      >
+        {props.children}
+      </button>
+    );
+  }
 }

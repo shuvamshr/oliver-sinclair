@@ -8,21 +8,20 @@ export default {
       gray: {
         900: "#1D2F3F",
         800: "#2E475D",
+        100: "#F4F4F4",
       },
       red: {
         900: "#F16F73",
+        700: "#F48F93",
+        300: "#FFE9E4",
+        100: "#FFFCFA",
       },
     },
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
       serif: ["Vollkorn", "serif"],
     },
-    extend: {
-      lineHeight: {
-        2: "4.5rem",
-        1: "1.875rem",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
