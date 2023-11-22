@@ -11,7 +11,7 @@ export default function Index() {
         <div className="container mx-auto h-[84px]  items-center lg:px-0 px-6 flex flex-row justify-between">
           <img src={CompanyLogo} className="lg:w-[255px] w-[220px]" alt="" />
           <div className="lg:flex lg-flex-row lg:gap-10 hidden items-center">
-            <Typography size="sm" weight="semibold">
+            <Typography size="base" weight="semibold">
               home
             </Typography>
             <Typography type="serif" size="base">
