@@ -16,8 +16,8 @@ export default function () {
   return (
     <>
       <Header />
-      <div className="container-fluid bg-red-100 mt-6">
-        <div className="container mx-auto lg:px-0 px-6 py-32">
+      <div className="container-fluid bg-red-100 lg:mt-6 mt-24">
+        <div className="container mx-auto lg:px-0 px-6 lg:py-32 py-16">
           <div className="grid grid-cols-12">
             <div className="lg:col-span-6 lg:gap-10 col-span-12 gap-6 flex flex-col justify-center">
               <div className="flex flex-col gap-2">
@@ -63,7 +63,7 @@ export default function () {
       </div>
 
       <div className="container-fluid bg-gray-900">
-        <div className="container mx-auto lg:px-0 px-6 py-32">
+        <div className="container mx-auto lg:px-0 px-6 lg:py-32 py-16">
           <div className="grid grid-cols-12">
             <div className="lg:col-span-10 lg:col-start-2 lg:gap-12 col-span-12 gap-12 flex flex-col justify-center">
               <div className="flex flex-col gap-6">
@@ -97,6 +97,52 @@ export default function () {
                 <img src={LeedsLogo} alt="" className="snap-center" />
                 <img src={OliverWhiteLogo} alt="" className="snap-center" />
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container-fluid bg-red-100">
+        <div className="container mx-auto lg:px-0 px-6 lg:py-32 py-16">
+          <div className="grid grid-cols-12">
+            <div className="lg:col-span-6 lg:gap-10 col-span-12 gap-6 flex flex-col justify-center">
+              <div className="flex flex-col gap-2">
+                <Typography size="res-lg" weight="medium">
+                  NEW UX BUNDLE ADDED
+                </Typography>
+
+                <Typography size="res-5xl" weight="semibold">
+                  Crafting Creativity <br /> to Captivate.
+                  <span className="text-red-900 font-bold italic">
+                    {" "}
+                    No Cap.
+                  </span>
+                </Typography>
+              </div>
+
+              <Typography type="serif" size="res-xl">
+                Embark on a digital journey where captivation knows no bounds.
+                At Oliver Sinclair, we're devoted to crafting experiences that
+                transcend expectations.
+              </Typography>
+
+              <div className="flex flex-col gap-10">
+                <div className="flex flex-col lg:flex-row lg:gap-6 gap-4">
+                  <Button type="primary-res-large-block">
+                    Who's My Oliver?
+                  </Button>
+                  <Button type="secondary-res-large-block">
+                    View Service Bundles
+                  </Button>
+                </div>
+                <Typography type="serif" size="sm">
+                  learn more about our services, or figure out who oliver is
+                </Typography>
+              </div>
+            </div>
+
+            <div className="lg:col-start-8 lg:col-span-5 col-span-12 justify-center">
+              <img src={CreativityImg} alt="" />
             </div>
           </div>
         </div>
