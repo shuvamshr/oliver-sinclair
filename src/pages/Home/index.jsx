@@ -57,7 +57,7 @@ export default function () {
             </div>
 
             <div className="lg:col-start-8 lg:col-span-5 col-span-12 justify-center">
-              <img src={CreativityImg} alt="" />
+              <img src={CreativityImg} className="lg:pt-0 pt-10" alt="" />
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function () {
         <div className="container mx-auto lg:px-0 px-6 lg:py-32 py-16">
           <div className="grid grid-cols-12">
             <div className="lg:col-span-5 col-span-12 justify-center">
-              <img src={GroupworkImg} alt="" />
+              <img src={GroupworkImg} className="lg:pb-0 pb-10" alt="" />
             </div>
             <div className="lg:col-start-7 lg:col-span-6 lg:gap-10 col-span-12 gap-6 flex flex-col justify-center">
               <Typography size="res-4xl" weight="semibold">
