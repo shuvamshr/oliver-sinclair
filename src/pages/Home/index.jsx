@@ -111,8 +111,8 @@ export default function () {
             </div>
             <div className="lg:col-start-7 lg:col-span-6 lg:gap-10 col-span-12 gap-6 flex flex-col justify-center">
               <Typography size="res-4xl" weight="semibold">
-                Who is..{" "}
-                <span className="font-serif font-bold">Oliver Sinclair?</span>
+                Whom exactly is..{" "}
+                <span className="text-red-900 font-bold italic">Oliver?</span>
               </Typography>
               <Typography type="serif" size="res-lg">
                 we inspire businesses to conceive and craft the digital realms
