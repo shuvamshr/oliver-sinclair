@@ -6,6 +6,7 @@ import Typography from "../../components/Typography";
 
 import CreativityImg from "./assets/creativity.png";
 import GroupworkImg from "./assets/groupwork.png";
+import ProcessImg from "./assets/process.png";
 
 import AppleLogo from "./assets/apple.svg";
 import DolbyLogo from "./assets/dolby.svg";
@@ -135,6 +136,38 @@ export default function () {
                   </Button>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container-fluid bg-white">
+        <div className="container mx-auto lg:px-0 px-6 lg:py-32 py-16">
+          <div className="grid grid-cols-12 lg:gap-12 gap-6">
+            <div className="lg:col-span-8 lg:col-start-3 col-span-12">
+              <img src={ProcessImg} className="lg:pb-0 pb-10" alt="" />
+            </div>
+            <div className="lg:col-span-10 lg:col-start-2 lg:gap-12 col-span-12 gap-12 flex flex-col justify-center">
+              <div className="flex flex-col gap-6">
+                <Typography size="res-4xl" weight="semibold" align="res-center">
+                  All your design needs bundled.{" "}
+                  <span className="text-red-900 font-bold italic">
+                    Take your pick.
+                  </span>
+                </Typography>
+                <Typography type="serif" size="res-lg" align="res-center">
+                  our team of dedicated professionals comprises individuals with
+                  a diverse array of skills and knowledge acquired through
+                  certified expertise from various industries, renowned
+                  universities, and impactful events
+                </Typography>
+              </div>
+            </div>
+            <div className="flex flex-col  lg:flex-row lg:gap-6 gap-4 lg:col-span-8 lg:col-start-3 col-span-12">
+              <Button type="primary-res-large-block">Who's My Oliver?</Button>
+              <Button type="secondary-res-large-block">
+                View Service Bundles
+              </Button>
             </div>
           </div>
         </div>
