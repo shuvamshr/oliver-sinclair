@@ -24,7 +24,7 @@ export default {
     },
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
-      serif: ["Vollkorn", "serif"],
+      serif: ["serif"],
     },
 
     extend: {},
