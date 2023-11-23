@@ -1,4 +1,5 @@
 const rowStyle = {
+  large: "gap-20",
   medium: "gap-12",
   small: "gap-6",
 
