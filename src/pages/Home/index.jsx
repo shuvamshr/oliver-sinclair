@@ -96,6 +96,7 @@ export default function () {
           </Col>
         </Row>
       </Container>
+
       <Container>
         <Row>
           <Col span="5">
@@ -125,6 +126,7 @@ export default function () {
           </Col>
         </Row>
       </Container>
+
       <Container color="white">
         <Row>
           <Col span="8" pos="s3" justify="res-center">
@@ -159,6 +161,54 @@ export default function () {
               <Card></Card>
               <Card></Card>
               <Card></Card>
+              <Card></Card>
+              <Card></Card>
+              <Card></Card>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container color="offBlue" padding="compact">
+        <Row>
+          <Col span="9">
+            <div className="flex flex-col gap-4">
+              <Typography size="2xl" weight="semibold">
+                Got something a bit more custom?
+              </Typography>
+              <Typography type="serif" size="lg">
+                Our team of dedicated professionals comprises individuals with a
+                diverse array of skills and knowledge acquired through certified
+                expertise from various industries, renowned universities, and
+                impactful events
+              </Typography>
+            </div>
+          </Col>
+          <Col span="2" start="s11">
+            <Button type="secondary-res-large-block">Get in touch</Button>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container color="white">
+        <Row gap="large">
+          <Col span="10" pos="s2" justify="res-center">
+            <div className="flex flex-col gap-6">
+              <Typography size="res-4xl" weight="semibold" align="res-center">
+                Proven Track Record of{" "}
+                <span className="text-red-900 font-bold italic">Ambitious</span>{" "}
+                Projects
+              </Typography>
+              <Typography type="serif" size="res-lg" align="res-center">
+                our team of dedicated professionals comprises individuals with a
+                diverse array of skills and knowledge acquired through certified
+                expertise from various industries, renowned universities, and
+                impactful events
+              </Typography>
+            </div>
+          </Col>
+          <Col span="12" justify="res-center">
+            <div className="flex flex-wrap justify-center gap-10">
               <Card></Card>
               <Card></Card>
               <Card></Card>
