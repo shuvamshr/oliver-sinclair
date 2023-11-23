@@ -209,9 +209,9 @@ export default function () {
           </Col>
           <Col span="12" justify="res-center">
             <div className="flex flex-wrap justify-center gap-10">
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
+              <Card type="blog"></Card>
+              <Card type="blog"></Card>
+              <Card type="blog"></Card>
             </div>
           </Col>
         </Row>
