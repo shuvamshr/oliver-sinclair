@@ -28,8 +28,12 @@ export default function Index() {
             </Typography>
           </div>
           <div className="lg:flex lg:flex-row lg:gap-3 hidden">
-            <Button type="secondary-fix-medium-fit">View Bundles</Button>
-            <Button type="primary-fix-medium-fit">Who's Oliver?</Button>
+            <Button type="primary" size="medium" display="fit">
+              View Bundles
+            </Button>
+            <Button type="secondary" size="medium" display="fit">
+              Who's Oliver?
+            </Button>
           </div>
           <img src={MenuIcon} className="lg:hidden" alt="" />
         </div>

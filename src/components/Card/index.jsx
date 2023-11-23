@@ -51,7 +51,9 @@ export default function Index(props) {
               </div>
             </div>
           </div>
-          <Button type="primary-fix-medium-block">Learn more</Button>
+          <Button type="primary" size="medium">
+            Learn more
+          </Button>
         </div>
       </>
     );
@@ -80,7 +82,9 @@ export default function Index(props) {
               our team of dedicated professionals comprises individuals with a
               diverse array of skills and knowledge.
             </Typography>
-            <Button type="primary-fix-medium-block">Continue reading</Button>
+            <Button type="primary" size="medium" display="fit">
+              Continue reading
+            </Button>
           </div>
         </div>
       </>

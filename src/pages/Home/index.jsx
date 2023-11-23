@@ -42,8 +42,10 @@ export default function () {
             </Typography>
             <div className="flex flex-col gap-10">
               <div className="flex flex-col lg:flex-row lg:gap-6 gap-4">
-                <Button type="primary-res-large-block">Who's My Oliver?</Button>
-                <Button type="secondary-res-large-block">
+                <Button type="primary" size="res-large">
+                  Who's My Oliver?
+                </Button>
+                <Button type="secondary" size="res-large">
                   View Service Bundles
                 </Button>
               </div>
@@ -118,8 +120,10 @@ export default function () {
               industries, renowned universities, and impactful events
             </Typography>
             <div className="flex flex-col lg:flex-row lg:gap-6 gap-4">
-              <Button type="primary-res-large-block">Who's My Oliver?</Button>
-              <Button type="secondary-res-large-block">
+              <Button type="primary" size="res-large">
+                Who's My Oliver?
+              </Button>
+              <Button type="secondary" size="res-large">
                 View Service Bundles
               </Button>
             </div>
@@ -150,8 +154,10 @@ export default function () {
           </Col>
           <Col span="8" pos="s3" justify="res-center">
             <div className="flex flex-col lg:flex-row lg:gap-6 gap-4">
-              <Button type="primary-res-large-block">Who's My Oliver?</Button>
-              <Button type="secondary-res-large-block">
+              <Button type="primary" size="res-large">
+                Who's My Oliver?
+              </Button>
+              <Button type="secondary" size="res-large">
                 View Service Bundles
               </Button>
             </div>
@@ -176,7 +182,7 @@ export default function () {
               <Typography size="2xl" weight="semibold">
                 Got something a bit more custom?
               </Typography>
-              <Typography type="serif" size="lg">
+              <Typography type="serif" size="res-lg">
                 Our team of dedicated professionals comprises individuals with a
                 diverse array of skills and knowledge acquired through certified
                 expertise from various industries, renowned universities, and
@@ -185,7 +191,9 @@ export default function () {
             </div>
           </Col>
           <Col span="2" start="s11">
-            <Button type="secondary-res-large-block">Get in touch</Button>
+            <Button type="secondary" size="res-large">
+              Get in touch
+            </Button>
           </Col>
         </Row>
       </Container>
