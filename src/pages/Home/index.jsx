@@ -5,6 +5,7 @@ import Typography from "../../components/Typography";
 import Container from "../../components/Container";
 import Row from "../../components/Row";
 import Col from "../../components/Col";
+import Card from "../../components/Card";
 
 import CreativityImg from "./assets/creativity.png";
 import GroupworkImg from "./assets/groupwork.png";
@@ -151,6 +152,16 @@ export default function () {
               <Button type="secondary-res-large-block">
                 View Service Bundles
               </Button>
+            </div>
+          </Col>
+          <Col span="12" justify="res-center">
+            <div className="flex flex-wrap justify-center gap-10">
+              <Card></Card>
+              <Card></Card>
+              <Card></Card>
+              <Card></Card>
+              <Card></Card>
+              <Card></Card>
             </div>
           </Col>
         </Row>
