@@ -1,51 +1,24 @@
+const buttonStyle = {
+  primary:
+    "rounded-none bg-red-900 text-white hover:bg-red-700 transition linear duration-300",
+  secondary:
+    "rounded-none bg-white text-red-900 hover:bg-red-300 border-[1.5px] border-red-900 transition linear duration-300",
+  large: "h-16 text-lg",
+  "res-large": "lg:h-16 lg:text-lg h-12 text-base",
+  medium: "h-12 text-base",
+  fit: "w-fit px-6",
+  block: "w-full",
+  typography: "font-semibold font-sans",
+};
+
 export default function Index(props) {
-  let buttonType;
-  const [type, style] = props.type.split(/-(.*)/s);
+  const { type = "primary", size = "large", display = "block" } = props;
 
-  const res_large_block = "lg:h-16 lg:text-lg h-12 text-base w-full";
-  const fix_large_block = "h-16 text-lg w-full";
-  const fix_medium_block = "h-12 text-base w-full";
-  const fix_medium_fit = "h-12 text-base px-6 w-fit";
+  const buttonType = `${buttonStyle[type]} ${buttonStyle[size]} ${buttonStyle[display]} ${buttonStyle["typography"]}`;
 
-  switch (style) {
-    case "res-large-block":
-      buttonType = res_large_block;
-      break;
-    case "fix-large-block":
-      buttonType = fix_large_block;
-      break;
-    case "fix-medium-block":
-      buttonType = fix_medium_block;
-      break;
-    case "fix-medium-fit":
-      buttonType = fix_medium_fit;
-      break;
-    default:
-      buttonType = fix_medium_block;
-      break;
-  }
-
-  if (type === "primary") {
-    return (
-      <button
-        className={
-          buttonType +
-          " rounded-none bg-red-900 font-semibold font-sans text-white hover:bg-red-700 transition linear duration-300"
-        }
-      >
-        {props.children}
-      </button>
-    );
-  } else if (type === "secondary") {
-    return (
-      <button
-        className={
-          buttonType +
-          " rounded-none bg-white font-semibold font-sans text-red-900 hover:bg-red-300 border-[1.5px] border-red-900 transition linear duration-300"
-        }
-      >
-        {props.children}
-      </button>
-    );
-  }
+  return (
+    <>
+      <button className={buttonType}>{props.children}</button>
+    </>
+  );
 }
