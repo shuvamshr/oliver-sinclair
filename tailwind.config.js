@@ -19,6 +19,9 @@ export default {
         300: "#FFE9E4",
         100: "#FFFCFA",
       },
+      blue: {
+        100: "#EEF0F7",
+      },
     },
     border: {
       thin: "1px",
