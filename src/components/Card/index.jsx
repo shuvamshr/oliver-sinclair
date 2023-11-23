@@ -7,7 +7,7 @@ import Button from "../Button";
 export default function Index() {
   return (
     <>
-      <div className="flex flex-col w-full lg:w-[382px] shadow-md hover:shadow-xl py-10 px-8 gap-10 rounded-lg transition linear duration-300">
+      <div className="flex flex-col w-full lg:w-[382px] shadow-md hover:shadow-xl py-10 px-8 gap-8 rounded-lg transition linear duration-300">
         <div className="flex flex-col gap-6">
           <div className="flex flex-row gap-5 items-center">
             <img src={ServicePlaceholderIcon} alt="" />
