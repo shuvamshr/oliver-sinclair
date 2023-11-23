@@ -40,6 +40,7 @@ const typographyStyle = {
   liteBlack: "text-gray-700",
   deepWhite: "text-white",
   liteWhite: "text-gray-100",
+  deepRed: "text-red-900",
 };
 
 export default function Index(props) {
