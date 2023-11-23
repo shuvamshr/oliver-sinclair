@@ -3,14 +3,16 @@ const containerStyle = {
   black: "bg-black",
   offWhite: "bg-red-100",
   white: "bg-white",
+
+  default: "lg:py-32 py-16 lg:px-0 px-6",
 };
 
 export default function Index(props) {
   // Default Parameters
-  const { color = "bg-red-100" } = props;
+  const { color = "bg-red-100", padding = "default" } = props;
 
   const fluidContainerType = `container-fluid ${containerStyle[color]}`;
-  const containerType = `container mx-auto ${containerStyle[color]}`;
+  const containerType = `container mx-auto ${containerStyle[color]} ${containerStyle[padding]}`;
 
   return (
     <>

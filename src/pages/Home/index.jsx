@@ -20,7 +20,7 @@ export default function () {
   return (
     <>
       <Header />
-
+      <div className="h-20"></div>
       <Container>
         <Row>
           <Col span="6">
@@ -51,15 +51,14 @@ export default function () {
               </Typography>
             </div>
           </Col>
-          <Col span="5" start="8">
+          <Col span="5" pos="s8">
             <img src={CreativityImg} alt="" />
           </Col>
         </Row>
       </Container>
-
       <Container color="offBlack">
         <Row>
-          <Col span="10" start="2" justify="res-center">
+          <Col span="10" pos="s2" justify="res-center">
             <div className="flex flex-col gap-6">
               <Typography
                 size="res-4xl"
@@ -85,7 +84,7 @@ export default function () {
               </Typography>
             </div>
           </Col>
-          <Col span="10" start="2">
+          <Col span="10" pos="s2" justify="res-center">
             <div className="flex lg:flex-wrap justify-between gap-14 items-center overflow-x-auto snap-x">
               <img src={UTSLogo} alt="" className="snap-center" />
               <img src={AppleLogo} alt="" className="snap-center" />
@@ -96,13 +95,12 @@ export default function () {
           </Col>
         </Row>
       </Container>
-
       <Container>
         <Row>
           <Col span="5">
             <img src={GroupworkImg} alt="" />
           </Col>
-          <Col span="6" start="7">
+          <Col span="6" pos="s7">
             <Typography size="res-4xl" weight="semibold">
               Whom exactly is..{" "}
               <span className="text-red-900 font-bold italic">Oliver?</span>
@@ -126,13 +124,12 @@ export default function () {
           </Col>
         </Row>
       </Container>
-
       <Container color="white">
         <Row>
-          <Col span="8" start="3" justify="res-center">
+          <Col span="8" pos="s3" justify="res-center">
             <img src={ProcessImg} alt="" />
           </Col>
-          <Col span="10" start="2" justify="res-center">
+          <Col span="10" pos="s2" justify="res-center">
             <div className="flex flex-col gap-6">
               <Typography size="res-4xl" weight="semibold" align="res-center">
                 All your design needs bundled.{" "}
@@ -148,7 +145,7 @@ export default function () {
               </Typography>
             </div>
           </Col>
-          <Col span="8" start="3" justify="res-center">
+          <Col span="8" pos="s3" justify="res-center">
             <div className="flex flex-col lg:flex-row lg:gap-6 gap-4">
               <Button type="primary-res-large-block">Who's My Oliver?</Button>
               <Button type="secondary-res-large-block">
