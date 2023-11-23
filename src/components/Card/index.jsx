@@ -15,8 +15,8 @@ export default function Index() {
               Design Bundle
             </Typography>
           </div>
-          <Typography type="serif" size="sm">
-            our team of dedicated professionals comprises individuals with a
+          <Typography type="serif" size="base">
+            Our team of dedicated professionals comprises individuals with a
             diverse array of skills and knowledge.
           </Typography>
         </div>
