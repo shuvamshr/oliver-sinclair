@@ -6,6 +6,7 @@ const containerStyle = {
   offBlue: "bg-blue-100",
 
   default: "lg:py-32 py-16 lg:px-0 px-6",
+  small: "py-12 lg:px-0 px-6",
   compact: "py-16 lg:px-0 px-6",
 };
 
