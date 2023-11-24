@@ -51,7 +51,7 @@ export default function Index(props) {
                 <img className={cardStyle["cardIcon"]} src={iconTitleImg} />
               )}
               <Typography
-                size={title.length > 25 ? "lg" : "xl"}
+                size={title.length > 25 ? "lg" : "res-xl"}
                 weight="semibold"
               >
                 {title}
@@ -66,7 +66,7 @@ export default function Index(props) {
             <>
               <div className="w-full h-[1px] bg-gray-200" />
               <div className="flex flex-col gap-5">
-                <Typography size="lg" weight="medium">
+                <Typography size="res-lg" weight="medium">
                   Included Features
                 </Typography>
                 <div className="flex flex-col gap-4">
@@ -89,7 +89,7 @@ export default function Index(props) {
               </div>
             </>
           )}
-          <Button type="primary" size="medium">
+          <Button type="primary" size="res-medium">
             {article ? "Continue Reading" : "Learn More"}
           </Button>
         </div>
