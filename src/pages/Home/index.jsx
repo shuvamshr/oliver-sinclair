@@ -164,12 +164,66 @@ export default function () {
           </Col>
           <Col span="12" justify="res-center">
             <div className="flex flex-wrap justify-center gap-10">
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
-              <Card></Card>
+              <Card
+                iconTitle="default"
+                title="UX Research Bundle"
+                description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
+                feature={[
+                  "Define Target Demographic",
+                  "User Interviews & Research",
+                  "Field Usability Study",
+                ]}
+              ></Card>
+              <Card
+                iconTitle="default"
+                title="UX Research Bundle"
+                description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
+                feature={[
+                  "Define Target Demographic",
+                  "User Interviews & Research",
+                  "Field Usability Study",
+                ]}
+              ></Card>
+              <Card
+                iconTitle="default"
+                title="UX Research Bundle"
+                description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
+                feature={[
+                  "Define Target Demographic",
+                  "User Interviews & Research",
+                  "Field Usability Study",
+                ]}
+              ></Card>
+              <Card
+                iconTitle="default"
+                title="UX Research Bundle"
+                description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
+                feature={[
+                  "Define Target Demographic",
+                  "User Interviews & Research",
+                  "Field Usability Study",
+                ]}
+              ></Card>
+              <Card
+                iconTitle="default"
+                title="UX Research Bundle"
+                description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
+                feature={[
+                  "Define Target Demographic",
+                  "User Interviews & Research",
+                  "Field Usability Study",
+                ]}
+              ></Card>
+              <Card
+                iconTitle="default"
+                title="UX Research Bundle"
+                description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
+                feature={[
+                  "Define Target Demographic",
+                  "User Interviews & Research",
+                  "Field Usability Study",
+                ]}
+              ></Card>
             </div>
           </Col>
         </Row>
@@ -217,9 +271,24 @@ export default function () {
           </Col>
           <Col span="12" justify="res-center">
             <div className="flex flex-wrap justify-center gap-10">
-              <Card type="blog"></Card>
-              <Card type="blog"></Card>
-              <Card type="blog"></Card>
+              <Card
+                thumbnail="default"
+                category={["Case Study", "eCommerce"]}
+                title="Improving B2B Customer Experience For Assistive Technology Dealers"
+                description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
+              ></Card>
+              <Card
+                thumbnail="default"
+                category={["Case Study", "eCommerce"]}
+                title="Improving B2B Customer Experience For Assistive Technology Dealers"
+                description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
+              ></Card>
+              <Card
+                thumbnail="default"
+                category={["Case Study", "eCommerce"]}
+                title="Improving B2B Customer Experience For Assistive Technology Dealers"
+                description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
+              ></Card>
             </div>
           </Col>
         </Row>
