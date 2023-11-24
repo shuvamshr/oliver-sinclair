@@ -6,88 +6,94 @@ import Typography from "../Typography";
 import Button from "../Button";
 import Pill from "../Pill";
 
-export default function Index(props) {
-  const { type = "service" } = props;
+const cardStyle = {
+  cardBase:
+    "flex flex-col w-full lg:w-[382px] shadow-md hover:shadow-xl rounded-lg transition linear duration-300",
+  cardThumbnail: "h-56 w-full rounded-t-lg",
+  cardIcon: "h-8 w-8",
+};
 
-  if (type === "service") {
-    return (
-      <>
-        <div className="flex flex-col w-full lg:w-[382px] shadow-md hover:shadow-xl py-10 px-8 gap-8 rounded-lg transition linear duration-300">
-          <div className="flex flex-col gap-6">
-            <div className="flex flex-row gap-5 items-center">
-              <img src={ServicePlaceholderIcon} alt="" />
-              <Typography size="xl" weight="semibold">
-                Design Bundle
+export default function Index(props) {
+  const {
+    thumbnail,
+    category = [],
+    iconTitle,
+    title = "Untitled",
+    feature = [],
+    description = "No Description Provided",
+    article,
+  } = props;
+
+  const thumbnailImg =
+    thumbnail == "default" ? ThumbnailPlaceholderImg : thumbnail;
+  const iconTitleImg =
+    iconTitle == "default" ? ServicePlaceholderIcon : iconTitle;
+  const cardType = `${cardStyle["cardBase"]}`;
+
+  return (
+    <>
+      <div className={cardType}>
+        {thumbnail && (
+          <img className={cardStyle["cardThumbnail"]} src={thumbnailImg} />
+        )}
+        <div className="flex flex-col gap-8 p-8">
+          <div className="flex flex-col gap-4">
+            {category.length > 0 && (
+              <div className="flex flex-wrap gap-2">
+                {category.map((value, index) => (
+                  <Pill key={index}>{value}</Pill>
+                ))}
+              </div>
+            )}
+
+            <div className="flex flex-row gap-5 items-center ">
+              {iconTitle && (
+                <img className={cardStyle["cardIcon"]} src={iconTitleImg} />
+              )}
+              <Typography
+                size={title.length > 25 ? "lg" : "xl"}
+                weight="semibold"
+              >
+                {title}
               </Typography>
             </div>
             <Typography type="serif" size="base">
-              Our team of dedicated professionals comprises individuals with a
-              diverse array of skills and knowledge.
+              {description}
             </Typography>
           </div>
-          <div className="w-full h-[1px] bg-gray-200"></div>
-          <div className="flex flex-col gap-6">
-            <Typography size="lg" weight="medium">
-              Included Features
-            </Typography>
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-row gap-4">
-                <img src={CheckmarkIcon} alt="" />
-                <Typography type="serif" size="base">
-                  Feature 1
+
+          {feature.length > 0 && (
+            <>
+              <div className="w-full h-[1px] bg-gray-200" />
+              <div className="flex flex-col gap-5">
+                <Typography size="lg" weight="medium">
+                  Included Features
                 </Typography>
+                <div className="flex flex-col gap-4">
+                  {feature.map((value, index) => (
+                    <>
+                      <div className="flex flex-row gap-4">
+                        <img src={CheckmarkIcon} alt="" />
+                        <Typography
+                          key={index}
+                          size="sm"
+                          weight="medium"
+                          color="liteBlack"
+                        >
+                          {value}
+                        </Typography>
+                      </div>
+                    </>
+                  ))}
+                </div>
               </div>
-              <div className="flex flex-row gap-4">
-                <img src={CheckmarkIcon} alt="" />
-                <Typography type="serif" size="base">
-                  Feature 2
-                </Typography>
-              </div>
-              <div className="flex flex-row gap-4">
-                <img src={CheckmarkIcon} alt="" />
-                <Typography type="serif" size="base">
-                  Feature 3
-                </Typography>
-              </div>
-            </div>
-          </div>
+            </>
+          )}
           <Button type="primary" size="medium">
-            Learn more
+            {article ? "Continue Reading" : "Learn More"}
           </Button>
         </div>
-      </>
-    );
-  } else if (type === "blog") {
-    return (
-      <>
-        <div className="flex flex-col w-full lg:w-[382px] shadow-md hover:shadow-xl rounded-lg transition linear duration-300">
-          <img
-            src={ThumbnailPlaceholderImg}
-            className="h-[248px] w-full rounded-t-lg"
-            alt=""
-          />
-          <div className="flex flex-col py-10 px-8 gap-6">
-            <div className="flex flex-col gap-3">
-              <div className="flex flex-row gap-3">
-                <Pill>SaaS</Pill>
-                <Pill>eCommerce</Pill>
-              </div>
-
-              <Typography size="lg" weight="semibold">
-                Improving B2B Customer Experience For Assistive Technology
-                Dealers
-              </Typography>
-            </div>
-            <Typography type="serif" size="base">
-              our team of dedicated professionals comprises individuals with a
-              diverse array of skills and knowledge.
-            </Typography>
-            <Button type="primary" size="medium" display="fit">
-              Continue reading
-            </Button>
-          </div>
-        </div>
-      </>
-    );
-  }
+      </div>
+    </>
+  );
 }
