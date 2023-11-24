@@ -34,7 +34,7 @@ const colStyle = {
 export default function Index(props) {
   const { span = "12", pos, gap = "res-large", justify = "start" } = props;
 
-  const colType = `flex flex-col ${colStyle[span]} ${colStyle[pos]} ${colStyle[gap]} ${colStyle[justify]}`;
+  const colType = `flex flex-col ${colStyle[pos]} ${colStyle[span]} ${colStyle[gap]} ${colStyle[justify]}`;
   return (
     <>
       <div className={colType}>{props.children}</div>
