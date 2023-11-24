@@ -6,6 +6,8 @@ const buttonStyle = {
   large: "h-16 text-lg",
   "res-large": "lg:h-16 lg:text-lg h-12 text-base",
   medium: "h-12 text-base",
+  "res-medium": "lg:h-12 lg:text-base h-10 text-sm",
+  small: "h-10 text-sm",
   fit: "w-fit px-6",
   block: "w-full",
   typography: "font-semibold font-sans",
