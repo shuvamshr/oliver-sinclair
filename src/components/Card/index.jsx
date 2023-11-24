@@ -9,8 +9,8 @@ import Pill from "../Pill";
 const cardStyle = {
   cardBase:
     "flex flex-col w-full lg:w-[382px] shadow-md hover:shadow-xl rounded-lg transition linear duration-300",
-  cardThumbnail: "h-56 w-full rounded-t-lg",
-  cardIcon: "h-8 w-8",
+  cardThumbnail: "lg:h-56 h-48 w-full rounded-t-lg",
+  cardIcon: "lg:h-8 lg:w-8 h-6 w-6",
 };
 
 export default function Index(props) {
