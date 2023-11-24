@@ -3,7 +3,7 @@ const rowStyle = {
   medium: "gap-12",
   small: "gap-6",
 
-  center: "flex flex-col justify-center",
+  center: "flex flex-col items-center",
 };
 
 export default function Row(props) {
