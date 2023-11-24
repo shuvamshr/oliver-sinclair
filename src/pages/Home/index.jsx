@@ -10,6 +10,7 @@ import Card from "../../components/Card";
 import CreativityImg from "./assets/creativity.png";
 import GroupworkImg from "./assets/groupwork.png";
 import ProcessImg from "./assets/process.png";
+import GrowImg from "./assets/grow.png";
 
 import AppleLogo from "./assets/apple.svg";
 import DolbyLogo from "./assets/dolby.svg";
@@ -23,7 +24,7 @@ export default function () {
       <Header />
       <div className="h-20"></div>
       <Container>
-        <Row>
+        <Row align="center">
           <Col span="6">
             <div className="flex flex-col gap-2">
               <Typography size="res-lg" weight="medium">
@@ -100,7 +101,7 @@ export default function () {
       </Container>
 
       <Container>
-        <Row>
+        <Row align="center">
           <Col span="5">
             <img src={GroupworkImg} alt="" />
           </Col>
@@ -244,7 +245,7 @@ export default function () {
               </Typography>
             </div>
           </Col>
-          <Col span="2" start="s11">
+          <Col span="2" pos="s11">
             <Button type="secondary" size="res-large">
               Get in touch
             </Button>
@@ -293,6 +294,29 @@ export default function () {
                 article="link-to-article"
               ></Card>
             </div>
+          </Col>
+        </Row>
+      </Container>
+
+      <Container color="offWhite" padding="small">
+        <Row align="center">
+          <Col span="6">
+            <div className="flex flex-col gap-6">
+              <Typography size="res-3xl" weight="semibold">
+                Grow better with Oliver Sinclair today
+              </Typography>
+              <div className="flex flex-col lg:flex-row lg:gap-6 gap-4">
+                <Button type="primary" size="res-large">
+                  Who's My Oliver?
+                </Button>
+                <Button type="secondary" size="res-large">
+                  View Service Bundles
+                </Button>
+              </div>
+            </div>
+          </Col>
+          <Col span="4" pos="s9">
+            <img src={GrowImg} className="mix-blend-multiply" alt="" />
           </Col>
         </Row>
       </Container>
