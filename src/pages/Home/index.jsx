@@ -276,18 +276,21 @@ export default function () {
                 category={["Case Study", "eCommerce"]}
                 title="Improving B2B Customer Experience For Assistive Technology Dealers"
                 description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
+                article="link-to-article"
               ></Card>
               <Card
                 thumbnail="default"
                 category={["Case Study", "eCommerce"]}
                 title="Improving B2B Customer Experience For Assistive Technology Dealers"
                 description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
+                article="link-to-article"
               ></Card>
               <Card
                 thumbnail="default"
                 category={["Case Study", "eCommerce"]}
                 title="Improving B2B Customer Experience For Assistive Technology Dealers"
                 description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
+                article="link-to-article"
               ></Card>
             </div>
           </Col>
