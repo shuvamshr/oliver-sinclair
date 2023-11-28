@@ -17,6 +17,7 @@ export default {
         900: "#EF5F63",
         700: "#F48F93",
         300: "#FFE9E4",
+        200: "#FFF9F5",
         100: "#FFFCFA",
       },
       blue: {
@@ -28,7 +29,7 @@ export default {
     },
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
-      serif: ["serif"],
+      serif: ["Vollkorn", "serif"],
     },
 
     extend: {},
