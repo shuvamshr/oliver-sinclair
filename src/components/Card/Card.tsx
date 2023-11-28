@@ -90,7 +90,7 @@ export default function Card({
                     {feature.map((value, index) => (
                       <li
                         key={index}
-                        className="font-serif font-regular text-base  text-gray-700 leading-none flex flex-row gap-4 items-center"
+                        className="font-sans font-medium text-sm  text-gray-700 leading-none flex flex-row gap-4 items-center"
                       >
                         <img src={CheckmarkIcon} alt="" className="w-5 h-5" />
                         <span>{value}</span>
