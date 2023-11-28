@@ -3,7 +3,7 @@ import OliverWhiteLogo from "./assets/oliver-white.svg";
 export default function Footer() {
   return (
     <>
-      <div className="container-fluid bg-black py-14 lg:py-24 px-6 lg:px-0">
+      <div className="container-fluid bg-black py-14 lg:py-24 px-4 lg:px-0">
         <div className="container mx-auto flex flex-col gap-16">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-3 lg:flex lg:flex-col lg:justify-between">

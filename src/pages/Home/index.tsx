@@ -20,7 +20,7 @@ export default function Index() {
     <>
       <Header />
 
-      <div className="container-fluid bg-red-200 pt-40 lg:pt-44 pb-14 lg:pb-24 px-6 lg:px-0">
+      <div className="container-fluid bg-red-200 pt-32 lg:pt-44 pb-14 lg:pb-24 px-4 lg:px-0">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 items-center">
             <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
@@ -54,14 +54,14 @@ export default function Index() {
                 </p>
               </div>
             </div>
-            <div className="col-span-12 py-10 lg:py-0 lg:col-span-5 lg:col-start-8 ">
+            <div className="col-span-12 py-6 lg:py-0 lg:col-span-5 lg:col-start-8 ">
               <img src={CreativityImg} alt="" />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="container-fluid bg-gray-900 py-14 lg:py-24 px-6 lg:px-0">
+      <div className="container-fluid bg-gray-900 py-14 lg:py-24 px-4 lg:px-0">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 items-center">
             <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col gap-10">
@@ -111,10 +111,10 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-red-200 py-14 lg:py-24 px-6 lg:px-0">
+      <div className="container-fluid bg-red-200 py-14 lg:py-24 px-4 lg:px-0">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 items-center">
-            <div className="col-span-12 py-10 lg:py-0 lg:col-span-5">
+            <div className="col-span-12 py-6 lg:py-0 lg:col-span-5">
               <img src={GroupworkImg} alt="" />
             </div>
             <div className="col-span-12 lg:col-span-6 lg:col-start-7 flex flex-col lg:items-start gap-10">
@@ -154,7 +154,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-white py-14 lg:py-24 px-6 lg:px-0">
+      <div className="container-fluid bg-white py-14 lg:py-24 px-4 lg:px-0">
         <div className="container mx-auto">
           <div className="lg:grid lg:grid-cols-12 lg:items-center flex flex-col gap-10">
             <div className="col-span-12 lg:col-span-8 lg:col-start-3 flex flex-col">
@@ -188,7 +188,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-white px-6 lg:px-0 pb-14 lg:pb-24">
+      <div className="container-fluid bg-white px-4 lg:px-0 pb-14 lg:pb-24">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-8">
             <div className="lg:col-span-4 md:col-span-6 col-span-12">
@@ -223,7 +223,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-blue-100 py-14 lg:py-16 px-6 lg:px-0">
+      <div className="container-fluid bg-blue-100 py-14 lg:py-16 px-4 lg:px-0">
         <div className="container mx-auto">
           <div className="lg:grid lg:grid-cols-12 flex flex-col items-center gap-10">
             <div className="lg:col-span-8 flex flex-col">
@@ -250,7 +250,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-white py-14 lg:py-24 px-6 lg:px-0">
+      <div className="container-fluid bg-white py-14 lg:py-24 px-4 lg:px-0">
         <div className="container mx-auto">
           <div className="lg:grid lg:grid-cols-12 lg:items-center flex flex-col gap-10">
             <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col gap-10">
@@ -273,7 +273,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-white px-6 lg:px-0 pb-14 lg:pb-24">
+      <div className="container-fluid bg-white px-4 lg:px-0 pb-14 lg:pb-24">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-8">
             <div className="lg:col-span-4 md:col-span-6 col-span-12">
@@ -307,7 +307,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-red-200 py-14 lg:py-16 px-6 lg:px-0">
+      <div className="container-fluid bg-red-200 py-14 lg:py-16 px-4 lg:px-0">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 items-center">
             <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
@@ -330,7 +330,7 @@ export default function Index() {
                 />
               </div>
             </div>
-            <div className="col-span-12 py-10 lg:py-0 lg:col-span-5 lg:col-start-8 ">
+            <div className="col-span-12 py-6 lg:py-0 lg:col-span-5 lg:col-start-8 ">
               <img src={GrowImg} alt="" className="mix-blend-multiply" />
             </div>
           </div>
