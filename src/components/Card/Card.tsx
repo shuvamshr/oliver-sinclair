@@ -5,9 +5,9 @@ import ThumbnailPlaceholderImg from "./assets/thumbnail-placeholder.jpg";
 
 import Button from "../Button/Button.tsx";
 
-const cardStyle: Record<string, string> = {
-  // Add Style If Required
-};
+// const cardStyle: Record<string, string> = {
+//   // Add Style If Required
+// };
 
 interface CardProps {
   thumbnail?: "default" | string;
@@ -28,7 +28,7 @@ export default function Card({
   feature,
   buttonText = "Learn More",
 }: CardProps) {
-  const buttonClass = ``;
+  // const buttonClass = ``;
   return (
     <>
       <div className="flex flex-col rounded-lg shadow-md w-full">
