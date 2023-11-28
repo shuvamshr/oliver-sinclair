@@ -3,7 +3,7 @@ import ServicePlaceholderIcon from "./assets/service-placeholder.svg";
 
 import ThumbnailPlaceholderImg from "./assets/thumbnail-placeholder.jpg";
 
-import Button from "../Button/Button.tsx";
+import Button from "../Button/index.tsx";
 
 // const cardStyle: Record<string, string> = {
 //   // Add Style If Required

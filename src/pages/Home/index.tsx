@@ -1,8 +1,6 @@
-import Footer from "../../global/Footer/Footer.tsx";
-import Header from "../../global/Header/Header.tsx";
+import { Header, Footer } from "../../global";
 
-import Button from "../../components/Button/Button.tsx";
-import Card from "../../components/Card/Card.tsx";
+import { Button, Card } from "../../components";
 
 import CreativityImg from "./assets/creativity.png";
 import GroupworkImg from "./assets/groupwork.png";

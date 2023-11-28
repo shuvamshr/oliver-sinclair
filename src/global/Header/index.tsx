@@ -1,7 +1,7 @@
 import MenuIcon from "./assets/menu.svg";
 import OliverColorLogo from "./assets/oliver-color.svg";
 
-import Button from "../../components/Button/Button.tsx";
+import Button from "../../components/Button/index.tsx";
 
 export default function Header() {
   return (
