@@ -20,7 +20,7 @@ export default function Index() {
     <>
       <Header />
 
-      <div className="container-fluid bg-red-200 pt-32 lg:pt-44 pb-14 lg:pb-24 px-4 lg:px-0">
+      <div className="container-fluid bg-red-200 pt-32 lg:pt-44 pb-14 lg:pb-24 px-6 lg:px-0">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 items-center">
             <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
@@ -30,7 +30,7 @@ export default function Index() {
                 </h6>
                 <h1 className="font-sans font-semibold text-3xl lg:text-4xl text-gray-800 lg:leading-normal leading-relaxed">
                   Crafting Experiences <br className="lg:block hidden" />
-                  that Captivate.{" "}
+                  to Captivate.{" "}
                   <span className="text-red-900 font-bold italic">No Cap.</span>
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-lg text-gray-700 lg:leading-normal leading-relaxed">
@@ -54,14 +54,14 @@ export default function Index() {
                 </p>
               </div>
             </div>
-            <div className="col-span-12 py-6 lg:py-0 lg:col-span-5 lg:col-start-8 ">
+            <div className="col-span-12 pt-10 lg:pt-0 lg:col-span-5 lg:col-start-8 ">
               <img src={CreativityImg} alt="" />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="container-fluid bg-gray-900 py-14 lg:py-24 px-4 lg:px-0">
+      <div className="container-fluid bg-gray-900 py-14 lg:py-24 px-6 lg:px-0">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 items-center">
             <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col gap-10">
@@ -111,10 +111,10 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-red-200 py-14 lg:py-24 px-4 lg:px-0">
+      <div className="container-fluid bg-red-200 py-14 lg:py-24 px-6 lg:px-0">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 items-center">
-            <div className="col-span-12 py-6 lg:py-0 lg:col-span-5">
+            <div className="col-span-12 pb-10 lg:pb-0 lg:col-span-5">
               <img src={GroupworkImg} alt="" />
             </div>
             <div className="col-span-12 lg:col-span-6 lg:col-start-7 flex flex-col lg:items-start gap-10">
@@ -154,7 +154,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-white py-14 lg:py-24 px-4 lg:px-0">
+      <div className="container-fluid bg-white py-14 lg:py-24 px-6 lg:px-0">
         <div className="container mx-auto">
           <div className="lg:grid lg:grid-cols-12 lg:items-center flex flex-col gap-10">
             <div className="col-span-12 lg:col-span-8 lg:col-start-3 flex flex-col">
@@ -188,42 +188,99 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-white px-4 lg:px-0 pb-14 lg:pb-24">
+      <div className="container-fluid bg-white px-6 lg:px-0 pb-14 lg:pb-24">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-8">
             <div className="lg:col-span-4 md:col-span-6 col-span-12">
               <Card
                 titleIcon="default"
-                feature={["Feature 1", "Feature 2"]}
-                buttonText="Continue Reading"
+                title="User Experience Research"
+                description="our team of dedicated professionals comprises individuals with
+                a diverse array of skills "
+                feature={[
+                  "Desk Research & Case Study",
+                  "User Interview, Story & Persona",
+                  "Usability Testing & Field Testing",
+                ]}
+                buttonText="Learn more"
+              />
+            </div>
+
+            <div className="lg:col-span-4 md:col-span-6 col-span-12">
+              <Card
+                titleIcon="default"
+                title="User Experience Research"
+                description="our team of dedicated professionals comprises individuals with
+                a diverse array of skills "
+                feature={[
+                  "Desk Research & Case Study",
+                  "User Interview, Story & Persona",
+                  "Usability Testing & Field Testing",
+                ]}
+                buttonText="Learn more"
               />
             </div>
             <div className="lg:col-span-4 md:col-span-6 col-span-12">
               <Card
-                thumbnail="default"
-                title="Improving B2B Customer Experience For Assistive Technology Dealers"
-                description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
-                category={["CMS Platform", "Case Study"]}
-                buttonText="Continue Reading"
+                titleIcon="default"
+                title="User Experience Research"
+                description="our team of dedicated professionals comprises individuals with
+                a diverse array of skills "
+                feature={[
+                  "Desk Research & Case Study",
+                  "User Interview, Story & Persona",
+                  "Usability Testing & Field Testing",
+                ]}
+                buttonText="Learn more"
               />
             </div>
             <div className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Card />
+              <Card
+                titleIcon="default"
+                title="User Experience Research"
+                description="our team of dedicated professionals comprises individuals with
+                a diverse array of skills "
+                feature={[
+                  "Desk Research & Case Study",
+                  "User Interview, Story & Persona",
+                  "Usability Testing & Field Testing",
+                ]}
+                buttonText="Learn more"
+              />
             </div>
             <div className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Card />
+              <Card
+                titleIcon="default"
+                title="User Experience Research"
+                description="our team of dedicated professionals comprises individuals with
+                a diverse array of skills "
+                feature={[
+                  "Desk Research & Case Study",
+                  "User Interview, Story & Persona",
+                  "Usability Testing & Field Testing",
+                ]}
+                buttonText="Learn more"
+              />
             </div>
             <div className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Card />
-            </div>
-            <div className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Card />
+              <Card
+                titleIcon="default"
+                title="User Experience Research"
+                description="our team of dedicated professionals comprises individuals with
+                a diverse array of skills "
+                feature={[
+                  "Desk Research & Case Study",
+                  "User Interview, Story & Persona",
+                  "Usability Testing & Field Testing",
+                ]}
+                buttonText="Learn more"
+              />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="container-fluid bg-blue-100 py-14 lg:py-16 px-4 lg:px-0">
+      <div className="container-fluid bg-blue-100 py-14 lg:py-16 px-6 lg:px-0">
         <div className="container mx-auto">
           <div className="lg:grid lg:grid-cols-12 flex flex-col items-center gap-10">
             <div className="lg:col-span-8 flex flex-col">
@@ -250,7 +307,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-white py-14 lg:py-24 px-4 lg:px-0">
+      <div className="container-fluid bg-white py-14 lg:py-24 px-6 lg:px-0">
         <div className="container mx-auto">
           <div className="lg:grid lg:grid-cols-12 lg:items-center flex flex-col gap-10">
             <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col gap-10">
@@ -273,7 +330,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-white px-4 lg:px-0 pb-14 lg:pb-24">
+      <div className="container-fluid bg-white px-6 lg:px-0 pb-14 lg:pb-24">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-8">
             <div className="lg:col-span-4 md:col-span-6 col-span-12">
@@ -307,7 +364,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-red-200 py-14 lg:py-16 px-4 lg:px-0">
+      <div className="container-fluid bg-red-200 py-14 lg:py-16 px-6 lg:px-0">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 items-center">
             <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">

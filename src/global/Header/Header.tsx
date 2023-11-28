@@ -6,7 +6,7 @@ import Button from "../../components/Button/Button.tsx";
 export default function Header() {
   return (
     <>
-      <div className="container-fluid bg-white px-4 lg:px-0 fixed top-0 left-0 right-0 flex flex-row flex-start h-20 items-center z-50">
+      <div className="container-fluid bg-white px-6 lg:px-0 fixed top-0 left-0 right-0 flex flex-row flex-start h-20 items-center z-50">
         <div className="container mx-auto flex flex-row justify-between">
           <img
             src={OliverColorLogo}
