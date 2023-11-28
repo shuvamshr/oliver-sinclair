@@ -125,7 +125,7 @@ export default function Index() {
                     Oliver Sinclair?
                   </span>
                 </h1>
-                <p className="font-serif font-regular text-sm lg:text-base  text-gray-700 lg:leading-normal leading-relaxed">
+                <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
                   we inspire businesses to conceive and craft the digital realms
                   of the future. Success is a collective voyage with oliver, and
                   you’re just one click away from getting your way. our team of
@@ -168,7 +168,7 @@ export default function Index() {
                     Take your pick.
                   </span>
                 </h1>
-                <p className="font-serif font-regular text-sm lg:text-base lg:text-center text-gray-700 lg:leading-normal leading-relaxed">
+                <p className="font-serif font-regular text-base lg:text-center text-gray-700 lg:leading-normal leading-relaxed">
                   our team of dedicated professionals comprises individuals with
                   a diverse array of skills and knowledge acquired through
                   certified expertise from various industries, renowned
@@ -288,7 +288,7 @@ export default function Index() {
                 <h1 className="font-sans font-semibold text-2xl  text-gray-800 leading-normal">
                   Got something a bit more custom?
                 </h1>
-                <p className="font-serif font-regular text-sm lg:text-base  text-gray-700 lg:leading-normal leading-relaxed">
+                <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
                   our team of dedicated professionals comprises individuals with
                   a diverse array of skills and knowledge acquired through
                   certified expertise from various industries, renowned
@@ -318,7 +318,7 @@ export default function Index() {
                     Ambitious Projects
                   </span>
                 </h1>
-                <p className="font-serif font-regular text-sm lg:text-base lg:text-center text-gray-700 lg:leading-normal leading-relaxed">
+                <p className="font-serif font-regular text-base lg:text-center text-gray-700 lg:leading-normal leading-relaxed">
                   our team of dedicated professionals comprises individuals with
                   a diverse array of skills and knowledge acquired through
                   certified expertise from various industries, renowned
@@ -372,7 +372,7 @@ export default function Index() {
                 <h1 className="font-sans font-semibold text-2xl lg:text-3xl  text-gray-800 lg:leading-normal leading-relaxed">
                   Grow better with Oliver today
                 </h1>
-                <p className="font-serif font-regular text-sm lg:text-base  text-gray-700 lg:leading-normal leading-relaxed">
+                <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
                   our team of dedicated professionals comprises individuals with
                   a diverse array of skills
                 </p>
