@@ -25,7 +25,7 @@ export default function Header() {
             />
             <img src={CloseIcon} alt="" onClick={() => setToggle(!toggle)} />
           </div>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-8">
             <p className="font-sans font-semibold text-lg text-gray-800">
               home
             </p>
