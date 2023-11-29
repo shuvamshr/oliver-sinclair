@@ -134,7 +134,7 @@ export default function Index() {
                   industries, renowned universities, and impactful events
                 </p>
               </div>
-              <div className="flex flex-col lg:flex-row gap-2 lg:gap-4">
+              <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
                 <Button
                   title="Find an Oliver For You"
                   size="large"
