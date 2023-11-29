@@ -80,7 +80,7 @@ export default function Card({
 
           {feature && (
             <>
-              <div className="w-full h-[1px] bg-gray-300"></div>
+              <div className="w-full h-[1px] bg-gray-200"></div>
               <div className="flex flex-col gap-5">
                 <h6 className="font-sans font-semibold text-base text-gray-800 leading-none">
                   Included Features
