@@ -47,8 +47,8 @@ export default function Index() {
                     display="block"
                   />
                 </div>
-                <p className="font-serif font-regular text-sm lg:text-base text-gray-700 leading-normal">
-                  learn more about our services, or figure out who oliver is
+                <p className="font-sans font-medium text-xs lg:text-sm text-gray-700 leading-normal">
+                  View all our services, or figure out who Oliver is
                 </p>
               </div>
             </div>
@@ -385,7 +385,7 @@ export default function Index() {
                 />
               </div>
             </div>
-            <div className="col-span-12 py-6 lg:py-0 lg:col-span-5 lg:col-start-8 ">
+            <div className="col-span-12 pt-10 lg:pt-0 lg:col-span-5 lg:col-start-8 ">
               <img src={GrowImg} alt="" className="mix-blend-multiply" />
             </div>
           </div>
