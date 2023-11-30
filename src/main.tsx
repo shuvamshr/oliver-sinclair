@@ -12,7 +12,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="oliver-sinclair" element={<Home />} />
         <Route path="services" element={<Services />} />
       </Routes>
       <Footer />

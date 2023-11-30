@@ -1,8 +1,15 @@
 import { Button, Card } from "../../components";
 
+import { useEffect } from "react";
+
 import ProcessImg from "./assets/process.png";
 
 export default function Index() {
+  useEffect(() => {
+    // Scroll to the top of the page when the component is mounted
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="container-fluid bg-white py-14 lg:py-24 px-6 lg:px-0">

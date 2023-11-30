@@ -1,5 +1,7 @@
 import { Button, Card } from "../../components";
 
+import { useEffect } from "react";
+
 import CreativityImg from "./assets/creativity.png";
 import GroupworkImg from "./assets/groupwork.png";
 import ProcessImg from "./assets/process.png";
@@ -12,6 +14,11 @@ import LeedsLogo from "./assets/leeds.svg";
 import OliverLogo from "./assets/oliver.svg";
 
 export default function Index() {
+  useEffect(() => {
+    // Scroll to the top of the page when the component is mounted
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="container-fluid bg-red-200 pt-32 lg:pt-44 pb-14 lg:pb-24 px-6 lg:px-0">
