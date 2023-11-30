@@ -41,7 +41,7 @@ export default function Index() {
                 </p>
               </div>
 
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-6">
                 <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
                   <Button title="Who’s Oliver?" display="block" />
                   <Button
