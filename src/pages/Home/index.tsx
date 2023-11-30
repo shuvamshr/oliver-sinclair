@@ -1,5 +1,3 @@
-import { Header, Footer } from "../../global";
-
 import { Button, Card } from "../../components";
 
 import CreativityImg from "./assets/creativity.png";
@@ -16,8 +14,6 @@ import OliverLogo from "./assets/oliver.svg";
 export default function Index() {
   return (
     <>
-      <Header />
-
       <div className="container-fluid bg-red-200 pt-32 lg:pt-44 pb-14 lg:pb-24 px-6 lg:px-0">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 items-center">
@@ -391,8 +387,6 @@ export default function Index() {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 }
