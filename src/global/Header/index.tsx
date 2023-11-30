@@ -6,6 +6,17 @@ import OliverColorLogo from "./assets/oliver-color.svg";
 
 import Button from "../../components/Button/index.tsx";
 
+import { Outlet, Link } from "react-router-dom";
+
+import { NavLink } from "react-router-dom";
+
+const linkStyle = {
+  active: "font-sans font-semibold text-sm text-gray-800 leading-none",
+  inactive: "font-serif font-regular text-base text-gray-700 leading-none",
+  sidebar_active: "font-sans font-semibold text-lg text-gray-800",
+  sidebar_inactive: "font-serif font-regular text-lg text-gray-700",
+};
+
 export default function Header() {
   const [toggle, setToggle] = useState(true);
 
@@ -18,29 +29,71 @@ export default function Header() {
       >
         <div className="container mx-auto h-full flex flex-col gap-10">
           <div className="flex flex-row flex-start h-20 items-center justify-between  border-b-[0.5px] border-gray-200">
-            <img
-              src={OliverColorLogo}
-              className="lg:w-[255px] w-[230px]"
-              alt=""
-            />
+            <Link to="/">
+              <img
+                src={OliverColorLogo}
+                className="lg:w-[255px] w-[210px]"
+                alt=""
+              />
+            </Link>
             <img src={CloseIcon} alt="" onClick={() => setToggle(!toggle)} />
           </div>
           <div className="flex flex-col gap-8">
-            <p className="font-sans font-semibold text-lg text-gray-800">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? linkStyle["sidebar_active"]
+                  : linkStyle["sidebar_inactive"]
+              }
+              onClick={() => setToggle(!toggle)}
+            >
               home
-            </p>
-            <p className="font-serif font-regular text-lg text-gray-800">
+            </NavLink>
+
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                isActive
+                  ? linkStyle["sidebar_active"]
+                  : linkStyle["sidebar_inactive"]
+              }
+              onClick={() => setToggle(!toggle)}
+            >
               services
-            </p>
-            <p className="font-serif font-regular text-lg text-gray-800">
+            </NavLink>
+
+            <NavLink
+              to="/case-studies"
+              className={({ isActive }) =>
+                isActive
+                  ? linkStyle["sidebar_active"]
+                  : linkStyle["sidebar_inactive"]
+              }
+            >
               case studies
-            </p>
-            <p className="font-serif font-regular text-lg text-gray-800">
+            </NavLink>
+
+            <NavLink
+              to="/blogs"
+              className={({ isActive }) =>
+                isActive
+                  ? linkStyle["sidebar_active"]
+                  : linkStyle["sidebar_inactive"]
+              }
+            >
               blogs
-            </p>
-            <p className="font-serif font-regular text-lg text-gray-800">
-              contact us
-            </p>
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive
+                  ? linkStyle["sidebar_active"]
+                  : linkStyle["sidebar_inactive"]
+              }
+            >
+              contact
+            </NavLink>
           </div>
 
           <div className="flex flex-col gap-3">
@@ -50,29 +103,58 @@ export default function Header() {
         </div>
       </div>
       <div className="container-fluid bg-white px-6 lg:px-0 fixed top-0 left-0 right-0 flex flex-row flex-start h-20 items-center z-40 border-b-[0.5px] border-gray-200">
-        <div className="container mx-auto flex flex-row justify-between">
-          <img
-            src={OliverColorLogo}
-            className="lg:w-[255px] w-[230px]"
-            alt=""
-          />
-          <ul className="lg:flex lg:flex-row hidden items-center gap-10">
-            <li className="font-sans font-semibold text-sm text-gray-800 leading-none">
+        <div className="container mx-auto flex flex-row items-center justify-between">
+          <Link to="/">
+            <img
+              src={OliverColorLogo}
+              className="lg:w-[255px] w-[210px]"
+              alt=""
+            />
+          </Link>
+          <div className="lg:flex lg:flex-row hidden items-center gap-10">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? linkStyle["active"] : linkStyle["inactive"]
+              }
+            >
               home
-            </li>
-            <li className="font-serif font-regular text-base text-gray-700 leading-none">
+            </NavLink>
+
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                isActive ? linkStyle["active"] : linkStyle["inactive"]
+              }
+            >
               services
-            </li>
-            <li className="font-serif font-regular text-base text-gray-700 leading-none">
+            </NavLink>
+
+            <NavLink
+              to="/case-studies"
+              className={({ isActive }) =>
+                isActive ? linkStyle["active"] : linkStyle["inactive"]
+              }
+            >
               case studies
-            </li>
-            <li className="font-serif font-regular text-base text-gray-700 leading-none">
+            </NavLink>
+            <NavLink
+              to="/blogs"
+              className={({ isActive }) =>
+                isActive ? linkStyle["active"] : linkStyle["inactive"]
+              }
+            >
               blogs
-            </li>
-            <li className="font-serif font-regular text-base text-gray-700 leading-none">
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? linkStyle["active"] : linkStyle["inactive"]
+              }
+            >
               contact
-            </li>
-          </ul>
+            </NavLink>
+          </div>
           <div className="lg:flex lg:flex-row gap-4 hidden">
             <Button title="View Bundles" type="secondary" size="medium" />
             <Button title="Who's Oliver" type="primary" size="medium" />
@@ -85,6 +167,7 @@ export default function Header() {
           />
         </div>
       </div>
+      <Outlet />
     </>
   );
 }
