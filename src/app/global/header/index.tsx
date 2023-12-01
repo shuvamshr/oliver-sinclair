@@ -8,6 +8,10 @@ import { usePathname } from "next/navigation";
 
 import Image from "next/image";
 
+import OliverSinclairLogo from "./assets/oliver-color.svg";
+import CloseIcon from "./assets/close.svg";
+import MenuIcon from "./assets/menu.svg";
+
 const linkStyle = {
   active: "font-sans font-semibold text-sm text-gray-800 leading-none",
   inactive: "font-serif font-regular text-base text-gray-700 leading-none",
@@ -30,19 +34,15 @@ export default function Header() {
           <div className="flex flex-row flex-start h-20 items-center justify-between  border-b-[0.5px] border-gray-200">
             <Link href="/">
               <Image
-                src="/oliver-color.svg"
+                src={OliverSinclairLogo}
                 alt="Oliver Sinclair Logo"
-                width={100}
-                height={100}
                 className="lg:w-[255px] w-[210px]"
               />
             </Link>
 
             <Image
-              src="/close.svg"
+              src={CloseIcon}
               alt="Close Icon"
-              width={30}
-              height={30}
               onClick={() => setToggle(!toggle)}
             />
           </div>
@@ -117,10 +117,8 @@ export default function Header() {
         <div className="container mx-auto flex flex-row items-center justify-between">
           <Link href="/">
             <Image
-              src="/oliver-color.svg"
-              alt="me"
-              width={100}
-              height={100}
+              src={OliverSinclairLogo}
+              alt="Oliver Sinclair Logo"
               className="lg:w-[255px] w-[210px]"
             />
           </Link>
@@ -183,10 +181,8 @@ export default function Header() {
           </div>
 
           <Image
-            src="/menu.svg"
+            src={MenuIcon}
             alt="Menu Icon"
-            width={30}
-            height={30}
             className="lg:hidden"
             onClick={() => setToggle(!toggle)}
           />

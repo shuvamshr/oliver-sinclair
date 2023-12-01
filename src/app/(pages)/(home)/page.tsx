@@ -1,15 +1,21 @@
 "use client";
 
-import Button from "./components/button";
-import Card from "./components/card";
+import Button from "../../components/button";
+import Card from "../../components/card";
+import Image from "next/image";
 
 import { useEffect } from "react";
 
-import UTSLogo from "/uts.svg";
-import AppleLogo from "/apple.svg";
-import DolbyLogo from "/dolby.svg";
-import LeedsLogo from "/leeds.svg";
-import OliverLogo from "/oliver.svg";
+import CreativityImg from "./assets/creativity.png";
+import GroupworkImg from "./assets/groupwork.png";
+import ProcessImg from "./assets/process.png";
+import GrowImg from "./assets/grow.png";
+
+import UTSLogo from "./assets/uts.svg";
+import AppleLogo from "./assets/apple.svg";
+import DolbyLogo from "./assets/dolby.svg";
+import LeedsLogo from "./assets/leeds.svg";
+import OliverLogo from "./assets/oliver-white.svg";
 
 export default function Home() {
   useEffect(() => {
@@ -54,7 +60,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-span-12 pt-10 lg:pt-0 lg:col-span-5 lg:col-start-8 ">
-              <img src="/creativity.png" alt="" />
+              <Image src={CreativityImg} alt="Creativity Image" />
             </div>
           </div>
         </div>
@@ -78,32 +84,12 @@ export default function Home() {
                   universities, and impactful events
                 </p>
               </div>
-              <div className="lg:flex lg:flex-wrap lg:justify-around lg:overflow-hidden flex flex-row overflow-x-auto snap-x gap-12">
-                <img
-                  src="/uts.svg"
-                  className="snap-center lg:scale-110"
-                  alt=""
-                />
-                <img
-                  src="/apple.svg"
-                  className="snap-center lg:scale-110"
-                  alt=""
-                />
-                <img
-                  src="/dolby.svg"
-                  className="snap-center lg:scale-110"
-                  alt=""
-                />
-                <img
-                  src="/leeds.svg"
-                  className="snap-center lg:scale-110"
-                  alt=""
-                />
-                <img
-                  src="/oliver.svg"
-                  className="snap-center lg:scale-110"
-                  alt=""
-                />
+              <div className="lg:flex lg:flex-wrap lg:justify-between lg:overflow-hidden flex flex-row overflow-x-auto snap-x gap-16">
+                <Image src={UTSLogo} className="snap-center" alt="" />
+                <Image src={AppleLogo} className="snap-center" alt="" />
+                <Image src={DolbyLogo} className="snap-center" alt="" />
+                <Image src={LeedsLogo} className="snap-center" alt="" />
+                <Image src={OliverLogo} className="snap-center" alt="" />
               </div>
             </div>
           </div>
@@ -114,7 +100,7 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="grid grid-cols-12 items-center">
             <div className="col-span-12 pb-10 lg:pb-0 lg:col-span-5">
-              <img src="/groupwork.png" alt="" />
+              <Image src={GroupworkImg} alt="" />
             </div>
             <div className="col-span-12 lg:col-span-6 lg:col-start-7 flex flex-col lg:items-start gap-10">
               <div className="flex flex-col gap-4">
@@ -157,7 +143,7 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="lg:grid lg:grid-cols-12 lg:items-center flex flex-col gap-10">
             <div className="col-span-12 lg:col-span-8 lg:col-start-3 flex flex-col">
-              <img src="/process.png" alt="" />
+              <Image src={ProcessImg} alt="" />
             </div>
             <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col gap-10">
               <div className="flex flex-col gap-4">
@@ -381,7 +367,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-span-12 pt-10 lg:pt-0 lg:col-span-5 lg:col-start-8 ">
-              <img src="/grow.png" alt="" className="mix-blend-multiply" />
+              <Image src={GrowImg} alt="" className="mix-blend-multiply" />
             </div>
           </div>
         </div>

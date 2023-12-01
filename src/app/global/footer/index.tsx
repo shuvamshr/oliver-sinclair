@@ -1,3 +1,9 @@
+"use client";
+
+import Image from "next/image";
+
+import OliverSinclairWhiteLogo from "./assets/oliver-white.svg";
+
 export default function Footer() {
   return (
     <>
@@ -5,7 +11,10 @@ export default function Footer() {
         <div className="container mx-auto flex flex-col gap-16">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-3 lg:flex lg:flex-col lg:justify-between">
-              <img src="/oliver-white.svg" alt="Oliver Sinclair White Logo" />
+              <Image
+                src={OliverSinclairWhiteLogo}
+                alt="Oliver Sinclair White Logo"
+              />
               <p className="font-serif font-regular text-sm text-white leading-none lg:block hidden">
                 a startup by Shuvam Shrestha. Who’s that?
               </p>

@@ -1,6 +1,11 @@
 "use client";
 
 import Button from "../button";
+import Image from "next/image";
+
+import CheckmarkIcon from "./assets/checkmark.svg";
+import ServicePlaceholderIcon from "./assets/service-placeholder.svg";
+import ThumbnailPlaceholderImg from "./assets/thumbnail-placeholder.jpg";
 
 // const cardStyle: Record<string, string> = {
 //   // Add Style If Required
@@ -30,10 +35,8 @@ export default function Card({
     <>
       <div className="flex flex-col rounded-lg shadow-md w-full">
         {thumbnail && (
-          <img
-            src={
-              thumbnail == "default" ? "/thumbnail-placeholder.jpg" : thumbnail
-            }
+          <Image
+            src={thumbnail == "default" ? ThumbnailPlaceholderImg : thumbnail}
             className="h-56 rounded-t-lg bg-cover"
             alt="Card Thumbnail"
           />
@@ -56,14 +59,16 @@ export default function Card({
 
               <div className="flex flex-row gap-4 lg:gap-5 items-center">
                 {titleIcon && (
-                  <img
+                  <Image
                     src={
                       titleIcon == "default"
-                        ? "/service-placeholder.svg"
+                        ? ServicePlaceholderIcon
                         : "/" + titleIcon
                     }
                     alt="Card Title Icon"
                     className="w-6 h-6 lg:w-8 lg:h-8"
+                    width={30}
+                    height={30}
                   />
                 )}
 
@@ -92,7 +97,7 @@ export default function Card({
                         key={index}
                         className="font-sans font-medium text-sm  text-gray-700 leading-none flex flex-row gap-4 items-center"
                       >
-                        <img src="/checkmark.svg" alt="" className="w-5 h-5" />
+                        <Image src={CheckmarkIcon} alt="" className="w-5 h-5" />
                         <span>{value}</span>
                       </li>
                     ))}

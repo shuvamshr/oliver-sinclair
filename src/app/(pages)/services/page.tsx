@@ -2,10 +2,11 @@
 
 import Button from "@/app/components/button";
 import Card from "@/app/components/card";
+import Image from "next/image";
 
 import { useEffect } from "react";
 
-import ProcessImg from "./assets/process.png";
+import ProcessPlainImg from "./assets/process-plain.png";
 
 export default function Index() {
   useEffect(() => {
@@ -42,8 +43,8 @@ export default function Index() {
               </div>
             </div>
             <div className="col-span-12 pt-10 lg:pt-0 lg:col-span-5 lg:col-start-8 ">
-              <img
-                src="/process-plain.png"
+              <Image
+                src={ProcessPlainImg}
                 alt=""
                 className="mix-blend-multiply"
               />
