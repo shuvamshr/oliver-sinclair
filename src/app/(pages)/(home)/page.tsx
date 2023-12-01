@@ -40,8 +40,8 @@ export default function Home() {
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-lg text-gray-700 lg:leading-normal leading-relaxed">
                   Embark on a digital journey where captivation knows no bounds.
-                  At Oliver Sinclair, we're devoted to crafting experiences that
-                  transcend expectations.
+                  At Oliver Sinclair, we&apos;re devoted to crafting experiences
+                  that transcend expectations.
                 </p>
               </div>
 
