@@ -3,6 +3,7 @@
 import Button from "@/app/components/button";
 import Card from "@/app/components/card";
 import Image from "next/image";
+import Services from "@/app/global/services";
 
 import { useEffect } from "react";
 
@@ -55,87 +56,7 @@ export default function Index() {
 
       <div className="container-fluid bg-white px-6 lg:px-0 pb-14 lg:pb-24">
         <div className="container mx-auto">
-          <div className="grid grid-cols-12 gap-8">
-            <div className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Card
-                titleIcon="user-experience.svg"
-                title="User Experience Research"
-                description="A comprehensive exploration of your target audience's needs and requirements utilizing advanced human-centered methodologies"
-                feature={[
-                  "Extensive User Profile of Target Audience",
-                  "User Behavior Analysis Report",
-                  "Documentation of Usability Testing",
-                ]}
-                buttonText="Learn more"
-              />
-            </div>
-
-            <div className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Card
-                titleIcon="digital-product.svg"
-                title="Digital Product Design"
-                description="Crafting meaninful and intuitive digital experiences that align seamlessly with user expectations and business goals"
-                feature={[
-                  "Competitive Analysis and UX Report",
-                  "Workshop Session and Ideation Notes",
-                  "Development Ready Prototype",
-                ]}
-                buttonText="Learn more"
-              />
-            </div>
-            <div className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Card
-                titleIcon="branding.svg"
-                title="Precise Branding Guidelines"
-                description="Cohesive brand identity with clear guidelines that reflect your values and resonate with your audience"
-                feature={[
-                  "Brand Research Report & Documents",
-                  "Comprehensive Digital Brand Book",
-                  "Asset and Resources Folder",
-                ]}
-                buttonText="Learn more"
-              />
-            </div>
-            <div className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Card
-                titleIcon="design-system.svg"
-                title="Dynamic Design System"
-                description="Establish a design system that serves as the foundation for consistent, scalable, and efficient design across your organization"
-                feature={[
-                  "Digital Product Audit Report",
-                  "Figma Design Component Libraries",
-                  "Usage Consultation Session",
-                ]}
-                buttonText="Learn more"
-              />
-            </div>
-            <div className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Card
-                titleIcon="react-component.svg"
-                title="React Component Libraries"
-                description="React component libraries that enhance the development process, providing a library of consistent and reusable components"
-                feature={[
-                  "Dynamic React Component Library",
-                  "Figma Component Guide",
-                  "Usage Consultation Session",
-                ]}
-                buttonText="Learn more"
-              />
-            </div>
-            <div className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Card
-                titleIcon="development.svg"
-                title="Frontend Web Development"
-                description="Bring designs to life with expert frontend web development, ensuring a responsive, high-performance, and user-friendly products"
-                feature={[
-                  "Competitive Analysis & Figma Prototype",
-                  "Dynamic Web Development & Hosting",
-                  "Headless CMS Integration",
-                ]}
-                buttonText="Learn more"
-              />
-            </div>
-          </div>
+          <Services />
         </div>
       </div>
 

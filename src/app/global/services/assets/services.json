@@ -1,0 +1,62 @@
+[
+  {
+    "titleIcon": "user-experience.svg",
+    "title": "User Experience Research",
+    "description": "A comprehensive exploration of your target audience's needs and requirements utilizing advanced human-centered methodologies",
+    "feature": [
+      "Extensive User Profile",
+      "User Behavior Analysis Report",
+      "Documentation of Usability Testing"
+    ]
+  },
+  {
+    "titleIcon": "digital-product.svg",
+    "title": "Digital Product Design",
+    "description": "Crafting meaningful and intuitive digital experiences that align seamlessly with user expectations and business goals",
+    "feature": [
+      "Competitive Analysis and UX Report",
+      "Workshop Session and Ideation Notes",
+      "Development Ready Prototype"
+    ]
+  },
+  {
+    "titleIcon": "branding.svg",
+    "title": "Precise Branding Guidelines",
+    "description": "Cohesive brand identity with clear guidelines that reflect your values and resonate with your audience",
+    "feature": [
+      "Brand Research Report & Documents",
+      "Comprehensive Digital Brand Book",
+      "Asset and Resources Folder"
+    ]
+  },
+  {
+    "titleIcon": "design-system.svg",
+    "title": "Dynamic Design System",
+    "description": "Establish a design system that serves as the foundation for consistent, scalable, and efficient design across your organization",
+    "feature": [
+      "Digital Product Audit Report",
+      "Figma Design Component Libraries",
+      "Usage Consultation Session"
+    ]
+  },
+  {
+    "titleIcon": "react-component.svg",
+    "title": "React Component Libraries",
+    "description": "React component libraries that enhance the development process, providing a library of consistent and reusable components",
+    "feature": [
+      "Dynamic React Component Library",
+      "Figma Component Guide",
+      "Usage Consultation Session"
+    ]
+  },
+  {
+    "titleIcon": "development.svg",
+    "title": "Frontend Web Development",
+    "description": "Bring designs to life with expert frontend web development, ensuring a responsive, and user-friendly product",
+    "feature": [
+      "Figma Prototype",
+      "Dynamic Web Development",
+      "Headless CMS Integration"
+    ]
+  }
+]
