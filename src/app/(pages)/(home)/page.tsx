@@ -1,10 +1,11 @@
 "use client";
 
 import Button from "../../components/button";
-import Card from "../../components/card";
+
 import Image from "next/image";
 
-import Services from "@/app/global/services";
+import Services from "@/app/global/sections/services";
+import Blogs from "@/app/global/sections/blogs";
 
 import { useEffect } from "react";
 
@@ -175,11 +176,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container-fluid bg-white px-6 lg:px-0 pb-14 lg:pb-24">
-        <div className="container mx-auto">
-          <Services />
-        </div>
-      </div>
+      <Services />
 
       <div className="container-fluid bg-blue-100 py-14 lg:py-16 px-6 lg:px-0">
         <div className="container mx-auto">
@@ -231,39 +228,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container-fluid bg-white px-6 lg:px-0 pb-14 lg:pb-24">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-12 gap-8">
-            <div className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Card
-                thumbnail="default"
-                title="Improving B2B Customer Experience For Assistive Technology Dealers"
-                description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
-                category={["CMS Platform", "Case Study"]}
-                buttonText="Continue Reading"
-              />
-            </div>
-            <div className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Card
-                thumbnail="default"
-                title="Improving B2B Customer Experience For Assistive Technology Dealers"
-                description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
-                category={["CMS Platform", "Case Study"]}
-                buttonText="Continue Reading"
-              />
-            </div>
-            <div className="lg:col-span-4 md:col-span-6 col-span-12">
-              <Card
-                thumbnail="default"
-                title="Improving B2B Customer Experience For Assistive Technology Dealers"
-                description="our team of dedicated professionals comprises individuals with a diverse array of skills and knowledge."
-                category={["CMS Platform", "Case Study"]}
-                buttonText="Continue Reading"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <Blogs />
 
       <div className="container-fluid bg-red-200 py-14 lg:py-16 px-6 lg:px-0">
         <div className="container mx-auto">

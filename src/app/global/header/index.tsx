@@ -85,11 +85,11 @@ export default function Header() {
 
             <Link
               className={`${
-                pathname === "/blogs"
+                pathname === "/posts"
                   ? linkStyle["sidebar_active"]
                   : linkStyle["sidebar_inactive"]
               }`}
-              href="/blogs"
+              href="/posts"
               onClick={() => setToggle(!toggle)}
             >
               blogs
@@ -156,11 +156,11 @@ export default function Header() {
 
             <Link
               className={`${
-                pathname === "/blogs"
+                pathname === "/posts"
                   ? linkStyle["active"]
                   : linkStyle["inactive"]
               }`}
-              href="/blogs"
+              href="/posts"
             >
               blogs
             </Link>

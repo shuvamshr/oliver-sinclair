@@ -2,6 +2,7 @@
 
 import Button from "../button";
 import Image from "next/image";
+import Link from "next/link";
 
 import CheckmarkIcon from "./assets/checkmark.svg";
 import ServicePlaceholderIcon from "./assets/service-placeholder.svg";
@@ -12,6 +13,7 @@ import ThumbnailPlaceholderImg from "./assets/thumbnail-placeholder.jpg";
 // };
 
 interface CardProps {
+  slug?: string;
   thumbnail?: "default" | string;
   category?: string[];
   titleIcon?: "default" | string;
@@ -22,6 +24,7 @@ interface CardProps {
 }
 
 export default function Card({
+  slug,
   thumbnail,
   category,
   titleIcon,
@@ -33,7 +36,7 @@ export default function Card({
   // const cardClass = ``;
   return (
     <>
-      <div className="flex flex-col rounded-lg shadow-md w-full">
+      <div className="flex flex-col lg:flex-shrink-0 lg:w-[30%] rounded-lg shadow-md w-full h-full">
         {thumbnail && (
           <Image
             src={thumbnail == "default" ? ThumbnailPlaceholderImg : thumbnail}
@@ -106,8 +109,9 @@ export default function Card({
               </div>
             </>
           )}
-
-          <Button title={buttonText} size="medium" display="block" />
+          <Link href={`/posts/${slug}`} aria-label={title}>
+            <Button title={buttonText} size="medium" display="block" />
+          </Link>
         </div>
       </div>
     </>

@@ -3,7 +3,7 @@
 import Button from "@/app/components/button";
 import Card from "@/app/components/card";
 import Image from "next/image";
-import Services from "@/app/global/services";
+import Services from "@/app/global/sections/services";
 
 import { useEffect } from "react";
 
@@ -54,11 +54,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className="container-fluid bg-white px-6 lg:px-0 pb-14 lg:pb-24">
-        <div className="container mx-auto">
-          <Services />
-        </div>
-      </div>
+      <Services />
 
       <div className="container-fluid bg-blue-100 py-14 lg:py-16 px-6 lg:px-0">
         <div className="container mx-auto">
