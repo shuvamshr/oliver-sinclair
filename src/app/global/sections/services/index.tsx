@@ -9,6 +9,7 @@ export default function Services() {
           <div className="flex flex-wrap justify-evenly gap-y-8">
             {ServicesData.map((service, index) => (
               <Card
+                key={index}
                 titleIcon={service.titleIcon}
                 title={service.title}
                 description={service.description}

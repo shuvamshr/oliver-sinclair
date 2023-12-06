@@ -9,6 +9,7 @@ export default function Blogs() {
           <div className="flex flex-wrap justify-evenly gap-y-8">
             {BlogsData.map((blogs, index) => (
               <Card
+                key={index}
                 thumbnail={blogs.thumbnail}
                 title={blogs.title}
                 description={blogs.description}
