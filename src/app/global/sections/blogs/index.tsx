@@ -1,20 +1,22 @@
-import BlogsData from "./assets/blogs.json";
-import Card from "@/app/components/card";
+import PostCard from "@/app/components/post_card";
+import { client } from "@/app/api/contentful/client";
 
-export default function Blogs() {
+export default async function Blogs() {
+  const data = (await getData()).props.posts;
+
   return (
     <>
       <div className="container-fluid bg-white px-6 lg:px-0 pb-14 lg:pb-24">
         <div className="container mx-auto">
-          <div className="flex flex-wrap justify-evenly gap-y-8">
-            {BlogsData.map((blogs, index) => (
-              <Card
+          <div className="flex flex-wrap justify-between gap-y-8">
+            {data.map((post: any, index: any) => (
+              <PostCard
                 key={index}
-                thumbnail={blogs.thumbnail}
-                title={blogs.title}
-                description={blogs.description}
-                category={blogs.category}
-                buttonText="Continue Reading"
+                slug={post.fields.slug}
+                thumbnail={"default"}
+                title={post.fields.title}
+                excerpt={post.fields.excerpt}
+                category={["Category 1", "Category 2"]}
               />
             ))}
           </div>
@@ -22,4 +24,15 @@ export default function Blogs() {
       </div>
     </>
   );
+}
+
+async function getData() {
+  const response = await client.getEntries({ content_type: "post" });
+
+  return {
+    props: {
+      posts: response.items,
+      revalidate: 60,
+    },
+  };
 }
