@@ -1,6 +1,6 @@
-import Blogs from "@/app/global/sections/blogs";
+import BlogList from "../global/sections/blog_list";
 
-export default async function Posts() {
+export default async function Blogs() {
   return (
     <>
       <div className="container-fluid bg-white pt-32 lg:pt-44 pb-14 lg:pb-24 px-6 lg:px-0">
@@ -19,7 +19,7 @@ export default async function Posts() {
           </div>
         </div>
       </div>
-      <Blogs />
+      <BlogList />
     </>
   );
 }

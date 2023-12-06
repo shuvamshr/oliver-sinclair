@@ -5,7 +5,7 @@ import Button from "../../components/button";
 import Image from "next/image";
 
 import Services from "@/app/global/sections/services";
-import Blogs from "@/app/global/sections/blogs";
+import BlogList from "@/app/global/sections/blog_list";
 
 import { useEffect } from "react";
 
@@ -228,7 +228,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Blogs />
+      <BlogList />
 
       <div className="container-fluid bg-red-200 py-14 lg:py-16 px-6 lg:px-0">
         <div className="container mx-auto">

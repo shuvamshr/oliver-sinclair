@@ -1,7 +1,7 @@
 import PostCard from "@/app/components/post_card";
 import { client } from "@/app/api/contentful/client";
 
-export default async function Blogs() {
+export default async function BlogList() {
   const data = (await getData()).props.posts;
 
   return (
