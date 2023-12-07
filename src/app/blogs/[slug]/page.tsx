@@ -1,19 +1,27 @@
 import { client } from "@/app/api/contentful/client";
+import RichText from "@/app/components/post/RichText";
 
 export default async function ({ params }: { params: { slug: string } }) {
   const data = (await getData(params.slug)).props?.posts.fields;
-  console.log("================");
-  console.log(data);
+  console.log(data.content);
+
   return (
     <>
       <div className="container-fluid bg-white pt-32 lg:pt-44 pb-14 lg:pb-24 px-6 lg:px-0">
-        <div className="container mx-auto">
-          <h1 className="font-sans text-3xl text-gray-800 font-semibold align-middle">
-            {data.title}
-          </h1>
-          <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
-            {data.excerpt}
-          </p>
+        <div className="container mx-auto lg:px-[20%] px-0">
+          <div className="flex flex-col lg:gap-4 gap-2">
+            <h1 className="font-serif font-semibold text-3xl lg:text-4xl text-gray-800 leading-normal">
+              {data.title}
+            </h1>
+            <h6 className="font-sans font-medium text-base lg:text-xl text-gray-700 leading-normal">
+              {data.excerpt}
+            </h6>
+          </div>
+          <div className="flex flex-col mt-10">
+            <div className="font-sys_serif font-regular text-base  text-gray-800 leading-relaxed">
+              <RichText content={data.content} />
+            </div>
+          </div>
         </div>
       </div>
     </>

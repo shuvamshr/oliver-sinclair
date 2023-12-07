@@ -36,7 +36,7 @@ export default function Card({
   // const cardClass = ``;
   return (
     <>
-      <div className="flex flex-col lg:w-[30%] rounded-lg shadow-md w-full h-full">
+      <div className="flex flex-col lg:w-[32%] rounded-lg shadow-md w-full h-full">
         {thumbnail && (
           <Image
             src={thumbnail == "default" ? ThumbnailPlaceholderImg : thumbnail}

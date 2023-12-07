@@ -16,7 +16,7 @@ export default function Footer() {
                 alt="Oliver Sinclair White Logo"
               />
               <p className="font-serif font-regular text-sm text-white leading-none lg:block hidden">
-                a startup by Shuvam Shrestha. Who’s that?
+                a project by Shuvam Shrestha. Who’s that?
               </p>
             </div>
 
