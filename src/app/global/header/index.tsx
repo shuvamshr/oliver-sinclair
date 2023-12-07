@@ -33,7 +33,7 @@ export default function Header() {
         }`}
         onClick={() => setConToggle(!conToggle)}
       >
-        <ContactCard></ContactCard>
+        <ContactCard />
       </div>
       <div
         className={`container-fluid bg-white px-6 z-40 h-screen w-full fixed transition ease-out duration-200  ${
@@ -118,25 +118,20 @@ export default function Header() {
           </div>
 
           <div className="flex flex-col gap-3">
-            <Link
-              href="https://calendly.com/oliversinclair/30min"
-              target="_blank"
-            >
-              <Button
-                title="Get in Touch"
-                type="secondary"
-                size="large"
-                display="block"
-              />
-            </Link>
-            <Link href="blogs/unveiling-the-enigma-who-is-oliver-sinclair">
-              <Button
-                title="Who's Oliver"
-                type="primary"
-                size="large"
-                display="block"
-              />
-            </Link>
+            <Button
+              title="Get in Touch"
+              type="secondary"
+              size="large"
+              link="https://calendly.com/oliversinclair/30min"
+              newTab={true}
+            />
+            <Button
+              title="Who's Oliver"
+              type="primary"
+              size="large"
+              link="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+              newTab={true}
+            />
           </div>
         </div>
       </div>
@@ -200,18 +195,20 @@ export default function Header() {
             </div>
           </div>
           <div className="lg:flex lg:flex-row gap-4 hidden">
-            <Link
-              href="https://calendly.com/oliversinclair/30min"
-              target="_blank"
-            >
-              <Button title="Get in Touch" type="secondary" size="medium" />
-            </Link>
-            <Link
-              href="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
-              target="_blank"
-            >
-              <Button title="Who's Oliver" type="primary" size="medium" />
-            </Link>
+            <Button
+              title="Get in Touch"
+              type="secondary"
+              size="medium"
+              link="https://calendly.com/oliversinclair/30min"
+              newTab={true}
+            />
+            <Button
+              title="Who's Oliver"
+              type="primary"
+              size="medium"
+              link="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+              newTab={true}
+            />
           </div>
 
           <Image

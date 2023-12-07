@@ -7,8 +7,6 @@ import EmailIcon from "./assets/email-icon.svg";
 import DownloadIcon from "./assets/download-icon.svg";
 import CloseIcon from "./assets/close.svg";
 
-import Button from "../button";
-
 import Link from "next/link";
 
 // const cardStyle: Record<string, string> = {

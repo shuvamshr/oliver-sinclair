@@ -1,5 +1,6 @@
-import PostCard from "@/app/components/post_card";
 import { client } from "@/app/api/contentful/client";
+
+import PostCard from "@/app/components/post_card";
 
 export default async function CaseStudiesList() {
   const data = (await getData()).props.posts;

@@ -109,9 +109,13 @@ export default function Card({
               </div>
             </>
           )}
-          <Link href={`/services`} aria-label={title}>
-            <Button title={buttonText} size="medium" display="block" />
-          </Link>
+
+          <Button
+            title={buttonText}
+            size="medium"
+            display="block"
+            link="services"
+          />
         </div>
       </div>
     </>

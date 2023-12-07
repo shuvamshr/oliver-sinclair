@@ -74,9 +74,12 @@ export default function PostCard({
             </p>
           </div>
 
-          <Link href={`/${category}/${slug}`} aria-label={title}>
-            <Button title="Continue reading" size="medium" display="block" />
-          </Link>
+          <Button
+            title="Continue reading"
+            size="medium"
+            display="block"
+            link={`/${category}/${slug}`}
+          />
         </div>
       </div>
     </>

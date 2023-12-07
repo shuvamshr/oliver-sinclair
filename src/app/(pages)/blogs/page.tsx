@@ -1,5 +1,4 @@
 import BlogList from "../../global/sections/blog_list";
-
 import PreFooter from "@/app/global/sections/prefooter";
 
 export default async function Blogs() {

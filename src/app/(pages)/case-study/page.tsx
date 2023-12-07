@@ -1,8 +1,7 @@
-import CaseStudiesList from "@/app/global/sections/case_studies_list";
-
 import Button from "@/app/components/button";
 import Link from "next/link";
 
+import CaseStudiesList from "@/app/global/sections/case_studies_list";
 import PreFooter from "@/app/global/sections/prefooter";
 
 export default async function CaseStudies() {
@@ -28,19 +27,18 @@ export default async function CaseStudies() {
               </div>
             </div>
             <div className="col-span-12 lg:col-span-8 lg:col-start-3 flex flex-col lg:flex-row gap-3 lg:gap-5">
-              <Link
-                href="https://calendly.com/oliversinclair/30min"
-                className="w-full"
-              >
-                <Button title="Get Started With Your Project" display="block" />
-              </Link>
-              <Link href="services" className="w-full">
-                <Button
-                  title="View Service Bundles"
-                  type="secondary"
-                  display="block"
-                />
-              </Link>
+              <Button
+                title="Get Started With Your Project"
+                display="block"
+                link="https://calendly.com/oliversinclair/30min"
+                newTab={true}
+              />
+              <Button
+                title="View Service Bundles"
+                type="secondary"
+                display="block"
+                link="services"
+              />
             </div>
           </div>
         </div>

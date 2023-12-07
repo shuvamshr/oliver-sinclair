@@ -1,9 +1,8 @@
-import Image from "next/image";
 import Button from "@/app/components/button";
 
-import GrowImg from "./assets/grow.png";
+import Image from "next/image";
 
-import Link from "next/link";
+import GrowImg from "./assets/grow.png";
 
 export default function PreFooter() {
   return (
@@ -23,19 +22,17 @@ export default function PreFooter() {
             </div>
 
             <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
-              <Link
-                href="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
-                className="w-full"
-              >
-                <Button title="Who’s Oliver?" display="block" />
-              </Link>
-              <Link href="services" className="w-full">
-                <Button
-                  title="View Service Bundles"
-                  type="secondary"
-                  display="block"
-                />
-              </Link>
+              <Button
+                title="Who’s Oliver?"
+                display="block"
+                link="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+              />
+              <Button
+                title="View Service Bundles"
+                type="secondary"
+                display="block"
+                link="services"
+              />
             </div>
           </div>
           <div className="col-span-12 pt-10 lg:pt-0 lg:col-span-5 lg:col-start-8 ">

@@ -1,14 +1,14 @@
 "use client";
 
-import Button from "../../components/button";
+import { useEffect } from "react";
 
+import Button from "../../components/button";
 import Image from "next/image";
+import Link from "next/link";
 
 import Services from "@/app/global/sections/services";
 import BlogList from "@/app/global/sections/blog_list";
 import PreFooter from "@/app/global/sections/prefooter";
-
-import { useEffect } from "react";
 
 import CreativityImg from "./assets/creativity.png";
 import GroupworkImg from "./assets/groupwork.png";
@@ -19,11 +19,9 @@ import AppleLogo from "./assets/apple.svg";
 import DolbyLogo from "./assets/dolby.svg";
 import LeedsLogo from "./assets/leeds.svg";
 import OliverLogo from "./assets/oliver-white.svg";
-import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
-    // Scroll to the top of the page when the component is mounted
     window.scrollTo(0, 0);
   }, []);
 
@@ -54,19 +52,17 @@ export default function Home() {
 
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
-                  <Link
-                    href="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
-                    className="w-full"
-                  >
-                    <Button title="Who’s Oliver?" display="block" />
-                  </Link>
-                  <Link href="services" className="w-full">
-                    <Button
-                      title="View Service Bundles"
-                      type="secondary"
-                      display="block"
-                    />
-                  </Link>
+                  <Button
+                    title="Who’s Oliver?"
+                    link="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+                    display="block"
+                  />
+                  <Button
+                    title="View Service Bundles"
+                    type="secondary"
+                    link="services"
+                    display="block"
+                  />
                 </div>
 
                 <p className="font-sans font-medium text-xs lg:text-sm text-gray-700 leading-normal">
@@ -139,16 +135,12 @@ export default function Home() {
                 </p>
               </div>
 
-              <Link
-                href="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
-                className="w-full"
-              >
-                <Button
-                  title="Learn More About Oliver"
-                  size="large"
-                  display="fit"
-                />
-              </Link>
+              <Button
+                title="Learn More About Oliver"
+                size="large"
+                display="fit"
+                link="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+              />
             </div>
           </div>
         </div>
@@ -217,12 +209,13 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:col-span-3 lg:col-start-10 flex flex-col w-full">
-              <Link
-                href="https://calendly.com/oliversinclair/30min"
-                target="_blank"
-              >
-                <Button title="Get in Touch" type="secondary" display="block" />
-              </Link>
+              <Button
+                title="Get in Touch"
+                type="secondary"
+                display="block"
+                link="https://calendly.com/oliversinclair/30min"
+                newTab={true}
+              />
             </div>
           </div>
         </div>

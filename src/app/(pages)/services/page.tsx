@@ -1,14 +1,14 @@
 "use client";
 
-import Button from "@/app/components/button";
-import Card from "@/app/components/card";
-import Image from "next/image";
-import Services from "@/app/global/sections/services";
-
 import { useEffect } from "react";
 
-import ProcessPlainImg from "./assets/process-plain.png";
+import Button from "@/app/components/button";
+import Image from "next/image";
 import Link from "next/link";
+
+import Services from "@/app/global/sections/services";
+
+import ProcessPlainImg from "./assets/process-plain.png";
 
 export default function Index() {
   useEffect(() => {
@@ -36,20 +36,18 @@ export default function Index() {
               </div>
 
               <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
-                <Link href="/services#services" className="w-full">
-                  <Button title="Browse Services" display="block" />
-                </Link>
-                <Link
-                  href="https://calendly.com/oliversinclair/30min"
-                  target="_blank"
-                  className="w-full"
-                >
-                  <Button
-                    title="Get in Touch"
-                    type="secondary"
-                    display="block"
-                  />
-                </Link>
+                <Button
+                  title="Browse Services"
+                  display="block"
+                  link="/services#services"
+                />
+                <Button
+                  title="Get in Touch"
+                  type="secondary"
+                  display="block"
+                  link="https://calendly.com/oliversinclair/30min"
+                  newTab={true}
+                />
               </div>
             </div>
             <div className="col-span-12 pt-10 lg:pt-0 lg:col-span-5 lg:col-start-8 ">
@@ -82,12 +80,13 @@ export default function Index() {
               </div>
             </div>
             <div className="lg:col-span-3 lg:col-start-10 flex flex-col w-full">
-              <Link
-                href="https://calendly.com/oliversinclair/30min"
-                target="_blank"
-              >
-                <Button title="Get in Touch" type="secondary" display="block" />
-              </Link>
+              <Button
+                title="Get in Touch"
+                type="secondary"
+                display="block"
+                link="https://calendly.com/oliversinclair/30min"
+                newTab={true}
+              />
             </div>
           </div>
         </div>
