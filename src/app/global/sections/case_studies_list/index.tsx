@@ -1,7 +1,7 @@
 import PostCard from "@/app/components/post_card";
 import { client } from "@/app/api/contentful/client";
 
-export default async function BlogList() {
+export default async function CaseStudiesList() {
   const data = (await getData()).props.posts;
 
   data.map((post: any, index: any) => console.log(post.fields));
@@ -13,7 +13,7 @@ export default async function BlogList() {
           <div className="flex flex-wrap justify-between gap-y-8">
             {data.map(
               (post: any, index: any) =>
-                post.fields.category === "blogs" && (
+                post.fields.category === "case-study" && (
                   <PostCard
                     key={index}
                     slug={post.fields.slug}

@@ -1,4 +1,4 @@
-import BlogList from "../global/sections/blog_list";
+import BlogList from "../../global/sections/blog_list";
 
 export default async function Blogs() {
   return (
