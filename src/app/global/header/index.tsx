@@ -109,7 +109,18 @@ export default function Header() {
           </div>
 
           <div className="flex flex-col gap-3">
-            <Button title="View Bundles" type="secondary" size="large" />
+            <Link
+              href="https://calendly.com/oliversinclair/30min"
+              target="_blank"
+            >
+              <Button
+                title="Get in Touch"
+                type="secondary"
+                size="large"
+                display="block"
+              />
+            </Link>
+
             <Button title="Who's Oliver" type="primary" size="large" />
           </div>
         </div>
