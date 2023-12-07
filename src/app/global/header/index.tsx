@@ -73,7 +73,8 @@ export default function Header() {
 
             <Link
               className={`${
-                pathname === "/case-studies"
+                pathname.startsWith("/case-study/") ||
+                pathname === "/case-study"
                   ? linkStyle["sidebar_active"]
                   : linkStyle["sidebar_inactive"]
               }`}
@@ -85,7 +86,7 @@ export default function Header() {
 
             <Link
               className={`${
-                pathname.startsWith("/blogs/")
+                pathname.startsWith("/blogs/") || pathname === "/blogs"
                   ? linkStyle["sidebar_active"]
                   : linkStyle["sidebar_inactive"]
               }`}
