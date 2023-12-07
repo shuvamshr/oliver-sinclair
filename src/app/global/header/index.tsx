@@ -105,12 +105,13 @@ export default function Header() {
             >
               blogs
             </Link>
+
             <div
-              className={`${
-                pathname === "/contact"
-                  ? linkStyle["sidebar_active"]
-                  : linkStyle["sidebar_inactive"]
-              }`}
+              className={`${linkStyle["sidebar_inactive"]} hover:cursor-pointer`}
+              onClick={() => {
+                setToggle(!toggle);
+                setConToggle(!conToggle);
+              }}
             >
               contact
             </div>
