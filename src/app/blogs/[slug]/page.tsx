@@ -8,17 +8,18 @@ export default async function ({ params }: { params: { slug: string } }) {
   return (
     <>
       <div className="container-fluid bg-white pt-32 lg:pt-44 pb-14 lg:pb-24 px-6 lg:px-0">
-        <div className="container mx-auto lg:px-[20%] px-0">
-          <div className="flex flex-col lg:gap-4 gap-2">
-            <h1 className="font-serif font-semibold text-3xl lg:text-4xl text-gray-800 leading-normal">
-              {data.title}
-            </h1>
-            <h6 className="font-sans font-medium text-base lg:text-xl text-gray-700 leading-normal">
-              {data.excerpt}
-            </h6>
-          </div>
-          <div className="flex flex-col mt-10">
-            <div className="font-sys_serif font-regular text-base  text-gray-800 leading-relaxed">
+        <div className="container mx-auto flex justify-center">
+          <div className="flex flex-col prose">
+            <div className="flex flex-col">
+              <h1 className="font-serif font-semibold text-3xl lg:text-4xl text-gray-800 leading-normal">
+                {data.title}
+              </h1>
+              <h6 className="font-sans font-medium text-base lg:text-xl text-gray-700 leading-normal">
+                {data.excerpt}
+              </h6>
+            </div>
+
+            <div className="font-sans text-gray-800">
               <RichText content={data.content} />
             </div>
           </div>
