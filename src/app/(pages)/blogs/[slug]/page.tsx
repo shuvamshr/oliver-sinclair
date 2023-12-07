@@ -1,6 +1,7 @@
 import { client } from "@/app/api/contentful/client";
 import RichText from "@/app/components/post/RichText";
 import Image from "next/image";
+import PreFooter from "@/app/global/sections/prefooter";
 
 export default async function ({ params }: { params: { slug: string } }) {
   const data = (await getData(params.slug)).props?.posts.fields;
@@ -57,6 +58,7 @@ export default async function ({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </div>
+      <PreFooter />
     </>
   );
 }

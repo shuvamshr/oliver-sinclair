@@ -19,6 +19,7 @@ import AppleLogo from "./assets/apple.svg";
 import DolbyLogo from "./assets/dolby.svg";
 import LeedsLogo from "./assets/leeds.svg";
 import OliverLogo from "./assets/oliver-white.svg";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -33,9 +34,12 @@ export default function Home() {
           <div className="grid grid-cols-12 items-center">
             <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
               <div className="flex flex-col gap-2 lg:gap-4">
-                <h6 className="font-sans font-medium text-base lg:text-lg text-gray-800 lg:leading-none leading-snug">
+                <Link
+                  href="#bundles"
+                  className="font-sans font-medium text-base lg:text-lg text-gray-800 lg:leading-none leading-snug hover:text-red-700 transition ease-in-out duration-200"
+                >
                   NEW UX BUNDLE ADDED
-                </h6>
+                </Link>
                 <h1 className="font-sans font-semibold text-3xl lg:text-4xl text-gray-800 lg:leading-normal leading-relaxed">
                   Crafting Experiences <br className="lg:block hidden" />
                   to Captivate.{" "}
@@ -50,13 +54,21 @@ export default function Home() {
 
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
-                  <Button title="Who’s Oliver?" display="block" />
-                  <Button
-                    title="View Service Bundles"
-                    type="secondary"
-                    display="block"
-                  />
+                  <Link
+                    href="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+                    className="w-full"
+                  >
+                    <Button title="Who’s Oliver?" display="block" />
+                  </Link>
+                  <Link href="services" className="w-full">
+                    <Button
+                      title="View Service Bundles"
+                      type="secondary"
+                      display="block"
+                    />
+                  </Link>
                 </div>
+
                 <p className="font-sans font-medium text-xs lg:text-sm text-gray-700 leading-normal">
                   View all our services, or figure out who Oliver is
                 </p>
@@ -114,29 +126,29 @@ export default function Home() {
                   </span>
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
-                  we inspire businesses to conceive and craft the digital realms
-                  of the future. Success is a collective voyage with oliver, and
-                  you’re just one click away from getting your way. our team of
-                  dedicated professionals comprises individuals with a diverse
-                  array of skills. <br />
+                  In the vast landscape of talent and expertise, there emerges a
+                  name that resonates with versatility and innovation - Oliver
+                  Sinclair. But who is Oliver Sinclair, and why is this name
+                  creating ripples in various industries? Let's embark on a
+                  journey to uncover the mysteries behind the persona of Oliver
+                  Sinclair. <br />
                   <br />
-                  knowledge acquired through certified expertise from various
-                  industries, renowned universities, and impactful events
+                  Oliver Sinclair is not just a person; he is a concept, an
+                  embodiment of dynamic capabilities tailored to meet your
+                  specific needs.
                 </p>
               </div>
-              <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
+
+              <Link
+                href="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+                className="w-full"
+              >
                 <Button
-                  title="Find an Oliver For You"
+                  title="Learn More About Oliver"
                   size="large"
                   display="fit"
                 />
-                <Button
-                  title="View Services"
-                  type="secondary"
-                  size="large"
-                  display="fit"
-                />
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -148,7 +160,10 @@ export default function Home() {
             <div className="col-span-12 lg:col-span-8 lg:col-start-3 flex flex-col">
               <Image src={ProcessImg} alt="" />
             </div>
-            <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col gap-10">
+            <div
+              className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col gap-10"
+              id="bundles"
+            >
               <div className="flex flex-col gap-4">
                 <h1 className="font-sans font-semibold text-2xl lg:text-3xl lg:text-center text-gray-800 lg:leading-normal leading-relaxed">
                   All your design needs bundled.{" "}
@@ -157,20 +172,27 @@ export default function Home() {
                   </span>
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-center text-gray-700 lg:leading-normal leading-relaxed">
-                  our team of dedicated professionals comprises individuals with
-                  a diverse array of skills and knowledge acquired through
-                  certified expertise from various industries, renowned
-                  universities, and impactful events
+                  Explore our wide range of service bundles tailored to meet
+                  your specific needs. From essential connectivity to
+                  personalized digital solutions, find the perfect package for
+                  an enhanced and seamless experience.
                 </p>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-8 lg:col-start-3 flex flex-col lg:flex-row gap-3 lg:gap-5">
-              <Button title="Who’s Oliver?" display="block" />
-              <Button
-                title="View Service Bundles"
-                type="secondary"
-                display="block"
-              />
+              <Link
+                href="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+                className="w-full"
+              >
+                <Button title="Who’s Oliver?" display="block" />
+              </Link>
+              <Link href="services" className="w-full">
+                <Button
+                  title="View Service Bundles"
+                  type="secondary"
+                  display="block"
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -187,19 +209,20 @@ export default function Home() {
                   Got something a bit more custom?
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
-                  our team of dedicated professionals comprises individuals with
-                  a diverse array of skills and knowledge acquired through
-                  certified expertise from various industries, renowned
-                  universities, and impactful events
+                  For custom-tailored solutions beyond our standard bundles,
+                  reach out to us. We're here to craft personalized service
+                  packages that precisely meet your unique requirements and
+                  preferences.
                 </p>
               </div>
             </div>
             <div className="lg:col-span-3 lg:col-start-10 flex flex-col w-full">
-              <Button
-                title="View Service Bundles"
-                type="secondary"
-                display="block"
-              />
+              <Link
+                href="https://calendly.com/oliversinclair/30min"
+                target="_blank"
+              >
+                <Button title="Get in Touch" type="secondary" display="block" />
+              </Link>
             </div>
           </div>
         </div>
@@ -211,16 +234,17 @@ export default function Home() {
             <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col gap-10">
               <div className="flex flex-col gap-4">
                 <h1 className="font-sans font-semibold text-2xl lg:text-3xl lg:text-center text-gray-800 lg:leading-normal leading-relaxed">
-                  Read through our latest{" "}
+                  Unlock Wisdom by Exploring Our{" "}
                   <span className="text-red-900 font-bold italic">
                     Informative Blogs
                   </span>
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-center text-gray-700 lg:leading-normal leading-relaxed">
-                  our team of dedicated professionals comprises individuals with
-                  a diverse array of skills and knowledge acquired through
-                  certified expertise from various industries, renowned
-                  universities, and impactful events
+                  Dive into our blog section and embark on a journey of
+                  expanding your knowledge. Discover insightful articles, expert
+                  tips, and the latest trends that will empower you to stay
+                  informed and make informed decisions in an ever-evolving
+                  landscape.
                 </p>
               </div>
             </div>

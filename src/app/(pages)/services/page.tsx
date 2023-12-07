@@ -8,6 +8,7 @@ import Services from "@/app/global/sections/services";
 import { useEffect } from "react";
 
 import ProcessPlainImg from "./assets/process-plain.png";
+import Link from "next/link";
 
 export default function Index() {
   useEffect(() => {
@@ -29,14 +30,26 @@ export default function Index() {
                   All your design needs bundled.
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
-                  our team of dedicated professionals comprises individuals with
-                  a diverse array of skills
+                  Explore our wide range of service bundles tailored to meet
+                  your specific needs
                 </p>
               </div>
 
               <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
-                <Button title="Browse Services" display="block" />
-                <Button title="Get in Touch" type="secondary" display="block" />
+                <Link href="/services#services" className="w-full">
+                  <Button title="Browse Services" display="block" />
+                </Link>
+                <Link
+                  href="https://calendly.com/oliversinclair/30min"
+                  target="_blank"
+                  className="w-full"
+                >
+                  <Button
+                    title="Get in Touch"
+                    type="secondary"
+                    display="block"
+                  />
+                </Link>
               </div>
             </div>
             <div className="col-span-12 pt-10 lg:pt-0 lg:col-span-5 lg:col-start-8 ">
@@ -49,7 +62,7 @@ export default function Index() {
           </div>
         </div>
       </div>
-
+      <div id="services" className="h-[0px]"></div>
       <Services />
 
       <div className="container-fluid bg-blue-100 py-14 lg:py-16 px-6 lg:px-0">
@@ -61,19 +74,20 @@ export default function Index() {
                   Got something a bit more custom?
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
-                  our team of dedicated professionals comprises individuals with
-                  a diverse array of skills and knowledge acquired through
-                  certified expertise from various industries, renowned
-                  universities, and impactful events
+                  For custom-tailored solutions beyond our standard bundles,
+                  reach out to us. We're here to craft personalized service
+                  packages that precisely meet your unique requirements and
+                  preferences.
                 </p>
               </div>
             </div>
             <div className="lg:col-span-3 lg:col-start-10 flex flex-col w-full">
-              <Button
-                title="View Service Bundles"
-                type="secondary"
-                display="block"
-              />
+              <Link
+                href="https://calendly.com/oliversinclair/30min"
+                target="_blank"
+              >
+                <Button title="Get in Touch" type="secondary" display="block" />
+              </Link>
             </div>
           </div>
         </div>

@@ -28,7 +28,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${poppins.variable} ${vollkorn.variable}`}>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${vollkorn.variable} scroll-smooth`}
+    >
       <body>
         <Header />
         {children}

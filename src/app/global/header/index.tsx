@@ -5,6 +5,7 @@ import { useState } from "react";
 import Button from "@/app/components/button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ContactCard from "@/app/components/contact_card";
 
 import Image from "next/image";
 
@@ -21,12 +22,21 @@ const linkStyle = {
 
 export default function Header() {
   const [toggle, setToggle] = useState(true);
+  const [conToggle, setConToggle] = useState(true);
   const pathname = usePathname();
 
   return (
     <>
       <div
-        className={`container-fluid bg-white px-6 z-50 h-screen w-full fixed transition ease-out duration-200  ${
+        className={`flex fixed z-50 justify-center align-middle pt-32 px-6 w-full h-full bg-black/50  transition ease-out duration-200 ${
+          conToggle ? "hidden" : "block"
+        }`}
+        onClick={() => setConToggle(!conToggle)}
+      >
+        <ContactCard></ContactCard>
+      </div>
+      <div
+        className={`container-fluid bg-white px-6 z-40 h-screen w-full fixed transition ease-out duration-200  ${
           toggle ? "translate-x-full" : "translate-x-0"
         }`}
       >
@@ -95,17 +105,15 @@ export default function Header() {
             >
               blogs
             </Link>
-            <Link
+            <div
               className={`${
                 pathname === "/contact"
                   ? linkStyle["sidebar_active"]
                   : linkStyle["sidebar_inactive"]
               }`}
-              href="/contact"
-              onClick={() => setToggle(!toggle)}
             >
               contact
-            </Link>
+            </div>
           </div>
 
           <div className="flex flex-col gap-3">
@@ -120,8 +128,14 @@ export default function Header() {
                 display="block"
               />
             </Link>
-
-            <Button title="Who's Oliver" type="primary" size="large" />
+            <Link href="blogs/unveiling-the-enigma-who-is-oliver-sinclair">
+              <Button
+                title="Who's Oliver"
+                type="primary"
+                size="large"
+                display="block"
+              />
+            </Link>
           </div>
         </div>
       </div>
@@ -177,17 +191,12 @@ export default function Header() {
             >
               blogs
             </Link>
-            <Link
-              className={`${
-                pathname === "/contact"
-                  ? linkStyle["active"]
-                  : linkStyle["inactive"]
-              }`}
-              href="https://www.linkedin.com/in/shuvam-s-976186184/"
-              target="_blank"
+            <div
+              className={`${linkStyle["inactive"]} hover:cursor-pointer`}
+              onClick={() => setConToggle(!conToggle)}
             >
               contact
-            </Link>
+            </div>
           </div>
           <div className="lg:flex lg:flex-row gap-4 hidden">
             <Link
@@ -196,8 +205,12 @@ export default function Header() {
             >
               <Button title="Get in Touch" type="secondary" size="medium" />
             </Link>
-
-            <Button title="Who's Oliver" type="primary" size="medium" />
+            <Link
+              href="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+              target="_blank"
+            >
+              <Button title="Who's Oliver" type="primary" size="medium" />
+            </Link>
           </div>
 
           <Image

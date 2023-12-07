@@ -6,12 +6,14 @@ export default async function BlogList() {
 
   data.map((post: any, index: any) => console.log(post.fields.date));
 
+  const publicBlog = data.slice(1, 5);
+
   return (
     <>
       <div className="container-fluid bg-white px-6 lg:px-0 pb-14 lg:pb-24">
         <div className="container mx-auto">
           <div className="flex flex-wrap justify-between gap-y-8">
-            {data.map(
+            {publicBlog.map(
               (post: any, index: any) =>
                 post.fields.category === "blogs" && (
                   <PostCard

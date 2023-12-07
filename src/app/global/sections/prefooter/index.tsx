@@ -3,6 +3,8 @@ import Button from "@/app/components/button";
 
 import GrowImg from "./assets/grow.png";
 
+import Link from "next/link";
+
 export default function PreFooter() {
   return (
     <div className="container-fluid bg-red-200 py-14 lg:py-16 px-6 lg:px-0">
@@ -11,21 +13,29 @@ export default function PreFooter() {
           <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
             <div className="flex flex-col gap-2 lg:gap-4">
               <h1 className="font-sans font-semibold text-2xl lg:text-3xl  text-gray-800 lg:leading-normal leading-relaxed">
-                Grow better with Oliver today
+                Elevate Your Growth with Oliver
               </h1>
               <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
-                our team of dedicated professionals comprises individuals with a
-                diverse array of skills
+                Empower your aspirations, seize opportunities, and
+                thrive—experience the journey of growth with Oliver Sinclair by
+                your side.
               </p>
             </div>
 
             <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
-              <Button title="Who’s Oliver?" display="block" />
-              <Button
-                title="View Service Bundles"
-                type="secondary"
-                display="block"
-              />
+              <Link
+                href="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+                className="w-full"
+              >
+                <Button title="Who’s Oliver?" display="block" />
+              </Link>
+              <Link href="services" className="w-full">
+                <Button
+                  title="View Service Bundles"
+                  type="secondary"
+                  display="block"
+                />
+              </Link>
             </div>
           </div>
           <div className="col-span-12 pt-10 lg:pt-0 lg:col-span-5 lg:col-start-8 ">
