@@ -35,12 +35,8 @@ export default function Index() {
               </div>
 
               <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
-                <Button title="Who’s Oliver?" display="block" />
-                <Button
-                  title="View Service Bundles"
-                  type="secondary"
-                  display="block"
-                />
+                <Button title="Browse Services" display="block" />
+                <Button title="Get in Touch" type="secondary" display="block" />
               </div>
             </div>
             <div className="col-span-12 pt-10 lg:pt-0 lg:col-span-5 lg:col-start-8 ">

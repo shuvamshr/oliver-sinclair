@@ -211,9 +211,9 @@ export default function Home() {
             <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col gap-10">
               <div className="flex flex-col gap-4">
                 <h1 className="font-sans font-semibold text-2xl lg:text-3xl lg:text-center text-gray-800 lg:leading-normal leading-relaxed">
-                  Proven Track Record of{" "}
+                  Read through out latest{" "}
                   <span className="text-red-900 font-bold italic">
-                    Ambitious Projects
+                    Informative Blogs
                   </span>
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-center text-gray-700 lg:leading-normal leading-relaxed">

@@ -171,13 +171,20 @@ export default function Header() {
                   ? linkStyle["active"]
                   : linkStyle["inactive"]
               }`}
-              href="/contact"
+              href="https://www.linkedin.com/in/shuvam-s-976186184/"
+              target="_blank"
             >
               contact
             </Link>
           </div>
           <div className="lg:flex lg:flex-row gap-4 hidden">
-            <Button title="View Bundles" type="secondary" size="medium" />
+            <Link
+              href="https://calendly.com/oliversinclair/30min"
+              target="_blank"
+            >
+              <Button title="Get in Touch" type="secondary" size="medium" />
+            </Link>
+
             <Button title="Who's Oliver" type="primary" size="medium" />
           </div>
 
