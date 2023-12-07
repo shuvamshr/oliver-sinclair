@@ -4,6 +4,8 @@ import { client } from "@/app/api/contentful/client";
 export default async function BlogList() {
   const data = (await getData()).props.posts;
 
+  data.map((post: any, index: any) => console.log(post.fields));
+
   return (
     <>
       <div className="container-fluid bg-white px-6 lg:px-0 pb-14 lg:pb-24">
@@ -13,10 +15,10 @@ export default async function BlogList() {
               <PostCard
                 key={index}
                 slug={post.fields.slug}
-                thumbnail={"default"}
+                thumbnail={post.fields.coverImage.fields.file.url}
                 title={post.fields.title}
                 excerpt={post.fields.excerpt}
-                category={["Category 1", "Category 2"]}
+                category={post.fields.tag}
               />
             ))}
           </div>

@@ -30,11 +30,18 @@ export default function PostCard({
     <>
       <div className="flex flex-col lg:w-[32%] rounded-lg shadow-md w-full h-full">
         {thumbnail && (
-          <Image
-            src={thumbnail == "default" ? ThumbnailPlaceholderImg : thumbnail}
-            className="h-56 rounded-t-lg bg-cover"
-            alt="Card Thumbnail"
-          />
+          <div className="h-56 object-contain relative">
+            <Image
+              src={
+                thumbnail == "default"
+                  ? ThumbnailPlaceholderImg
+                  : "https:" + thumbnail
+              }
+              className="rounded-t-lg"
+              alt="Card Thumbnail"
+              fill={true}
+            />
+          </div>
         )}
         <div className="flex flex-col gap-8 lg:px-8 lg:py-10 px-6 py-8">
           <div className="flex flex-col gap-6">
