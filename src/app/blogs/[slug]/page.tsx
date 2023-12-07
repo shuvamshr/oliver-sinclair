@@ -49,9 +49,9 @@ export default async function ({ params }: { params: { slug: string } }) {
             <div className="font-sans font-base text-sm text-gray-700 bg-gray-200 px-4 py-3 my-4 rounded-lg border-2 border-gray-300 leading-relaxed">
               <strong className="text-gray-800">Disclaimer</strong>: This blog
               post, emphasizing the significance of design systems and Figma,
-              was generated for testing purposes only using OpenAI's GPT-3.5.
-              Readers are advised to verify information independently, as the
-              content may not reflect real-world expertise, and it is not
+              was generated for testing purposes only using OpenAI&apos;s
+              GPT-3.5. Readers are advised to verify information independently,
+              as the content may not reflect real-world expertise, and it is not
               intended as professional advice. This disclaimer was also
               generated via ChatGPT.
             </div>
