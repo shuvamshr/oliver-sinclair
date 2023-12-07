@@ -129,7 +129,7 @@ export default function Home() {
                   In the vast landscape of talent and expertise, there emerges a
                   name that resonates with versatility and innovation - Oliver
                   Sinclair. But who is Oliver Sinclair, and why is this name
-                  creating ripples in various industries? Let's embark on a
+                  creating ripples in various industries? Let&apos;s embark on a
                   journey to uncover the mysteries behind the persona of Oliver
                   Sinclair. <br />
                   <br />
@@ -210,7 +210,7 @@ export default function Home() {
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
                   For custom-tailored solutions beyond our standard bundles,
-                  reach out to us. We're here to craft personalized service
+                  reach out to us. We&apos;re here to craft personalized service
                   packages that precisely meet your unique requirements and
                   preferences.
                 </p>

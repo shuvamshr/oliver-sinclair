@@ -75,7 +75,7 @@ export default function Index() {
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
                   For custom-tailored solutions beyond our standard bundles,
-                  reach out to us. We're here to craft personalized service
+                  reach out to us. We&apos;re here to craft personalized service
                   packages that precisely meet your unique requirements and
                   preferences.
                 </p>
