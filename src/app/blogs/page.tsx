@@ -8,10 +8,10 @@ export default async function Blogs() {
           <div className="grid grid-cols-12 items-center">
             <div className="col-span-12 lg:col-span-8">
               <div className="flex flex-col gap-2 lg:gap-4">
-                <h1 className="font-sans font-semibold text-3xl lg:text-5xl text-gray-800 lg:leading-normal leading-relaxed">
+                <h1 className="font-sans font-semibold text-3xl lg:text-5xl text-gray-800 leading-normal">
                   Latest Blogs
                 </h1>
-                <p className="font-serif font-regular text-base lg:text-lg text-gray-700 lg:leading-normal leading-relaxed">
+                <p className="font-serif font-regular text-base lg:text-lg text-gray-700 leading-normal">
                   Expand your knowledge with our latest content
                 </p>
               </div>
