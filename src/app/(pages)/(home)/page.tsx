@@ -19,7 +19,6 @@ import AppleLogo from "./assets/apple.svg";
 import DolbyLogo from "./assets/dolby.svg";
 import LeedsLogo from "./assets/leeds.svg";
 import OliverLogo from "./assets/oliver-white.svg";
-import PreFooter from "@/app/global/sections/prefooter";
 
 export default function Home() {
   useEffect(() => {
