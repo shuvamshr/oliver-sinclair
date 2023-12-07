@@ -29,7 +29,7 @@ export default async function ({ params }: { params: { slug: string } }) {
                 {data.excerpt}
               </h6>
             </div>
-            <div className="h-52 lg:h-[400px] object-contain relative my-2">
+            <div className="aspect-video relative my-2">
               <Image
                 src={"https:" + data.coverImage.fields.file.url}
                 className="rounded-lg"
@@ -38,10 +38,10 @@ export default async function ({ params }: { params: { slug: string } }) {
               />
             </div>
             <div className="font-serif text-base text-gray-700 mt-12">
+              Photo Credit:{" "}
               <a href={data.coverLink} className="text-gray-700">
-                Image by rawpixel.com
-              </a>{" "}
-              on Freepik
+                Image Attribute
+              </a>
             </div>
             <div className="font-sans font-base text-sm text-gray-700 bg-gray-200 px-4 py-3 my-4 rounded-lg border-2 border-gray-300 leading-relaxed">
               <strong className="text-gray-800">Disclaimer</strong>: This blog

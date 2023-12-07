@@ -32,7 +32,7 @@ export default function PostCard({
     <>
       <div className="flex flex-col lg:w-[32%] rounded-lg shadow-md w-full h-full hover:shadow-xl transition ease-in-out duration-300">
         {thumbnail && (
-          <div className="h-60 relative">
+          <div className="aspect-video relative">
             <Image
               src={
                 thumbnail == "default"

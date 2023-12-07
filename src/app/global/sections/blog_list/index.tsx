@@ -4,7 +4,7 @@ import { client } from "@/app/api/contentful/client";
 export default async function BlogList() {
   const data = (await getData()).props.posts;
 
-  data.map((post: any, index: any) => console.log(post.fields));
+  data.map((post: any, index: any) => console.log(post.fields.date));
 
   return (
     <>

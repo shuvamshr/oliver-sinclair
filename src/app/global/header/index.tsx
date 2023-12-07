@@ -78,7 +78,7 @@ export default function Header() {
                   ? linkStyle["sidebar_active"]
                   : linkStyle["sidebar_inactive"]
               }`}
-              href="/case-studies"
+              href="/case-study"
               onClick={() => setToggle(!toggle)}
             >
               case studies
