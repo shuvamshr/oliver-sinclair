@@ -6,7 +6,7 @@ export default async function BlogList() {
 
   data.map((post: any, index: any) => console.log(post.fields.date));
 
-  const publicBlog = data.slice(1, 5);
+  const publicBlog = data;
 
   return (
     <>
@@ -15,7 +15,9 @@ export default async function BlogList() {
           <div className="flex flex-wrap justify-between gap-y-8">
             {publicBlog.map(
               (post: any, index: any) =>
-                post.fields.category === "blogs" && (
+                post.fields.category === "blogs" &&
+                post.fields.slug !=
+                  "unveiling-the-enigma-who-is-oliver-sinclair" && (
                   <PostCard
                     key={index}
                     slug={post.fields.slug}
