@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default async function ({ params }: { params: { slug: string } }) {
   const data = (await getData(params.slug)).props?.posts.fields;
-  console.log(data.content);
+  console.log(data.coverImage.fields.description);
 
   return (
     <>
@@ -38,18 +38,14 @@ export default async function ({ params }: { params: { slug: string } }) {
               />
             </div>
             <div className="font-serif text-base text-gray-700 mt-12">
-              <a
-                className="font-serif text-base text-gray-700"
-                href="https://www.freepik.com/free-photo/architecture-plan-blueprint-layout-work-concept_17199131.htm#query=design%20system&position=2&from_view=search&track=ais&uuid=f527950e-04b6-4799-809b-ecc6448c1152"
-              >
+              <a href={data.coverLink} className="text-gray-700">
                 Image by rawpixel.com
               </a>{" "}
               on Freepik
             </div>
             <div className="font-sans font-base text-sm text-gray-700 bg-gray-200 px-4 py-3 my-4 rounded-lg border-2 border-gray-300 leading-relaxed">
               <strong className="text-gray-800">Disclaimer</strong>: This blog
-              post, emphasizing the significance of design systems and Figma,
-              was generated for testing purposes only using OpenAI&apos;s
+              post was generated for testing purposes only using OpenAI&apos;s
               GPT-3.5. Readers are advised to verify information independently,
               as the content may not reflect real-world expertise, and it is not
               intended as professional advice. This disclaimer was also
