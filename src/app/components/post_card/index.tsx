@@ -39,7 +39,7 @@ export default function PostCard({
                   ? ThumbnailPlaceholderImg
                   : "https:" + thumbnail
               }
-              className="rounded-t-lg"
+              className="rounded-t-lg "
               alt="Card Thumbnail"
               fill={true}
             />

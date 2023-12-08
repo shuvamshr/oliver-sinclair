@@ -7,8 +7,11 @@ import RichText from "@/app/components/post/RichText";
 import PreFooter from "@/app/global/sections/prefooter";
 
 export default async function ({ params }: { params: { slug: string } }) {
+  console.log("==========");
   const data = (await getData(params.slug)).props?.posts.fields;
-  console.log(data.coverImage.fields.description);
+  console.log(data.content);
+  console.log("==========");
+  console.log(data.content.content[0].nodeType);
 
   return (
     <>
