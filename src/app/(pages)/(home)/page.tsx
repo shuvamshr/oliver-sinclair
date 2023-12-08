@@ -95,7 +95,7 @@ export default function Home() {
                   universities, and impactful events
                 </p>
               </div>
-              <div className="lg:flex lg:flex-wrap lg:justify-between lg:overflow-hidden flex flex-row overflow-x-auto snap-x gap-16">
+              <div className="lg:flex lg:flex-wrap lg:justify-between items-center lg:overflow-hidden flex flex-row overflow-x-auto snap-x gap-16">
                 <Image src={UTSLogo} className="snap-center" alt="" />
                 <Image src={AppleLogo} className="snap-center" alt="" />
                 <Image src={DolbyLogo} className="snap-center" alt="" />
