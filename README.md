@@ -1,7 +1,17 @@
 # Oliver Sinclair
 
-This is a project I've been working on, as a practice for frontend engineering, while also strategizing a business plan. Let's see how it goes.
+Welcome to the Oliver Sinclair repository! This project is a dynamic and modern website built with Next.js and TypeScript, leveraging the latest app router mechanism for seamless navigation. The stylish and responsive design is crafted using Tailwind CSS, ensuring a visually appealing and user-friendly experience.
 
-If you stumbled on this somehow, this wasn't meant to be seen yet. I just needed to make this repo public to make GitHub pages work.
+## Technology
 
-If you are still reading this, hit me up on LinkedIn, and I'd love to chat about if there's a potential for partnership or collaboration on this project.
+- **Next.js and TypeScript**: Built on the React Framework Next.js combined with the type safety of TypeScript for a robust and maintainable codebase.
+
+- **App Router Mechanism**: Uses the latest app router mechanism in Next.js to create smooth and efficient navigation within the application.
+
+- **Tailwind CSS Styling**: Sleek and responsive design with the help of Tailwind CSS, making the website visually appealing across various devices.
+
+- **Headless CMS - Contentful**: Content managed effortlessly with Contentful, a headless CMS that provides a flexible and scalable content management solution.
+
+## Visit the Website
+
+Browse through the website at https://oliver-sinclair.vercel.app/
