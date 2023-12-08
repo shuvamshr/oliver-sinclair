@@ -41,7 +41,7 @@ export default function Footer() {
                     services
                   </Link>
                   <Link
-                    href="/case-studies"
+                    href="/case-study"
                     className="font-serif font-regular text-base  text-gray-300 leading-none"
                   >
                     case studies
@@ -130,14 +130,14 @@ export default function Footer() {
           <div className="h-[1px] w-full bg-[#353535] "></div>
           <div className="flex lg:flex-row flex-col justify-between gap-10">
             <p className="font-sans font-regular text-base text-white leading-none">
-              Copyright 2023, Oliver Sinclair
+              Oliver Sinclair, 2023
             </p>
             <div className="flex flex-row gap-16">
               <p className="font-sans font-semibold text-base text-white leading-none">
-                Privacy Policy
+                <s>Privacy Policy</s>
               </p>
               <p className="font-sans font-semibold text-base text-white leading-none">
-                Terms & Conditions
+                <s>Terms & Conditions</s>
               </p>
             </div>
           </div>
