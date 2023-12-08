@@ -3,12 +3,14 @@
 import { useEffect } from "react";
 
 import Button from "../../components/button";
+import Note from "@/app/components/note";
 import Image from "next/image";
 import Link from "next/link";
 
 import Services from "@/app/global/sections/services";
 import BlogList from "@/app/global/sections/blog_list";
 import PreFooter from "@/app/global/sections/prefooter";
+import Credentials from "@/app/global/sections/credentials";
 
 import CreativityImg from "./assets/creativity.png";
 import GroupworkImg from "./assets/groupwork.png";
@@ -95,13 +97,8 @@ export default function Home() {
                   universities, and impactful events
                 </p>
               </div>
-              <div className="lg:flex lg:flex-wrap lg:justify-between items-center lg:overflow-hidden flex flex-row overflow-x-auto snap-x gap-16">
-                <Image src={UTSLogo} className="snap-center" alt="" />
-                <Image src={AppleLogo} className="snap-center" alt="" />
-                <Image src={DolbyLogo} className="snap-center" alt="" />
-                <Image src={LeedsLogo} className="snap-center" alt="" />
-                <Image src={OliverLogo} className="snap-center" alt="" />
-              </div>
+
+              <Credentials />
             </div>
           </div>
         </div>
