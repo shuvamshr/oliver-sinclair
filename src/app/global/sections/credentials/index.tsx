@@ -90,8 +90,8 @@ export default function Credentials() {
           onClick={() =>
             handleLogoClick(
               "Oliver Sinclair:",
-              "Just made this website fam",
-              ""
+              "Just put this logo in here to see how consistent it would look with established logos. I think it looks fine for now. Might update it later. I've linked the company logo page below.",
+              "https://www.linkedin.com/company/oliversinclair/"
             )
           }
         />
