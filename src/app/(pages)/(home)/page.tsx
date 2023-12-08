@@ -245,7 +245,7 @@ export default function Home() {
         </div>
       </div>
 
-      <BlogList />
+      <BlogList showAll={false} />
 
       <PreFooter />
     </>

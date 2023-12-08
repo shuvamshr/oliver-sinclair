@@ -20,7 +20,7 @@ export default async function Blogs() {
           </div>
         </div>
       </div>
-      <BlogList />
+      <BlogList showAll={true} />
       <PreFooter />
     </>
   );
