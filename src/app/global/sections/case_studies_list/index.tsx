@@ -39,7 +39,6 @@ async function getData() {
   return {
     props: {
       posts: response.items,
-      revalidate: 60,
     },
   };
 }
