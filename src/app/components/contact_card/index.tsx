@@ -5,6 +5,7 @@ import Image from "next/image";
 import LinkedInIcon from "./assets/linkedin-icon.svg";
 import EmailIcon from "./assets/email-icon.svg";
 import DownloadIcon from "./assets/download-icon.svg";
+import OliverRedIcon from "./assets/oliver-mini-red-icon.svg";
 import CloseIcon from "./assets/close.svg";
 
 import Link from "next/link";
@@ -63,6 +64,15 @@ export default function ContactCard() {
                     target="_blank"
                   >
                     Download my Resume
+                  </Link>
+                </li>
+                <li className="font-sans font-medium text-sm  text-gray-700 leading-none flex flex-row gap-4 items-center  hover:text-red-700">
+                  <Image src={OliverRedIcon} alt="" className="w-5 h-5" />
+                  <Link
+                    href="https://www.linkedin.com/company/oliversinclair/"
+                    target="_blank"
+                  >
+                    Follow Company Page
                   </Link>
                 </li>
               </ul>
