@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import OliverSinclairWhiteLogo from "./assets/oliver-white.svg";
 
@@ -27,21 +28,37 @@ export default function Footer() {
                   Browse Around
                 </h6>
                 <ul className="list-none flex flex-col gap-6">
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
+                  <Link
+                    href="/"
+                    className="font-serif font-regular text-base  text-gray-300 leading-none"
+                  >
                     home
-                  </li>
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
+                  </Link>
+                  <Link
+                    href="/services"
+                    className="font-serif font-regular text-base  text-gray-300 leading-none"
+                  >
                     services
-                  </li>
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
+                  </Link>
+                  <Link
+                    href="/case-studies"
+                    className="font-serif font-regular text-base  text-gray-300 leading-none"
+                  >
                     case studies
-                  </li>
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
+                  </Link>
+                  <Link
+                    href="/blogs"
+                    className="font-serif font-regular text-base  text-gray-300 leading-none"
+                  >
                     blogs
-                  </li>
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
-                    contact
-                  </li>
+                  </Link>
+                  <Link
+                    href="https://calendly.com/oliversinclair/30min"
+                    className="font-serif font-regular text-base  text-gray-300 leading-none"
+                    target="_blank"
+                  >
+                    get in touch
+                  </Link>
                 </ul>
               </div>
               <div className="flex flex-col gap-8">
@@ -49,21 +66,36 @@ export default function Footer() {
                   Services
                 </h6>
                 <ul className="list-none flex flex-col gap-6">
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
-                    UX Research
-                  </li>
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
+                  <Link
+                    href="services"
+                    className="font-serif font-regular text-base  text-gray-300 leading-none"
+                  >
+                    User Experience Research
+                  </Link>
+                  <Link
+                    href="services"
+                    className="font-serif font-regular text-base  text-gray-300 leading-none"
+                  >
+                    Digital Product Design
+                  </Link>
+                  <Link
+                    href="services"
+                    className="font-serif font-regular text-base  text-gray-300 leading-none"
+                  >
+                    Branding Guidelines
+                  </Link>
+                  <Link
+                    href="services"
+                    className="font-serif font-regular text-base  text-gray-300 leading-none"
+                  >
                     Design System
-                  </li>
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
-                    No Code Development
-                  </li>
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
-                    Product Design
-                  </li>
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
+                  </Link>
+                  <Link
+                    href="services"
+                    className="font-serif font-regular text-base underline text-gray-300 leading-none"
+                  >
                     View All
-                  </li>
+                  </Link>
                 </ul>
               </div>
               <div className="flex flex-col gap-8">
@@ -71,21 +103,26 @@ export default function Footer() {
                   Connect
                 </h6>
                 <ul className="list-none flex flex-col gap-6">
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
+                  <Link
+                    href="https://www.linkedin.com/in/shuvamshr/"
+                    target="_blank"
+                    className="font-serif font-regular text-base  text-gray-300 leading-none"
+                  >
                     LinkedIn
-                  </li>
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
-                    Facebook
-                  </li>
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
-                    Instagram
-                  </li>
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
-                    Twitter
-                  </li>
-                  <li className="font-serif font-regular text-base  text-gray-300 leading-none">
-                    Email
-                  </li>
+                  </Link>
+                  <Link
+                    href="mailto:shuvamshrestha408@gmail.com"
+                    className="font-serif font-regular text-base  text-gray-300 leading-none"
+                  >
+                    Email Address
+                  </Link>
+                  <Link
+                    href="https://drive.google.com/file/d/1gGlKu2rI66lMXYImDnfV2RVf11Gw0RC1/view"
+                    target="_blank"
+                    className="font-serif font-regular text-base  text-gray-300 leading-none"
+                  >
+                    Download Resume
+                  </Link>
                 </ul>
               </div>
             </div>
