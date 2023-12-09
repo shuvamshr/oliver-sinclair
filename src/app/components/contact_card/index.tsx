@@ -14,7 +14,11 @@ import Link from "next/link";
 //   // Add Style If Required
 // };
 
-export default function ContactCard() {
+interface ContactCardProps {
+  onClick: () => void;
+}
+
+const ContactCard: React.FC<ContactCardProps> = ({ onClick }) => {
   // const cardClass = ``;
   return (
     <>
@@ -25,7 +29,13 @@ export default function ContactCard() {
               <h5 className="font-sans font-semibold text-xl text-gray-800 leading-normal">
                 Reach Out To Me
               </h5>
-              <Image src={CloseIcon} alt="" className="w-5 h-5" />
+
+              <Image
+                src={CloseIcon}
+                alt=""
+                className="w-5 h-5 cursor-pointer hover:scale-150 transition ease-in-out duration-150"
+                onClick={onClick}
+              />
             </div>
 
             <p className="font-serif font-regular text-base  text-gray-700 leading-normal">
@@ -82,4 +92,6 @@ export default function ContactCard() {
       </div>
     </>
   );
-}
+};
+
+export default ContactCard;
