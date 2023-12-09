@@ -16,19 +16,19 @@ export default function Credentials() {
     "undescribed",
     "unlinked",
   ]);
+  const [activeLogo, setActiveLogo] = useState("");
 
   const handleLogoClick = (
     title: string,
     description: string,
     link: string
   ) => {
-    // Check if the clicked logo is the same as the currently selected one
     if (selectedLogo[0] === title) {
-      // If yes, clear the selection
       setSelectedLogo(["untitled", "undescribed", "unlinked"]);
+      setActiveLogo("");
     } else {
-      // If no, update the selection
       setSelectedLogo([title, description, link]);
+      setActiveLogo(title);
     }
   };
 
@@ -37,7 +37,11 @@ export default function Credentials() {
       <div className="lg:flex lg:flex-wrap lg:justify-between items-center lg:overflow-hidden flex flex-row overflow-x-auto snap-x gap-16">
         <Image
           src={UTSLogo}
-          className="snap-center hover:opacity-50 transition ease-in-out duration-200"
+          className={`snap-center hover:opacity-50 transition ease-in-out duration-200 ${
+            activeLogo === "University of Technology Sydney:"
+              ? "opacity-50"
+              : ""
+          }`}
           alt=""
           onClick={() =>
             handleLogoClick(
@@ -49,7 +53,9 @@ export default function Credentials() {
         />
         <Image
           src={AppleLogo}
-          className="snap-center hover:opacity-50 transition ease-in-out duration-200"
+          className={`snap-center hover:opacity-50 transition ease-in-out duration-200 ${
+            activeLogo === "Apple Foundation Program:" ? "opacity-50" : ""
+          }`}
           alt=""
           onClick={() =>
             handleLogoClick(
@@ -61,7 +67,9 @@ export default function Credentials() {
         />
         <Image
           src={DolbyLogo}
-          className="snap-center hover:opacity-50 transition ease-in-out duration-200"
+          className={`snap-center hover:opacity-50 transition ease-in-out duration-200 ${
+            activeLogo === "Dolby.IO Hackathon:" ? "opacity-50" : ""
+          }`}
           alt=""
           onClick={() =>
             handleLogoClick(
@@ -73,7 +81,9 @@ export default function Credentials() {
         />
         <Image
           src={LeedsLogo}
-          className="snap-center hover:opacity-50 transition ease-in-out duration-200"
+          className={`snap-center hover:opacity-50 transition ease-in-out duration-200 ${
+            activeLogo === "Leeds Beckett University:" ? "opacity-50" : ""
+          }`}
           alt=""
           onClick={() =>
             handleLogoClick(
@@ -85,7 +95,9 @@ export default function Credentials() {
         />
         <Image
           src={OliverLogo}
-          className="snap-center hover:opacity-50 transition ease-in-out duration-200"
+          className={`snap-center hover:opacity-50 transition ease-in-out duration-200 ${
+            activeLogo === "Oliver Sinclair:" ? "opacity-50" : ""
+          }`}
           alt=""
           onClick={() =>
             handleLogoClick(
