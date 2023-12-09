@@ -2,6 +2,7 @@ import { client } from "@/app/api/contentful/client";
 
 import Image from "next/image";
 import Link from "next/link";
+import { format } from "date-fns";
 
 import RichText from "@/app/components/post/RichText";
 import PreFooter from "@/app/global/sections/prefooter";
@@ -9,9 +10,15 @@ import PreFooter from "@/app/global/sections/prefooter";
 export default async function ({ params }: { params: { slug: string } }) {
   console.log("==========");
   const data = (await getData(params.slug)).props?.posts.fields;
-  console.log(data.content);
+  console.log(data.date);
   console.log("==========");
   console.log(data.content.content[0].nodeType);
+
+  const originalDateString = data.date;
+  const originalDate = new Date(originalDateString);
+
+  // Format date using date-fns
+  const formattedDate = format(originalDate, "MMMM dd, yyyy");
 
   return (
     <>
@@ -29,28 +36,32 @@ export default async function ({ params }: { params: { slug: string } }) {
                   </p>
                 ))}
               </div>
-              <h1 className="font-serif font-semibold text-3xl lg:text-4xl text-gray-800 leading-normal">
+              <h1 className="font-serif font-semibold text-3xl lg:text-4xl text-gray-800 lg:leading-snug leading-normal">
                 {data.title}
               </h1>
-              <h6 className="font-sans font-medium text-base lg:text-xl text-gray-700 leading-normal">
+              <h6 className="font-sans font-medium text-base lg:text-xl text-gray-700 leading-snug">
                 {data.excerpt}
               </h6>
             </div>
-            <div className="aspect-video relative my-2">
-              <Image
-                src={"https:" + data.coverImage.fields.file.url}
-                className="rounded-lg"
-                alt="Card Thumbnail"
-                fill={true}
-              />
+
+            <div className="flex flex-col gap-4 my-10">
+              <div className="aspect-video relative">
+                <Image
+                  src={"https:" + data.coverImage.fields.file.url}
+                  className="rounded-lg m-0"
+                  alt="Card Thumbnail"
+                  fill={true}
+                />
+              </div>
+              <div className="font-serif text-base text-gray-700 ">
+                Photo Credit:{" "}
+                <a href={data.coverLink} className="text-gray-700">
+                  Image Attribute
+                </a>
+              </div>
             </div>
-            <div className="font-serif text-base text-gray-700 mt-12">
-              Photo Credit:{" "}
-              <a href={data.coverLink} className="text-gray-700">
-                Image Attribute
-              </a>
-            </div>
-            <div className="font-sans font-base text-sm text-gray-700 bg-gray-200 px-4 py-3 my-4 rounded-lg border-2 border-gray-300 leading-relaxed">
+
+            <div className="font-sans font-base text-sm text-gray-700 bg-gray-200 px-4 py-3 my-1 rounded-lg border-2 border-gray-300 leading-relaxed">
               <strong className="text-gray-800">Disclaimer</strong>: This blog
               post was generated for testing purposes only using OpenAI&apos;s
               GPT-3.5. Readers are advised to verify information independently,
