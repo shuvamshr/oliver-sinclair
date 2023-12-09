@@ -15,7 +15,8 @@ import MenuIcon from "./assets/menu.svg";
 
 const linkStyle = {
   active: "font-sans font-semibold text-sm text-gray-800 leading-none",
-  inactive: "font-serif font-regular text-base text-gray-700 leading-none",
+  inactive:
+    "font-serif font-regular text-base text-gray-700 leading-none transition ease-in-out duration-300 hover:font-sans hover:font-semibold hover:text-sm hover:text-gray-800",
   sidebar_active: "font-sans font-semibold text-lg text-gray-800",
   sidebar_inactive: "font-serif font-regular text-lg text-gray-700",
 };
@@ -31,9 +32,8 @@ export default function Header() {
         className={`flex fixed z-50 justify-center align-middle pt-32 px-6 w-full h-full bg-black/50  transition ease-out duration-200 ${
           conToggle ? "hidden" : "block"
         }`}
-        onClick={() => setConToggle(!conToggle)}
       >
-        <ContactCard />
+        <ContactCard onClick={() => setConToggle(!conToggle)} />
       </div>
       <div
         className={`container-fluid bg-white px-6 z-40 h-screen w-full fixed transition ease-out duration-200  ${
