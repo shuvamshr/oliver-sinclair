@@ -67,31 +67,31 @@ export default function Footer() {
                 </h6>
                 <ul className="list-none flex flex-col gap-6">
                   <Link
-                    href="services"
+                    href="/services"
                     className="font-serif font-regular text-base  text-gray-300 leading-none"
                   >
                     User Experience Research
                   </Link>
                   <Link
-                    href="services"
+                    href="/services"
                     className="font-serif font-regular text-base  text-gray-300 leading-none"
                   >
                     Digital Product Design
                   </Link>
                   <Link
-                    href="services"
+                    href="/services"
                     className="font-serif font-regular text-base  text-gray-300 leading-none"
                   >
                     Branding Guidelines
                   </Link>
                   <Link
-                    href="services"
+                    href="/services"
                     className="font-serif font-regular text-base  text-gray-300 leading-none"
                   >
                     Design System
                   </Link>
                   <Link
-                    href="services"
+                    href="/services"
                     className="font-serif font-regular text-base underline text-gray-300 leading-none"
                   >
                     View All

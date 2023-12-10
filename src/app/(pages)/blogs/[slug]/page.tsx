@@ -8,12 +8,7 @@ import RichText from "@/app/components/post/RichText";
 import PreFooter from "@/app/global/sections/prefooter";
 
 export default async function ({ params }: { params: { slug: string } }) {
-  console.log("==========");
   const data = (await getData(params.slug)).props?.posts.fields;
-  console.log(data.date);
-  console.log("==========");
-  console.log(data.authors[0].fields.picture.fields.file.url);
-  console.log(data.authors[1].fields.name);
 
   const originalDateString = data.date;
   const originalDate = new Date(originalDateString);
