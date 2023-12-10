@@ -44,7 +44,7 @@ export default async function ({ params }: { params: { slug: string } }) {
                 {data.excerpt}
               </h6>
               {/* <div className="w-full h-[1px] bg-gray-200"></div> */}
-              <div className="flex lg:flex-row flex-col lg:items-center gap-4 my-4 border-y-[1px] border-gray-200 py-6">
+              <div className="flex lg:flex-row flex-col lg:items-center lg:gap-4 gap-3 my-4 border-y-[1px] border-gray-200 lg:py-6 py-5">
                 <div className="flex flex-row gap-2">
                   {data.authors.map((value: any, index: any) => (
                     <>
