@@ -10,6 +10,25 @@ import DolbyLogo from "./assets/dolby.svg";
 import LeedsLogo from "./assets/leeds.svg";
 import OliverLogo from "./assets/oliver-white.svg";
 
+import CredentialData from "./assets/credentials.json";
+
+const getLogoByValue = (logoValue: any) => {
+  switch (logoValue) {
+    case "UTSLogo":
+      return UTSLogo;
+    case "AppleLogo":
+      return AppleLogo;
+    case "DolbyLogo":
+      return DolbyLogo;
+    case "LeedsLogo":
+      return LeedsLogo;
+    case "OliverLogo":
+      return OliverLogo;
+    default:
+      return OliverLogo; // You might want to handle the default case appropriately
+  }
+};
+
 export default function Credentials() {
   const [selectedLogo, setSelectedLogo] = useState([
     "untitled",
@@ -17,6 +36,9 @@ export default function Credentials() {
     "unlinked",
   ]);
   const [activeLogo, setActiveLogo] = useState("");
+
+  const logoStyle =
+    "snap-center hover:opacity-50 transition ease-in-out duration-200 cursor:pointer";
 
   const handleLogoClick = (
     title: string,
@@ -35,9 +57,22 @@ export default function Credentials() {
   return (
     <>
       <div className="lg:flex lg:flex-wrap lg:justify-between items-center lg:overflow-hidden flex flex-row overflow-x-auto snap-x gap-16">
-        <Image
+        {CredentialData.map((value, index) => (
+          <Image
+            src={getLogoByValue(value.logo)}
+            className={`${logoStyle} ${
+              activeLogo === value.title ? "opacity-50" : ""
+            }`}
+            alt=""
+            onClick={() =>
+              handleLogoClick(value.title, value.description, value.link)
+            }
+          />
+        ))}
+
+        {/* <Image
           src={UTSLogo}
-          className={`snap-center hover:opacity-50 transition ease-in-out duration-200 ${
+          className={`${logoStyle} ${
             activeLogo === "University of Technology Sydney:"
               ? "opacity-50"
               : ""
@@ -53,7 +88,7 @@ export default function Credentials() {
         />
         <Image
           src={AppleLogo}
-          className={`snap-center hover:opacity-50 transition ease-in-out duration-200 ${
+          className={`${logoStyle} ${
             activeLogo === "Apple Foundation Program:" ? "opacity-50" : ""
           }`}
           alt=""
@@ -67,7 +102,7 @@ export default function Credentials() {
         />
         <Image
           src={DolbyLogo}
-          className={`snap-center hover:opacity-50 transition ease-in-out duration-200 ${
+          className={`${logoStyle} ${
             activeLogo === "Dolby.IO Hackathon:" ? "opacity-50" : ""
           }`}
           alt=""
@@ -81,7 +116,7 @@ export default function Credentials() {
         />
         <Image
           src={LeedsLogo}
-          className={`snap-center hover:opacity-50 transition ease-in-out duration-200 ${
+          className={`${logoStyle} ${
             activeLogo === "Leeds Beckett University:" ? "opacity-50" : ""
           }`}
           alt=""
@@ -95,7 +130,7 @@ export default function Credentials() {
         />
         <Image
           src={OliverLogo}
-          className={`snap-center hover:opacity-50 transition ease-in-out duration-200 ${
+          className={`${logoStyle} ${
             activeLogo === "Oliver Sinclair:" ? "opacity-50" : ""
           }`}
           alt=""
@@ -106,7 +141,7 @@ export default function Credentials() {
               "https://www.linkedin.com/company/oliversinclair/"
             )
           }
-        />
+        /> */}
       </div>
       <div
         className={`transition-all duration-200 ease-in ${
