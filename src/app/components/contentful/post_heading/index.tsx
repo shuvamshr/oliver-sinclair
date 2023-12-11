@@ -1,5 +1,6 @@
 import { format } from "date-fns";
 import Image from "next/image";
+import Link from "next/link";
 
 function FormatDate(date: any) {
   const originalDateString = date;
@@ -73,7 +74,12 @@ export default function PostHeading({
               By{" "}
               {authors.map((value: any, index: any) => (
                 <span key={index}>
-                  {value.fields.name}
+                  <Link
+                    href={value.fields.link}
+                    className="text-gray-800 font-semibold text-sm no-underline hover:underline"
+                  >
+                    {value.fields.name}
+                  </Link>
                   {index < authors.length - 1 && " & "}{" "}
                 </span>
               ))}{" "}
@@ -106,9 +112,9 @@ export default function PostHeading({
                 key={index}
                 className="font-sans font-base text-sm text-gray-700 bg-gray-200 px-4 py-3 rounded-lg border-2 border-gray-300 leading-relaxed"
               >
-                <strong className="text-gray-800">Disclaimer</strong>: This blog
-                post was generated for testing purposes only using OpenAI&apos;s
-                GPT-3.5. Readers are advised to verify information
+                <strong className="text-gray-800">Disclaimer</strong>: Parts of
+                this post was generated using OpenAI&apos;s GPT-3.5, mostly for
+                testing purposes. Readers are advised to verify information
                 independently, as the content may not reflect real-world
                 expertise, and it is not intended as professional advice. This
                 disclaimer was also generated via ChatGPT.
