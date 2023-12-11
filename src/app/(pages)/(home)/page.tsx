@@ -43,7 +43,9 @@ export default function Home() {
                 <h1 className="font-sans font-semibold text-3xl lg:text-4xl text-gray-800 lg:leading-normal leading-relaxed">
                   Crafting Experiences <br className="lg:block hidden" />
                   to Captivate.{" "}
-                  <span className="text-red-900 font-bold italic">No Cap.</span>
+                  <span className="text-red-900 font-bold italic animate-pulse">
+                    No Cap.
+                  </span>
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-lg text-gray-700 lg:leading-normal leading-relaxed">
                   Embark on a digital journey where captivation knows no bounds.
