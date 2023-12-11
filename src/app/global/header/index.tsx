@@ -114,7 +114,7 @@ export default function Header() {
               title="Who's Oliver"
               type="primary"
               size="large"
-              link="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+              link="/blogs/unveiling-the-enigma-who-is-oliver-sinclair"
               newTab={true}
             />
           </div>
@@ -191,7 +191,7 @@ export default function Header() {
               title="Who's Oliver"
               type="primary"
               size="medium"
-              link="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+              link="/blogs/unveiling-the-enigma-who-is-oliver-sinclair"
               newTab={true}
             />
           </div>
