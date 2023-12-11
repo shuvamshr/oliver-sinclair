@@ -38,7 +38,7 @@ export default function Credentials() {
   const [activeLogo, setActiveLogo] = useState("");
 
   const logoStyle =
-    "snap-center hover:opacity-50 transition ease-in-out duration-200 cursor:pointer";
+    "snap-center hover:opacity-50 transition ease-in-out duration-200 cursor-pointer";
 
   const handleLogoClick = (
     title: string,
@@ -62,7 +62,7 @@ export default function Credentials() {
             key={index}
             src={getLogoByValue(value.logo)}
             className={`${logoStyle} ${
-              activeLogo === value.title ? "opacity-50" : ""
+              activeLogo === value.title ? "animate-pulse" : ""
             }`}
             alt=""
             onClick={() =>
@@ -70,79 +70,6 @@ export default function Credentials() {
             }
           />
         ))}
-
-        {/* <Image
-          src={UTSLogo}
-          className={`${logoStyle} ${
-            activeLogo === "University of Technology Sydney:"
-              ? "opacity-50"
-              : ""
-          }`}
-          alt=""
-          onClick={() =>
-            handleLogoClick(
-              "University of Technology Sydney:",
-              "Completed Master of Interaction Degree and garnered expertise in product design process using human-centered research and study",
-              "https://www.uts.edu.au/study/find-a-course/master-interaction-design-extension"
-            )
-          }
-        />
-        <Image
-          src={AppleLogo}
-          className={`${logoStyle} ${
-            activeLogo === "Apple Foundation Program:" ? "opacity-50" : ""
-          }`}
-          alt=""
-          onClick={() =>
-            handleLogoClick(
-              "Apple Foundation Program:",
-              "Completed a highly competitive 4 week program hosted by Apple and University of Technology Sydney",
-              "https://www.linkedin.com/posts/shuvamshr_applefoundationprogram-productdesign-iosdevelopment-activity-7039541695239127040-F32l?utm_source=share&utm_medium=member_desktop"
-            )
-          }
-        />
-        <Image
-          src={DolbyLogo}
-          className={`${logoStyle} ${
-            activeLogo === "Dolby.IO Hackathon:" ? "opacity-50" : ""
-          }`}
-          alt=""
-          onClick={() =>
-            handleLogoClick(
-              "Dolby.IO Hackathon:",
-              "Won first place prize for a two day hackathon to develop a platform for social good using Dolby's Conference API",
-              "https://www.linkedin.com/posts/shuvamshr_dolby-hackathon-activity-7081946350925352960-Bbaw?utm_source=share&utm_medium=member_desktop"
-            )
-          }
-        />
-        <Image
-          src={LeedsLogo}
-          className={`${logoStyle} ${
-            activeLogo === "Leeds Beckett University:" ? "opacity-50" : ""
-          }`}
-          alt=""
-          onClick={() =>
-            handleLogoClick(
-              "Leeds Beckett University:",
-              "Completed Bachelor of Computer Science and gained advanced software engineering and management knowledge",
-              "https://www.leedsbeckett.ac.uk/courses/computer-science-bsc/"
-            )
-          }
-        />
-        <Image
-          src={OliverLogo}
-          className={`${logoStyle} ${
-            activeLogo === "Oliver Sinclair:" ? "opacity-50" : ""
-          }`}
-          alt=""
-          onClick={() =>
-            handleLogoClick(
-              "Oliver Sinclair:",
-              "Just put this logo in here to see how consistent it would look with established logos. I think it looks fine for now. Might update it later. I've linked the company logo page below.",
-              "https://www.linkedin.com/company/oliversinclair/"
-            )
-          }
-        /> */}
       </div>
       <div
         className={`transition-all duration-200 ease-in ${
