@@ -24,7 +24,7 @@ export default async function ({ params }: { params: { slug: string } }) {
               coverImgLink={data.coverLink}
             />
 
-            <div className="font-sans text-gray-800 mt-2">
+            <div className="font-sans mt-2">
               <RichText content={data.content} />
             </div>
 

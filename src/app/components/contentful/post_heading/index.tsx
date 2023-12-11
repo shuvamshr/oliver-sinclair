@@ -110,11 +110,12 @@ export default function PostHeading({
             value.fields.name === "ChatGPT" && (
               <div
                 key={index}
-                className="font-sans font-base text-sm text-gray-700 bg-gray-200 px-4 py-3 rounded-lg border-2 border-gray-300 leading-relaxed"
+                className="font-sans font-base text-sm text-gray-700 bg-gray-200 px-5 py-4 rounded-lg border-2 border-gray-300 leading-relaxed"
               >
                 <strong className="text-gray-800">Disclaimer</strong>: Parts of
                 this post was generated using OpenAI&apos;s GPT-3.5, mostly for
-                testing purposes. Readers are advised to verify information
+                testing purposes, or the human author may not have a background
+                in content writing. Readers are advised to verify information
                 independently, as the content may not reflect real-world
                 expertise, and it is not intended as professional advice. This
                 disclaimer was also generated via ChatGPT.
