@@ -41,22 +41,7 @@ export default function Header() {
         }`}
       >
         <div className="container mx-auto h-full flex flex-col gap-10">
-          <div className="flex flex-row flex-start h-20 items-center justify-between  border-b-[0.5px] border-gray-200">
-            <Link href="/">
-              <Image
-                src={OliverSinclairLogo}
-                alt="Oliver Sinclair Logo"
-                className="lg:w-[255px] w-[210px]"
-              />
-            </Link>
-
-            <Image
-              src={CloseIcon}
-              alt="Close Icon"
-              onClick={() => setToggle(!toggle)}
-            />
-          </div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 pt-28">
             <Link
               className={`${
                 pathname === "/"
@@ -212,9 +197,9 @@ export default function Header() {
           </div>
 
           <Image
-            src={MenuIcon}
+            src={toggle ? MenuIcon : CloseIcon}
             alt="Menu Icon"
-            className="lg:hidden"
+            className="lg:hidden transition ease-in-out duration-100"
             onClick={() => setToggle(!toggle)}
           />
         </div>
