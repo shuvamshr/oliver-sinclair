@@ -59,6 +59,7 @@ export default function Credentials() {
       <div className="lg:flex lg:flex-wrap lg:justify-between items-center lg:overflow-hidden flex flex-row overflow-x-auto snap-x gap-16">
         {CredentialData.map((value, index) => (
           <Image
+            key={index}
             src={getLogoByValue(value.logo)}
             className={`${logoStyle} ${
               activeLogo === value.title ? "opacity-50" : ""
