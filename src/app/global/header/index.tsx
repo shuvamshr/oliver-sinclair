@@ -127,7 +127,7 @@ export default function Header() {
             <Image
               src={OliverSinclairBeta}
               alt="Oliver Sinclair Logo"
-              className="lg:w-[270px] w-[250px]"
+              className="lg:w-[270px] w-[260px]"
             />
           </Link>
           <div className="lg:flex lg:flex-row hidden items-center gap-10">
