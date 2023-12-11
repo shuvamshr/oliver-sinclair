@@ -10,6 +10,7 @@ import ContactCard from "@/app/components/contact_card";
 import Image from "next/image";
 
 import OliverSinclairLogo from "./assets/oliver-color.svg";
+import OliverSinclairBeta from "./assets/oliver-sinclair-beta.svg";
 import CloseIcon from "./assets/close.svg";
 import MenuIcon from "./assets/menu.svg";
 
@@ -124,9 +125,9 @@ export default function Header() {
         <div className="container mx-auto flex flex-row items-center justify-between">
           <Link href="/">
             <Image
-              src={OliverSinclairLogo}
+              src={OliverSinclairBeta}
               alt="Oliver Sinclair Logo"
-              className="lg:w-[255px] w-[210px]"
+              className="lg:w-[270px] w-[250px]"
             />
           </Link>
           <div className="lg:flex lg:flex-row hidden items-center gap-10">
