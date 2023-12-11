@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { format } from "date-fns";
 
-import RichText from "@/app/components/post/RichText";
+import RichText from "@/app/components/contentful/richtext";
 import PreFooter from "@/app/global/sections/prefooter";
 
 export default async function ({ params }: { params: { slug: string } }) {

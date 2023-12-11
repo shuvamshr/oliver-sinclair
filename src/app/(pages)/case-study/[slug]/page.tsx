@@ -1,5 +1,5 @@
 import { client } from "@/app/api/contentful/client";
-import RichText from "@/app/components/post/RichText";
+import RichText from "@/app/components/contentful/richtext";
 import PreFooter from "@/app/global/sections/prefooter";
 import Image from "next/image";
 
