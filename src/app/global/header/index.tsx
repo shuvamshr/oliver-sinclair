@@ -56,7 +56,7 @@ export default function Header() {
 
             <Link
               className={`${
-                pathname === "/services"
+                pathname.startsWith("/services/") || pathname === "/services"
                   ? linkStyle["sidebar_active"]
                   : linkStyle["sidebar_inactive"]
               }`}
