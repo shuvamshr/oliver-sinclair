@@ -98,7 +98,7 @@ export default async function ({ params }: { params: { slug: string } }) {
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
                   Empower your aspirations, seize opportunities, and
-                  thrive—experience the journey with Oliver Sinclair's{" "}
+                  thrive—experience the journey with Oliver Sinclair&apos;s{" "}
                   {data.title} package.
                 </p>
               </div>
