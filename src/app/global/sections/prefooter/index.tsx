@@ -25,13 +25,13 @@ export default function PreFooter() {
               <Button
                 title="Who’s Oliver?"
                 display="block"
-                link="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+                link="/blogs/unveiling-the-enigma-who-is-oliver-sinclair"
               />
               <Button
                 title="View Service Bundles"
                 type="secondary"
                 display="block"
-                link="services"
+                link="/services"
               />
             </div>
           </div>

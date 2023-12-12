@@ -114,7 +114,7 @@ export default async function ({ params }: { params: { slug: string } }) {
                   title="View Other Services"
                   type="secondary"
                   display="block"
-                  link="services"
+                  link="/services"
                 />
               </div>
             </div>
