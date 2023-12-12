@@ -77,6 +77,7 @@ export default function PostHeading({
                   <Link
                     href={value.fields.link}
                     className="text-gray-800 font-semibold text-sm no-underline hover:underline"
+                    target="_blank"
                   >
                     {value.fields.name}
                   </Link>

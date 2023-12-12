@@ -32,7 +32,7 @@ export default function PostCard({
     <>
       <div className="flex flex-col lg:w-[32%] rounded-lg shadow-md w-full h-full hover:shadow-xl transition ease-in-out duration-300">
         {thumbnail && (
-          <div className="aspect-video relative">
+          <Link href={`/${category}/${slug}`} className="aspect-video relative">
             <Image
               src={
                 thumbnail == "default"
@@ -43,7 +43,7 @@ export default function PostCard({
               alt="Card Thumbnail"
               fill={true}
             />
-          </div>
+          </Link>
         )}
         <div className="flex flex-col gap-8 lg:px-8 lg:py-10 px-6 py-8">
           <div className="flex flex-col gap-6">
