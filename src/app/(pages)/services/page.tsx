@@ -44,7 +44,7 @@ export default function Index() {
                   title="Get in Touch"
                   type="secondary"
                   display="block"
-                  link="https://calendly.com/oliversinclair/30min"
+                  link="https://www.linkedin.com/in/shuvam-s-976186184/"
                   newTab={true}
                 />
               </div>
