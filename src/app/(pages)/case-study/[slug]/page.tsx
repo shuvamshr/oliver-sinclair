@@ -6,6 +6,21 @@ import RichText from "@/app/components/contentful/richtext";
 import PostHeading from "@/app/components/contentful/post_heading";
 import PreFooter from "@/app/global/sections/prefooter";
 
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const data = (await getData(params.slug)).props?.posts.fields;
+  return {
+    title: data.title,
+    description: data.excerpt,
+    openGraph: {
+      images: "https:" + data.coverImage.fields.file.url,
+    },
+  };
+}
+
 export default async function ({ params }: { params: { slug: string } }) {
   const data = (await getData(params.slug)).props?.posts.fields;
 
