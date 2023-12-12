@@ -108,7 +108,7 @@ export default function Header() {
               title="Get in Touch"
               type="secondary"
               size="large"
-              link="https://calendly.com/oliversinclair/30min"
+              link="https://www.linkedin.com/in/shuvam-s-976186184/"
               newTab={true}
             />
             <Button
@@ -116,7 +116,6 @@ export default function Header() {
               type="primary"
               size="large"
               link="/blogs/unveiling-the-enigma-who-is-oliver-sinclair"
-              newTab={true}
             />
           </div>
         </div>
@@ -141,11 +140,11 @@ export default function Header() {
             </Link>
 
             <Link
-              className={`${
-                pathname === "/services"
+              className={
+                pathname.startsWith("/services/") || pathname === "/services"
                   ? linkStyle["active"]
                   : linkStyle["inactive"]
-              }`}
+              }
               href="/services"
             >
               services
@@ -185,7 +184,7 @@ export default function Header() {
               title="Get in Touch"
               type="secondary"
               size="medium"
-              link="https://calendly.com/oliversinclair/30min"
+              link="https://www.linkedin.com/in/shuvam-s-976186184/"
               newTab={true}
             />
             <Button
@@ -193,7 +192,6 @@ export default function Header() {
               type="primary"
               size="medium"
               link="/blogs/unveiling-the-enigma-who-is-oliver-sinclair"
-              newTab={true}
             />
           </div>
 
