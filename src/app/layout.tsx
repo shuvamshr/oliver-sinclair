@@ -19,7 +19,11 @@ const vollkorn = Vollkorn({
 
 export const metadata: Metadata = {
   title: "Oliver Sinclair",
-  description: "A Project by Shuvam Shrestha",
+  description: "Crafting Experiences To Captivate. No Cap.",
+  openGraph: {
+    images:
+      "https://images.ctfassets.net/lgr8vbujxrx3/5MdW0dHYYGUYKLY3qm1fyl/81a533bc6b9b15c55e4e9320638ebf14/Group_2.jpg",
+  },
 };
 
 export default function RootLayout({
