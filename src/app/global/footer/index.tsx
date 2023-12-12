@@ -70,31 +70,31 @@ export default function Footer() {
                     href="/services"
                     className="font-serif font-regular text-base  text-gray-300 leading-none"
                   >
-                    User Experience Research
+                    user experience research
                   </Link>
                   <Link
                     href="/services"
                     className="font-serif font-regular text-base  text-gray-300 leading-none"
                   >
-                    Digital Product Design
+                    digital product design
                   </Link>
                   <Link
                     href="/services"
                     className="font-serif font-regular text-base  text-gray-300 leading-none"
                   >
-                    Branding Guidelines
+                    branding guidelines
                   </Link>
                   <Link
                     href="/services"
                     className="font-serif font-regular text-base  text-gray-300 leading-none"
                   >
-                    Design System
+                    design system
                   </Link>
                   <Link
                     href="/services"
                     className="font-serif font-regular text-base underline text-gray-300 leading-none"
                   >
-                    View All
+                    view all
                   </Link>
                 </ul>
               </div>
@@ -108,20 +108,20 @@ export default function Footer() {
                     target="_blank"
                     className="font-serif font-regular text-base  text-gray-300 leading-none"
                   >
-                    LinkedIn
+                    linkedin
                   </Link>
                   <Link
                     href="mailto:shuvamshrestha408@gmail.com"
                     className="font-serif font-regular text-base  text-gray-300 leading-none"
                   >
-                    Email Address
+                    email address
                   </Link>
                   <Link
                     href="https://drive.google.com/file/d/1gGlKu2rI66lMXYImDnfV2RVf11Gw0RC1/view"
                     target="_blank"
                     className="font-serif font-regular text-base  text-gray-300 leading-none"
                   >
-                    Download Resume
+                    download resume
                   </Link>
                 </ul>
               </div>
