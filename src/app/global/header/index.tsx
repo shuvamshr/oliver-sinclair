@@ -9,7 +9,6 @@ import ContactCard from "@/app/components/contact_card";
 
 import Image from "next/image";
 
-import OliverSinclairLogo from "./assets/oliver-color.svg";
 import OliverSinclairBeta from "./assets/oliver-sinclair-beta.svg";
 import CloseIcon from "./assets/close.svg";
 import MenuIcon from "./assets/menu.svg";
