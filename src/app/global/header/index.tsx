@@ -26,14 +26,25 @@ export default function Header() {
   const [conToggle, setConToggle] = useState(true);
   const pathname = usePathname();
 
+  const backgroundCloseToggle = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (event.target === event.currentTarget) {
+      setConToggle(!conToggle);
+    }
+  };
+
   return (
     <>
       <div
         className={`flex fixed z-50 justify-center align-middle pt-32 px-6 w-full h-full bg-black/50  transition ease-out duration-200 ${
           conToggle ? "hidden" : "block"
         }`}
+        onClick={backgroundCloseToggle}
       >
-        <ContactCard onClick={() => setConToggle(!conToggle)} />
+        <ContactCard
+          onClick={() => {
+            setConToggle(!conToggle);
+          }}
+        />
       </div>
       <div
         className={`container-fluid bg-white px-6 z-40 h-screen w-full fixed transition ease-out duration-200  ${
