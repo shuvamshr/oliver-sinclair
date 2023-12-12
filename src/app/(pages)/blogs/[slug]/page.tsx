@@ -7,17 +7,30 @@ import RichText from "@/app/components/contentful/richtext";
 import PostHeading from "@/app/components/contentful/post_heading";
 import PreFooter from "@/app/global/sections/prefooter";
 
-export const metadata: Metadata = {
-  title: "Default Title",
-  description: "Default Description",
-};
+// export const metadata: Metadata = {
+//   title: "Default Title",
+//   description: "Default Description",
+//   openGraph: "",
+// };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const data = (await getData(params.slug)).props?.posts.fields;
+  return {
+    title: data.title,
+    description: data.excerpt,
+    image: data.coverImage.fields.file.url,
+  };
+}
 
 export default async function ({ params }: { params: { slug: string } }) {
   const data = (await getData(params.slug)).props?.posts.fields;
 
-  // Update metadata dynamically with data properties
-  metadata.title = data.title || "Default Title";
-  metadata.description = data.excerpt || "Default Description";
+  // metadata.title = data.title || "Default Title";
+  // metadata.description = data.excerpt || "Default Description";
 
   return (
     <>
