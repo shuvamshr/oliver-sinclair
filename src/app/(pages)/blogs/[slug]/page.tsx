@@ -23,7 +23,7 @@ export async function generateMetadata({
     title: data.title,
     description: data.excerpt,
     openGraph: {
-      images: ["https:", "data.coverImage.fields.file.url"],
+      images: "https:" + data.coverImage.fields.file.url,
     },
   };
 }
