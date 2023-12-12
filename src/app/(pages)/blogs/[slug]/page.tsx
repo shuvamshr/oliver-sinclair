@@ -1,4 +1,5 @@
 import { client } from "@/app/api/contentful/client";
+import type { Metadata } from "next";
 
 import Link from "next/link";
 
@@ -6,8 +7,17 @@ import RichText from "@/app/components/contentful/richtext";
 import PostHeading from "@/app/components/contentful/post_heading";
 import PreFooter from "@/app/global/sections/prefooter";
 
+export const metadata: Metadata = {
+  title: "Default Title",
+  description: "Default Description",
+};
+
 export default async function ({ params }: { params: { slug: string } }) {
   const data = (await getData(params.slug)).props?.posts.fields;
+
+  // Update metadata dynamically with data properties
+  metadata.title = data.title || "Default Title";
+  metadata.description = data.excerpt || "Default Description";
 
   return (
     <>
