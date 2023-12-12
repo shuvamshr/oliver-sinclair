@@ -7,7 +7,7 @@ import Note from "@/app/components/note";
 import Image from "next/image";
 import Link from "next/link";
 
-import Services from "@/app/global/sections/services";
+import ServiceList from "@/app/global/sections/service_list";
 import BlogList from "@/app/global/sections/blog_list";
 import PreFooter from "@/app/global/sections/prefooter";
 import Credentials from "@/app/global/sections/credentials";
@@ -15,12 +15,6 @@ import Credentials from "@/app/global/sections/credentials";
 import CreativityImg from "./assets/creativity.png";
 import GroupworkImg from "./assets/groupwork.png";
 import ProcessImg from "./assets/process.png";
-
-import UTSLogo from "./assets/uts.svg";
-import AppleLogo from "./assets/apple.svg";
-import DolbyLogo from "./assets/dolby.svg";
-import LeedsLogo from "./assets/leeds.svg";
-import OliverLogo from "./assets/oliver-white.svg";
 
 export default function Home() {
   useEffect(() => {
@@ -189,7 +183,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Services />
+      <ServiceList />
 
       <div className="container-fluid bg-blue-100 py-14 lg:py-16 px-6 lg:px-0">
         <div className="container mx-auto">

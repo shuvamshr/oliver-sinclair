@@ -10,7 +10,7 @@ import ThumbnailPlaceholderImg from "./assets/thumbnail-placeholder.jpg";
 //   // Add Style If Required
 // };
 
-interface CardProps {
+interface PostCardProps {
   slug?: string;
   thumbnail?: "default" | string;
   tags?: string[];
@@ -26,7 +26,7 @@ export default function PostCard({
   title = "untitled",
   excerpt = "No description provided",
   category,
-}: CardProps) {
+}: PostCardProps) {
   // const cardClass = ``;
   return (
     <>

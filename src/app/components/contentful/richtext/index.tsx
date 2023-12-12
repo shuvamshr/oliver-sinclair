@@ -7,8 +7,8 @@ const options = {
     [BLOCKS.EMBEDDED_ENTRY]: (node: any) => {
       return (
         <iframe
-          className="rounded-lg m-0 aspect-video"
-          height="400"
+          className="rounded-lg m-0 aspect-video lg:h-[400px] h-[300px]"
+          height="100%"
           width="100%"
           src={node.data.target.fields.embedUrl}
           title={node.data.target.fields.title}

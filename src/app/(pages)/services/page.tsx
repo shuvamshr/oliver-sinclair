@@ -4,9 +4,8 @@ import { useEffect } from "react";
 
 import Button from "@/app/components/button";
 import Image from "next/image";
-import Link from "next/link";
 
-import Services from "@/app/global/sections/services";
+import ServiceList from "@/app/global/sections/service_list";
 
 import ProcessPlainImg from "./assets/process-plain.png";
 
@@ -61,7 +60,7 @@ export default function Index() {
         </div>
       </div>
       <div id="services" className="h-[0px]"></div>
-      <Services />
+      <ServiceList />
 
       <div className="container-fluid bg-blue-100 py-14 lg:py-16 px-6 lg:px-0">
         <div className="container mx-auto">
