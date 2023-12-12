@@ -22,7 +22,7 @@ export async function generateMetadata({
   return {
     title: data.title,
     description: data.excerpt,
-    image: data.coverImage.fields.file.url,
+    image: "https:" + data.coverImage.fields.file.url,
   };
 }
 
