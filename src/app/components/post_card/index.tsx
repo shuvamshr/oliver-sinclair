@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import ThumbnailPlaceholderImg from "./assets/thumbnail-placeholder.jpg";
+import { Suspense } from "react";
 
 // const cardStyle: Record<string, string> = {
 //   // Add Style If Required
@@ -31,20 +32,29 @@ export default function PostCard({
   return (
     <>
       <div className="flex flex-col lg:w-[32%] rounded-lg shadow-md w-full h-full hover:shadow-xl transition ease-in-out duration-300">
-        {thumbnail && (
-          <Link href={`/${category}/${slug}`} className="aspect-video relative">
-            <Image
-              src={
-                thumbnail == "default"
-                  ? ThumbnailPlaceholderImg
-                  : "https:" + thumbnail
-              }
-              className="rounded-t-lg "
-              alt="Card Thumbnail"
-              fill={true}
-            />
-          </Link>
-        )}
+        <Suspense
+          fallback={
+            <div className="rounded-t-lg bg-gray-200 animate-pulse w-full h-[230px]"></div>
+          }
+        >
+          {thumbnail && (
+            <Link
+              href={`/${category}/${slug}`}
+              className="aspect-video relative"
+            >
+              <Image
+                src={
+                  thumbnail == "default"
+                    ? ThumbnailPlaceholderImg
+                    : "https:" + thumbnail
+                }
+                className="rounded-t-lg "
+                alt="Card Thumbnail"
+                fill={true}
+              />
+            </Link>
+          )}
+        </Suspense>
         <div className="flex flex-col gap-8 lg:px-8 lg:py-10 px-6 py-8">
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-4">
