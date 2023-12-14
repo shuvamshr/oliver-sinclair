@@ -2,6 +2,8 @@
 
 Welcome to the Oliver Sinclair repository! This project is a dynamic and modern website built with Next.js and TypeScript, leveraging the latest app router mechanism for seamless navigation. The stylish and responsive design is crafted using Tailwind CSS, ensuring a visually appealing and user-friendly experience.
 
+![Frame 1](https://github.com/shuvamshr/oliver-sinclair/assets/117790424/f8bc0756-e1c0-403e-a80c-94375cfb9b75)
+
 ## Technology
 
 - **Next.js and TypeScript**: Built on the React Framework Next.js combined with the type safety of TypeScript for a robust and maintainable codebase.
