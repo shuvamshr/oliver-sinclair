@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import { Poppins, Vollkorn } from "next/font/google";
 import "./globals.css";
 import Header from "./global/header";
@@ -41,6 +43,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
