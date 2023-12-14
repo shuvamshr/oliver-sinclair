@@ -53,7 +53,7 @@ export default function Footer() {
                     blogs
                   </Link>
                   <Link
-                    href="https://calendly.com/oliversinclair/30min"
+                    href="https://www.linkedin.com/in/shuvamshr/"
                     className="font-serif font-regular text-base  text-gray-300 leading-none"
                     target="_blank"
                   >
