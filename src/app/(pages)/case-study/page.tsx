@@ -30,7 +30,7 @@ export default async function CaseStudies() {
               <Button
                 title="Get Started With Your Project"
                 display="block"
-                link="https://calendly.com/oliversinclair/30min"
+                link="https://www.linkedin.com/in/shuvamshr/"
                 newTab={true}
               />
               <Button
