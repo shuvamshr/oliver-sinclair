@@ -56,7 +56,7 @@ export default function Credentials() {
 
   return (
     <>
-      <div className="lg:flex lg:flex-wrap lg:justify-between items-center lg:overflow-hidden flex flex-row overflow-x-auto snap-x gap-16">
+      <div className="flex flex-row lg:justify-around lg:flex-wrap lg:overflow-hidden overflow-x-auto snap-x gap-16 items-center">
         {CredentialData.map((value, index) => (
           <Image
             key={index}
