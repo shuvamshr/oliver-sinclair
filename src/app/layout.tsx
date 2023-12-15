@@ -43,8 +43,8 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
-        <SpeedInsights />
         <Analytics />
+        <SpeedInsights />
         <Footer />
       </body>
     </html>
