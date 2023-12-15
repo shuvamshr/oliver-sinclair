@@ -21,6 +21,7 @@ export async function generateMetadata({
     description: data.excerpt,
     openGraph: {
       images: ServiceHeaderImg,
+      url: "https:oliver-sinclair.vercel.app/services/" + data.slug,
     },
   };
 }

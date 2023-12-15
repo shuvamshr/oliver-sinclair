@@ -18,6 +18,7 @@ export async function generateMetadata({
     description: data.excerpt,
     openGraph: {
       images: "https:" + data.coverImage.fields.file.url,
+      url: "https:oliver-sinclair.vercel.app/blogs/" + data.slug,
     },
   };
 }
