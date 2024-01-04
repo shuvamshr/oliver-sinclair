@@ -87,7 +87,7 @@ export default function Header() {
               href="/case-study"
               onClick={() => setToggle(!toggle)}
             >
-              case studies
+              projects
             </Link>
 
             <Link
@@ -169,7 +169,7 @@ export default function Header() {
               }`}
               href="/case-study"
             >
-              case studies
+              projects
             </Link>
 
             <Link

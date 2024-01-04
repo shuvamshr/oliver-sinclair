@@ -15,14 +15,13 @@ export default async function CaseStudies() {
                 <h1 className="font-sans font-semibold text-2xl lg:text-3xl lg:text-center text-gray-800 lg:leading-normal leading-relaxed">
                   An insight into our{" "}
                   <span className="text-red-900 font-bold italic">
-                    Problem Solving.
+                    Creativity.
                   </span>
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-center text-gray-700 lg:leading-normal leading-relaxed">
                   Witness the power of problem-solving in action – delve into
-                  our Case Studies Gallery, where challenges transform into
-                  success stories, showcasing innovative solutions that drive
-                  results
+                  our Projects Gallery, where challenges transform into success
+                  stories, showcasing innovative solutions that drive results
                 </p>
               </div>
             </div>
