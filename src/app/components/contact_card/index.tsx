@@ -70,7 +70,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClick }) => {
                 <li className="font-sans font-medium text-sm  text-gray-700 leading-none flex flex-row gap-4 items-center  hover:text-red-700">
                   <Image src={DownloadIcon} alt="" className="w-5 h-5" />
                   <Link
-                    href="https://drive.google.com/file/d/1gGlKu2rI66lMXYImDnfV2RVf11Gw0RC1/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1ZOoDodGyOyBcIkACWOBt4azQCNymwdk2/view?usp=sharing"
                     target="_blank"
                   >
                     Download my Resume
