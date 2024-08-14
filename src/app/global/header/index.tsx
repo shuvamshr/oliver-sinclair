@@ -194,7 +194,7 @@ export default function Header() {
               title="Get in Touch"
               type="secondary"
               size="medium"
-              link="https://www.linkedin.com/in/shuvam-s-976186184/"
+              link="https://www.linkedin.com/in/shuvamshr/"
               newTab={true}
             />
             <Button
