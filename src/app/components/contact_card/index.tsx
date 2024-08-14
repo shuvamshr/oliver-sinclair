@@ -51,7 +51,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClick }) => {
                 <li className="font-sans font-medium text-sm  text-gray-700 leading-none flex flex-row gap-4 items-center hover:text-red-700">
                   <Image src={LinkedInIcon} alt="" className="w-5 h-5" />
                   <Link
-                    href="https://www.linkedin.com/in/shuvam-s-976186184/"
+                    href="https://www.linkedin.com/in/shuvamshr/"
                     target="_blank"
                   >
                     Connect on LinkedIn
