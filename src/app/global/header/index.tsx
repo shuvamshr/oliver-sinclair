@@ -120,12 +120,14 @@ export default function Header() {
               size="large"
               link="https://www.linkedin.com/in/shuvamshr/"
               newTab={true}
+              onClick={() => setToggle(!toggle)}
             />
             <Button
               title="Who's Oliver"
               type="primary"
               size="large"
               link="/blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+              onClick={() => setToggle(!toggle)}
             />
           </div>
         </div>
