@@ -12,17 +12,11 @@ const options = {
             <div className="lg:h-[400px] h-[300px] w-full bg-gray-200 rounded-lg m-0 animate-pulse"></div>
           }
         >
-          <iframe
-            className="rounded-lg m-0 aspect-video lg:h-[400px] h-[300px]"
-            height="100%"
-            width="100%"
-            src={node.data.target.fields.embedUrl}
-            title={node.data.target.fields.title}
-            allowFullScreen={true}
-          />
+          <iframe src={node.data.target.fields.embedUrl} allowFullScreen />
         </Suspense>
       );
     },
+
     [BLOCKS.EMBEDDED_ASSET]: (node: any) => {
       return (
         <Suspense
@@ -41,6 +35,9 @@ const options = {
         </Suspense>
       );
     },
+  },
+  renderMark: {
+    [MARKS.BOLD]: (text: any) => <span className="font-medium">{text}</span>,
   },
 };
 
