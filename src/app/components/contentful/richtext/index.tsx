@@ -24,12 +24,13 @@ const options = {
             <div className="lg:h-[400px] h-[300px] w-full bg-gray-200 rounded-lg m-0 animate-pulse"></div>
           }
         >
-          <div className="aspect-video relative">
+          <div className="relative w-full h-auto max-w-full">
             <Image
               src={"https:" + node.data.target.fields.file.url}
-              className="rounded-lg m-0"
+              className="rounded-lg m-0 object-cover"
               alt="Card Thumbnail"
-              fill={true}
+              fill={true} // Dynamically fill its container
+              sizes="(max-width: 1024px) 100vw, 50vw" // Ensures proper scaling
             />
           </div>
         </Suspense>
