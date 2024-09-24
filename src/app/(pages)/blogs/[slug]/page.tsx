@@ -47,14 +47,13 @@ export default async function ({ params }: { params: { slug: string } }) {
 
             <div className="font-sans text-sm text-gray-700 bg-gray-200 px-4 py-3 my-4 rounded-lg border-2 border-gray-300 leading-relaxed">
               <strong className="text-gray-800">Like what you read?</strong>{" "}
-              Follow{" "}
               <Link
-                href="https://www.linkedin.com/company/oliversinclair/"
+                href="https://www.linkedin.com/in/shuvamshr/"
                 className="underline text-gray-700"
               >
-                Oliver Sinclair on LinkedIn
+                Connect with me on LinkedIn
               </Link>{" "}
-              to keep yourself updated with the latest blogs!
+              to keep in touch with me!
             </div>
           </div>
         </div>

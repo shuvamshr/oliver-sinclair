@@ -116,13 +116,6 @@ export default function Footer() {
                   >
                     email address
                   </Link>
-                  <Link
-                    href="https://drive.google.com/file/d/1gGlKu2rI66lMXYImDnfV2RVf11Gw0RC1/view"
-                    target="_blank"
-                    className="font-serif font-regular text-base  text-gray-300 leading-none"
-                  >
-                    download resume
-                  </Link>
                 </ul>
               </div>
             </div>
@@ -130,7 +123,7 @@ export default function Footer() {
           <div className="h-[1px] w-full bg-[#353535] "></div>
           <div className="flex lg:flex-row flex-col justify-between gap-10">
             <p className="font-sans font-regular text-base text-white leading-none">
-              Oliver Sinclair, 2023
+              Oliver Sinclair, 2024
             </p>
             <div className="flex flex-row gap-16">
               <p className="font-sans font-semibold text-base text-white leading-none">
