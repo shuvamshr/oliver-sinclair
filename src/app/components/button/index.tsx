@@ -47,6 +47,7 @@ export default function Button({
           href={link}
           target={`${newTab ? "_blank" : "_self"}`}
           className={linkClass}
+          onClick={onClick}
         >
           {title}
         </Link>
