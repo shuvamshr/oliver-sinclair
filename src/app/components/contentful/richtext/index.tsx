@@ -37,7 +37,10 @@ const options = {
     },
   },
   renderMark: {
-    [MARKS.BOLD]: (text: any) => <span className="font-medium">{text}</span>,
+    [MARKS.BOLD]: (text: any) => <span className="font-semibold">{text}</span>,
+    [MARKS.UNDERLINE]: (text: any) => (
+      <span className="font-semibold text-blue-600">{text}</span>
+    ),
   },
 };
 
