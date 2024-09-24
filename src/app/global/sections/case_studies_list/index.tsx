@@ -15,7 +15,7 @@ export default async function CaseStudiesList() {
     <>
       <div className="container-fluid bg-white px-6 lg:px-0 pb-14 lg:pb-24">
         <div className="container mx-auto">
-          <div className="flex flex-wrap justify-between gap-y-8">
+          <div className="flex flex-wrap justify-start gap-y-8">
             {publicCaseStudy.map(
               (post: any, index: any) =>
                 post.fields.category === "case-study" && (
