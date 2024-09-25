@@ -29,10 +29,10 @@ export default function Home() {
             <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
               <div className="flex flex-col gap-2 lg:gap-4">
                 <Link
-                  href="#bundles"
+                  href="https://oliver-sinclair.vercel.app/case-study/alleviating-commuting-stress-and-anxiety-for-university-students-a-user"
                   className="font-sans font-medium text-base lg:text-lg text-gray-800 lg:leading-none leading-snug hover:text-red-700 transition ease-in-out duration-200"
                 >
-                  NEW UX BUNDLE ADDED
+                  READ LATEST CASE STUDY
                 </Link>
                 <h1 className="font-sans font-semibold text-3xl lg:text-4xl text-gray-800 lg:leading-normal leading-relaxed">
                   Crafting Experiences <br className="lg:block hidden" />
@@ -51,20 +51,20 @@ export default function Home() {
               <div className="flex flex-col gap-6">
                 <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
                   <Button
-                    title="Who’s Oliver?"
-                    link="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+                    title="View Projects"
+                    link="case-study"
                     display="block"
                   />
                   <Button
-                    title="View Service Bundles"
+                    title="Who’s Oliver?"
                     type="secondary"
-                    link="services"
+                    link="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
                     display="block"
                   />
                 </div>
 
                 <p className="font-sans font-medium text-xs lg:text-sm text-gray-700 leading-normal">
-                  View all our services, or figure out who Oliver is
+                  Read our latest project, or figure out who Oliver is
                 </p>
               </div>
             </div>
