@@ -13,7 +13,7 @@ export default async function Blogs() {
                   Latest Blogs
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-lg text-gray-700 leading-normal">
-                  Expand your knowledge with our latest content
+                  Expand your knowledge with my latest yappings.
                 </p>
               </div>
             </div>

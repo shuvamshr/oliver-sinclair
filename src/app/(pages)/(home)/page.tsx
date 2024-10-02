@@ -43,8 +43,8 @@ export default function Home() {
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-lg text-gray-700 lg:leading-normal leading-relaxed">
                   Embark on a digital journey where captivation knows no bounds.
-                  At Oliver Sinclair, we&apos;re devoted to crafting experiences
-                  that transcend expectations.
+                  Oliver Sinclair is devoted to crafting experiences that
+                  transcend expectations.
                 </p>
               </div>
 
@@ -64,7 +64,7 @@ export default function Home() {
                 </div>
 
                 <p className="font-sans font-medium text-xs lg:text-sm text-gray-700 leading-normal">
-                  Read our latest project, or figure out who Oliver is
+                  Read the latest project, or figure out who Oliver is
                 </p>
               </div>
             </div>
@@ -87,10 +87,10 @@ export default function Home() {
                   <br className="lg:block hidden" /> universities and events
                 </h1>
                 <p className="font-serif font-regular text-sm lg:text-base lg:text-center text-gray-300 lg:leading-normal leading-relaxed">
-                  our team of dedicated professionals comprises individuals with
-                  a diverse array of skills and knowledge acquired through
-                  certified expertise from various industries, renowned
-                  universities, and impactful events
+                  our team (one dude) of dedicated professionals comprises
+                  individuals with a diverse array of skills and knowledge
+                  acquired through certified expertise from various industries,
+                  renowned universities, and impactful events
                 </p>
               </div>
 
@@ -157,7 +157,7 @@ export default function Home() {
                   </span>
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-center text-gray-700 lg:leading-normal leading-relaxed">
-                  Explore our wide range of service bundles tailored to meet
+                  Explore some wide range of service bundles tailored to meet
                   your specific needs. From essential connectivity to
                   personalized digital solutions, find the perfect package for
                   an enhanced and seamless experience.
@@ -220,13 +220,13 @@ export default function Home() {
             <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col gap-10">
               <div className="flex flex-col gap-4">
                 <h1 className="font-sans font-semibold text-2xl lg:text-3xl lg:text-center text-gray-800 lg:leading-normal leading-relaxed">
-                  Unlock Wisdom by Exploring Our{" "}
+                  Unlock Wisdom by Exploring Some{" "}
                   <span className="text-red-900 font-bold italic">
                     Informative Blogs
                   </span>
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-center text-gray-700 lg:leading-normal leading-relaxed">
-                  Dive into our blog section and embark on a journey of
+                  Dive into the blog section and embark on a journey of
                   expanding your knowledge. Discover insightful articles, expert
                   tips, and the latest trends that will empower you to stay
                   informed and make informed decisions in an ever-evolving

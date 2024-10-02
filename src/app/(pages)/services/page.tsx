@@ -23,13 +23,13 @@ export default function Index() {
             <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
               <div className="flex flex-col gap-2 lg:gap-4">
                 <h6 className="font-sans font-medium text-base text-red-700 lg:leading-none leading-snug">
-                  WE&apos;RE AT YOUR SERVICE
+                  OLIVER'S AT YOUR SERVICE
                 </h6>
                 <h1 className="font-sans font-semibold text-2xl lg:text-3xl  text-gray-800 lg:leading-normal leading-relaxed">
                   All your design needs bundled.
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
-                  Explore our wide range of service bundles tailored to meet
+                  Explore some wide range of service bundles tailored to meet
                   your specific needs
                 </p>
               </div>
