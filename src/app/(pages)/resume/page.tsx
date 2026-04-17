@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Button from "@/app/components/button";
 import CaseStudiesList from "@/app/global/sections/case_studies_list";
@@ -27,7 +29,7 @@ export default function ResumePage() {
                   & Case Studies
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-xl text-gray-700 leading-relaxed max-w-xl">
-                  A curated collection of my work in product design, user research, and digital strategy. 
+                  A curated collection of my work in product design, user research, and digital strategy.
                   Below you&apos;ll find deep dives into my design process and insights from the field.
                 </p>
               </div>
@@ -50,7 +52,7 @@ export default function ResumePage() {
       {/* Case Studies Section */}
       <div className="container-fluid bg-white py-14 lg:py-24 px-6 lg:px-0">
         <div className="container mx-auto">
-           <div className="flex flex-col gap-4 mb-12">
+          <div className="flex flex-col gap-4 mb-12">
             <h2 className="font-sans font-semibold text-2xl lg:text-4xl text-gray-800">
               Selected Case Studies
             </h2>
