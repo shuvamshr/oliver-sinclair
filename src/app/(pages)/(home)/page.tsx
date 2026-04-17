@@ -43,7 +43,7 @@ export default function Home() {
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-lg text-gray-700 lg:leading-normal leading-relaxed">
                   Embark on a digital journey where captivation knows no bounds.
-                  Oliver Sinclair is devoted to crafting experiences that
+                  Shuvam Shrestha is devoted to crafting experiences that
                   transcend expectations.
                 </p>
               </div>
@@ -56,15 +56,21 @@ export default function Home() {
                     display="block"
                   />
                   <Button
-                    title="Who’s Oliver?"
-                    type="secondary"
-                    link="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+                    title="View Projects"
+                    link="case-study"
                     display="block"
+                  />
+                  <Button
+                    title="Who’s Shuvam?"
+                    type="secondary"
+                    link="https://www.linkedin.com/in/shuvamshr/"
+                    display="block"
+                    newTab={true}
                   />
                 </div>
 
                 <p className="font-sans font-medium text-xs lg:text-sm text-gray-700 leading-normal">
-                  Read the latest project, or figure out who Oliver is
+                  Read the latest project, or figure out who Shuvam is
                 </p>
               </div>
             </div>
@@ -81,16 +87,16 @@ export default function Home() {
             <div className="col-span-12 lg:col-span-10 lg:col-start-2 flex flex-col gap-10">
               <div className="flex flex-col gap-4">
                 <h1 className="font-sans font-semibold text-2xl lg:text-3xl lg:text-center text-white lg:leading-normal leading-relaxed">
-                  Certified expertise from over{" "}
+                  Certified expertise across{" "}
                   <span className="text-red-900 font-bold italic">10+</span>{" "}
                   industries,
                   <br className="lg:block hidden" /> universities and events
                 </h1>
                 <p className="font-serif font-regular text-sm lg:text-base lg:text-center text-gray-300 lg:leading-normal leading-relaxed">
-                  our team (one dude) of dedicated professionals comprises
-                  individuals with a diverse array of skills and knowledge
-                  acquired through certified expertise from various industries,
-                  renowned universities, and impactful events
+                  A dedicated professional (just one dude) with a diverse array
+                  of skills and knowledge acquired through certified expertise
+                  from various industries, renowned universities, and impactful
+                  events
                 </p>
               </div>
 
@@ -111,28 +117,28 @@ export default function Home() {
                 <h1 className="font-sans font-semibold text-2xl lg:text-3xl  text-gray-800 lg:leading-normal leading-relaxed">
                   Who is..{" "}
                   <span className="text-red-900 font-bold italic">
-                    Oliver Sinclair?
+                    Shuvam Shrestha?
                   </span>
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
                   In the vast landscape of talent and expertise, there emerges a
-                  name that resonates with versatility and innovation - Oliver
-                  Sinclair. But who is Oliver Sinclair, and why is this name
+                  name that resonates with versatility and innovation - Shuvam
+                  Shrestha. But who is Shuvam Shrestha, and why is he
                   creating ripples in various industries? Let&apos;s embark on a
-                  journey to uncover the mysteries behind the persona of Oliver
-                  Sinclair. <br />
+                  journey to uncover the story behind Shuvam. <br />
                   <br />
-                  Oliver Sinclair is not just a person; he is a concept, an
-                  embodiment of dynamic capabilities tailored to meet your
+                  Shuvam Shrestha is not just a designer; he is a problem solver,
+                  an embodiment of dynamic capabilities tailored to meet your
                   specific needs.
                 </p>
               </div>
 
               <Button
-                title="Learn More About Oliver"
+                title="Learn More About Shuvam"
                 size="large"
                 display="fit"
-                link="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+                link="https://www.linkedin.com/in/shuvamshr/"
+                newTab={true}
               />
             </div>
           </div>
@@ -157,23 +163,24 @@ export default function Home() {
                   </span>
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-center text-gray-700 lg:leading-normal leading-relaxed">
-                  Explore some wide range of service bundles tailored to meet
+                  Explore a wide range of services tailored to meet
                   your specific needs. From essential connectivity to
-                  personalized digital solutions, find the perfect package for
+                  personalized digital solutions, find the perfect approach for
                   an enhanced and seamless experience.
                 </p>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-8 lg:col-start-3 flex flex-col lg:flex-row gap-3 lg:gap-5">
               <Link
-                href="blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+                href="https://www.linkedin.com/in/shuvamshr/"
                 className="w-full"
+                target="_blank"
               >
-                <Button title="Who’s Oliver?" display="block" />
+                <Button title="Who’s Shuvam?" display="block" />
               </Link>
               <Link href="services" className="w-full">
                 <Button
-                  title="View Service Bundles"
+                  title="View Services"
                   type="secondary"
                   display="block"
                 />
@@ -194,9 +201,9 @@ export default function Home() {
                   Got something a bit more custom?
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
-                  For custom-tailored solutions beyond our standard bundles,
-                  reach out to us. We&apos;re here to craft personalized service
-                  packages that precisely meet your unique requirements and
+                  For custom-tailored solutions beyond my standard services,
+                  reach out to me. I&apos;m here to craft personalized
+                  experiences that precisely meet your unique requirements and
                   preferences.
                 </p>
               </div>

@@ -123,10 +123,11 @@ export default function Header() {
               onClick={() => setToggle(!toggle)}
             />
             <Button
-              title="Who's Oliver"
+              title="About Me"
               type="primary"
               size="large"
-              link="/blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+              link="https://www.linkedin.com/in/shuvamshr/"
+              newTab={true}
               onClick={() => setToggle(!toggle)}
             />
           </div>
@@ -200,10 +201,11 @@ export default function Header() {
               newTab={true}
             />
             <Button
-              title="Who's Oliver"
+              title="About Me"
               type="primary"
               size="medium"
-              link="/blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+              link="https://www.linkedin.com/in/shuvamshr/"
+              newTab={true}
             />
           </div>
 

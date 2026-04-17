@@ -123,7 +123,7 @@ export default function Footer() {
           <div className="h-[1px] w-full bg-[#353535] "></div>
           <div className="flex lg:flex-row flex-col justify-between gap-10">
             <p className="font-sans font-regular text-base text-white leading-none">
-              Oliver Sinclair, 2024
+              Shuvam Shrestha, 2024
             </p>
             <div className="flex flex-row gap-16">
               <p className="font-sans font-semibold text-base text-white leading-none">

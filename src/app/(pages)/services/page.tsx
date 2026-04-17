@@ -23,7 +23,7 @@ export default function Index() {
             <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
               <div className="flex flex-col gap-2 lg:gap-4">
                 <h6 className="font-sans font-medium text-base text-red-700 lg:leading-none leading-snug">
-                  OLIVER AT YOUR SERVICE
+                  SHUVAM AT YOUR SERVICE
                 </h6>
                 <h1 className="font-sans font-semibold text-2xl lg:text-3xl  text-gray-800 lg:leading-normal leading-relaxed">
                   All your design needs bundled.
@@ -71,9 +71,9 @@ export default function Index() {
                   Got something a bit more custom?
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
-                  For custom-tailored solutions beyond our standard bundles,
-                  reach out to us. We&apos;re here to craft personalized service
-                  packages that precisely meet your unique requirements and
+                  For custom-tailored solutions beyond my standard services,
+                  reach out to me. I&apos;m here to craft personalized
+                  experiences that precisely meet your unique requirements and
                   preferences.
                 </p>
               </div>

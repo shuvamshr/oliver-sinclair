@@ -21,7 +21,7 @@ export async function generateMetadata({
     description: data.excerpt,
     openGraph: {
       images: ServiceHeaderImg,
-      url: "https:oliver-sinclair.vercel.app/services/" + data.slug,
+      url: "https:shuvam.shrestha.com.au/services/" + data.slug,
     },
   };
 }
@@ -99,8 +99,8 @@ export default async function ({ params }: { params: { slug: string } }) {
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
                   Empower your aspirations, seize opportunities, and
-                  thrive—experience the journey with Oliver Sinclair&apos;s{" "}
-                  {data.title} package.
+                  thrive—experience the journey with Shuvam Shrestha&apos;s{" "}
+                  {data.title} service.
                 </p>
               </div>
 
@@ -108,7 +108,7 @@ export default async function ({ params }: { params: { slug: string } }) {
                 <Button
                   title="Get in Touch"
                   display="block"
-                  link="https://www.linkedin.com/in/shuvam-s-976186184/"
+                  link="https://www.linkedin.com/in/shuvamshr/"
                   newTab={true}
                 />
                 <Button

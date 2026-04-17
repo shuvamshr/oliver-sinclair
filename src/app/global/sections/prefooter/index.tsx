@@ -12,23 +12,24 @@ export default function PreFooter() {
           <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
             <div className="flex flex-col gap-2 lg:gap-4">
               <h1 className="font-sans font-semibold text-2xl lg:text-3xl  text-gray-800 lg:leading-normal leading-relaxed">
-                Elevate Your Growth with Oliver
+                Elevate Your Growth with Shuvam
               </h1>
               <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
                 Empower your aspirations, seize opportunities, and
-                thrive—experience the journey of growth with Oliver Sinclair by
+                thrive—experience the journey of growth with Shuvam Shrestha by
                 your side.
               </p>
             </div>
 
             <div className="flex flex-col lg:flex-row gap-3 lg:gap-5">
               <Button
-                title="Who’s Oliver?"
+                title="About Me"
                 display="block"
-                link="/blogs/unveiling-the-enigma-who-is-oliver-sinclair"
+                link="https://www.linkedin.com/in/shuvamshr/"
+                newTab={true}
               />
               <Button
-                title="View Service Bundles"
+                title="View Services"
                 type="secondary"
                 display="block"
                 link="/services"
