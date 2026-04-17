@@ -2,8 +2,6 @@
 import Image from "next/image";
 import Button from "@/app/components/button";
 import CaseStudiesList from "@/app/global/sections/case_studies_list";
-import BlogList from "@/app/global/sections/blog_list";
-import Credentials from "@/app/global/sections/credentials";
 import ResumeClientWrapper from "@/app/components/resume/ResumeClientWrapper";
 
 // Branding Assets
@@ -61,33 +59,6 @@ export default function ResumePage() {
         </div>
       </div>
 
-      {/* Credentials Section */}
-      <div className="container-fluid bg-gray-900 py-14 lg:py-24 px-6 lg:px-0">
-        <div className="container mx-auto text-center">
-          <div className="flex flex-col gap-4 mb-16">
-            <h2 className="font-sans font-semibold text-2xl lg:text-4xl text-white">
-              Certifications & Recognition
-            </h2>
-            <p className="font-serif text-gray-300 max-w-2xl mx-auto">
-              Ongoing commitment to professional excellence through industry certifications and competitive design challenges.
-            </p>
-          </div>
-          <Credentials />
-        </div>
-      </div>
-
-      {/* Blogs Section */}
-      <div className="container-fluid bg-white py-14 lg:py-24 px-6 lg:px-0">
-        <div className="container mx-auto">
-          <div className="flex flex-col gap-4 mb-12">
-            <h2 className="font-sans font-semibold text-2xl lg:text-4xl text-gray-800">
-              Insights & Thought Leadership
-            </h2>
-            <div className="w-20 h-1 bg-red-700"></div>
-          </div>
-          <BlogList />
-        </div>
-      </div>
     </ResumeClientWrapper>
   );
 }
