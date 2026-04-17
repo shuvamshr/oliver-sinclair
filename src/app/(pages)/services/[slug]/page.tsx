@@ -99,7 +99,7 @@ export default async function ({ params }: { params: { slug: string } }) {
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
                   Empower your aspirations, seize opportunities, and
-                  thrive—experience the journey with Shuvam Shrestha&apos;s{" "}
+                  thrive—experience the journey through my professional{" "}
                   {data.title} service.
                 </p>
               </div>

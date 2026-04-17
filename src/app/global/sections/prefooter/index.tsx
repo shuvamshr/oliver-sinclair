@@ -12,12 +12,11 @@ export default function PreFooter() {
           <div className="col-span-12 lg:col-span-6 flex flex-col gap-10">
             <div className="flex flex-col gap-2 lg:gap-4">
               <h1 className="font-sans font-semibold text-2xl lg:text-3xl  text-gray-800 lg:leading-normal leading-relaxed">
-                Elevate Your Growth with Shuvam
+                Let&apos;s Build Something Great
               </h1>
               <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
                 Empower your aspirations, seize opportunities, and
-                thrive—experience the journey of growth with Shuvam Shrestha by
-                your side.
+                thrive—let&apos;s collaborate to bring your digital vision to life through thoughtful design.
               </p>
             </div>
 

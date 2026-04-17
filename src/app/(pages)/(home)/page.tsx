@@ -43,8 +43,8 @@ export default function Home() {
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-lg text-gray-700 lg:leading-normal leading-relaxed">
                   Embark on a digital journey where captivation knows no bounds.
-                  Shuvam Shrestha is devoted to crafting experiences that
-                  transcend expectations.
+                  I am devoted to crafting experiences that
+                  transcend expectations through thoughtful design and research.
                 </p>
               </div>
 
@@ -61,7 +61,7 @@ export default function Home() {
                     display="block"
                   />
                   <Button
-                    title="Who’s Shuvam?"
+                    title="About Me"
                     type="secondary"
                     link="https://www.linkedin.com/in/shuvamshr/"
                     display="block"
@@ -70,7 +70,7 @@ export default function Home() {
                 </div>
 
                 <p className="font-sans font-medium text-xs lg:text-sm text-gray-700 leading-normal">
-                  Read the latest project, or figure out who Shuvam is
+                  Read the latest project, or learn more about me
                 </p>
               </div>
             </div>
@@ -115,26 +115,25 @@ export default function Home() {
             <div className="col-span-12 lg:col-span-6 lg:col-start-7 flex flex-col lg:items-start gap-10">
               <div className="flex flex-col gap-4">
                 <h1 className="font-sans font-semibold text-2xl lg:text-3xl  text-gray-800 lg:leading-normal leading-relaxed">
-                  Who is..{" "}
+                  About{" "}
                   <span className="text-red-900 font-bold italic">
-                    Shuvam Shrestha?
+                    Me
                   </span>
                 </h1>
                 <p className="font-serif font-regular text-base  text-gray-700 lg:leading-normal leading-relaxed">
-                  In the vast landscape of talent and expertise, there emerges a
-                  name that resonates with versatility and innovation - Shuvam
-                  Shrestha. But who is Shuvam Shrestha, and why is he
-                  creating ripples in various industries? Let&apos;s embark on a
-                  journey to uncover the story behind Shuvam. <br />
+                  In the vast landscape of talent and expertise, I strive to
+                  combine versatility with innovation. My journey in design is
+                  driven by a passion for creating impactful digital solutions
+                  that resonate with users and meet specific business needs. <br />
                   <br />
-                  Shuvam Shrestha is not just a designer; he is a problem solver,
-                  an embodiment of dynamic capabilities tailored to meet your
-                  specific needs.
+                  I don&apos;t just design interfaces; I solve problems,
+                  tailoring my capabilities to deliver high-quality outcomes for
+                  every project.
                 </p>
               </div>
 
               <Button
-                title="Learn More About Shuvam"
+                title="View LinkedIn Profile"
                 size="large"
                 display="fit"
                 link="https://www.linkedin.com/in/shuvamshr/"
@@ -157,15 +156,15 @@ export default function Home() {
             >
               <div className="flex flex-col gap-4">
                 <h1 className="font-sans font-semibold text-2xl lg:text-3xl lg:text-center text-gray-800 lg:leading-normal leading-relaxed">
-                  All your design needs bundled.{" "}
+                  Design Services &{" "}
                   <span className="text-red-900 font-bold italic">
-                    Take your pick.
+                    Expertise.
                   </span>
                 </h1>
                 <p className="font-serif font-regular text-base lg:text-center text-gray-700 lg:leading-normal leading-relaxed">
-                  Explore a wide range of services tailored to meet
+                  I offer a wide range of services tailored to meet
                   your specific needs. From essential connectivity to
-                  personalized digital solutions, find the perfect approach for
+                  personalized digital solutions, I find the perfect approach for
                   an enhanced and seamless experience.
                 </p>
               </div>
@@ -176,7 +175,13 @@ export default function Home() {
                 className="w-full"
                 target="_blank"
               >
-                <Button title="Who’s Shuvam?" display="block" />
+              <Link
+                href="https://www.linkedin.com/in/shuvamshr/"
+                className="w-full"
+                target="_blank"
+              >
+                <Button title="About Me" display="block" />
+              </Link>
               </Link>
               <Link href="services" className="w-full">
                 <Button
